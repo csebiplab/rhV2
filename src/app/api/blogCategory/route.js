@@ -1,5 +1,5 @@
 import connectMongoDB from "@/lib/db";
-import blogCategory from "@/models/blogCategory";
+import BlogCategoryModel from "@/models/blogCategory.model";
 import { NextResponse } from "next/server";
 
 
@@ -7,7 +7,7 @@ export async function POST(request) {
   try {
     const { name, slug, description } = await request.json();
     await connectMongoDB();
-    await blogCategory.create({
+    await BlogCategoryModel.create({
       name,
       slug,
       description,
@@ -27,14 +27,14 @@ export async function POST(request) {
 
 export async function GET() {
   await connectMongoDB();
-  const blogCategories = await blogCategory.find();
-  return NextResponse.json({ blogCategories });
+  const data = await BlogCategoryModel.find();
+  return NextResponse.json({ data });
 }
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectMongoDB();
-  await blogCategory.findByIdAndDelete(id);
+  await BlogCategoryModel.findByIdAndDelete(id);
   return NextResponse.json(
     { message: "Blog category is  deleted" },
     { status: 200 }

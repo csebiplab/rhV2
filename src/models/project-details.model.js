@@ -69,7 +69,7 @@ const ProjectDetailsSchema = new Schema({
 });
 
 
-const ProjectDetails =
+const ProjectDetailsModel =
     mongoose.models.ProjectDetails ||
     mongoose.model("ProjectDetails", ProjectDetailsSchema);
-export default ProjectDetails;
+export default ProjectDetailsModel;
