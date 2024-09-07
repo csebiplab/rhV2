@@ -1,5 +1,5 @@
 import connectMongoDB from "@/lib/db";
-import ProjectDetails from "@/models/project-details.model";
+import ProjectDetailsModel from "@/models/project-details.model";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -7,7 +7,7 @@ export async function POST(request) {
         const createData = await request.json();
 
         await connectMongoDB();
-        const res = await ProjectDetails.create(createData);
+        const res = await ProjectDetailsModel.create(createData);
 
         return NextResponse.json(
             {
@@ -72,9 +72,9 @@ export async function GET(req) {
     ];
 
     if (projectCat) {
-        res = await ProjectDetails.find(query, projectsFields);
+        res = await ProjectDetailsModel.find(query, projectsFields);
     } else {
-        res = await ProjectDetails.aggregate(aggregationPipeline);
+        res = await ProjectDetailsModel.aggregate(aggregationPipeline);
     }
 
 
@@ -94,7 +94,7 @@ export async function DELETE(request) {
 
     await connectMongoDB();
 
-    await projects.findByIdAndDelete(id);
+    await ProjectDetailsModel.findByIdAndDelete(id);
 
 
     return NextResponse.json(

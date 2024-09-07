@@ -1,7 +1,7 @@
 import connectMongoDB from "@/lib/db";
-import ProjectDetails from "@/models/project-details.model";
 import { NextResponse } from "next/server";
 import { ObjectId } from 'mongodb';
+import ProjectDetailsModel from "@/models/project-details.model";
 
 export async function PATCH(request) {
     try {
@@ -20,7 +20,7 @@ export async function PATCH(request) {
         }
 
         await connectMongoDB();
-        const res = await ProjectDetails.findByIdAndUpdate(id, { ...updateData });
+        const res = await ProjectDetailsModel.findByIdAndUpdate(id, { ...updateData });
 
         return NextResponse.json(
             {
@@ -55,7 +55,7 @@ export async function GET(request, { params }) {
     await connectMongoDB();
 
     try {
-        const res = await ProjectDetails.findOne({ projectName: projectName }, projectsFields);
+        const res = await ProjectDetailsModel.findOne({ projectName: projectName }, projectsFields);
 
         if (!res) {
             return NextResponse.json(
