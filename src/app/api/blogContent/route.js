@@ -1,7 +1,7 @@
-import { NextResponse } from "next/server";
 import convertToLink from "@/helpers/trimSpace";
 import connectMongoDB from "@/lib/db";
-import blogContent from "@/models/blog.model";
+import BlogModel from "@/models/blog.model";
+import { NextResponse } from "next/server";
 
 export async function POST(request) {
   try {
@@ -9,7 +9,7 @@ export async function POST(request) {
     // console.log({ blogTitle, metaTitle, metaDescription, metaKeywords, shortDescription, content })
     const convertLink = convertToLink(customLink)
     await connectMongoDB();
-    await blogContent.create({ blogTitle, metaTitle, customLink: convertLink, metaDescription, metaKeywords, shortDescription, content });
+    await BlogModel.create({ blogTitle, metaTitle, customLink: convertLink, metaDescription, metaKeywords, shortDescription, content });
     return NextResponse.json(
       { message: "Blog content Created Successfully" },
       { status: 201 }
@@ -26,14 +26,14 @@ export async function POST(request) {
 export async function GET() {
   await connectMongoDB();
   const sortFields = ['updatedAt', -1]
-  const blogContentData = await blogContent.find().sort([sortFields]);
-  return NextResponse.json({ blogContentData });
+  const data = await BlogModel.find().sort([sortFields]);
+  return NextResponse.json({ data });
 }
 
 export async function DELETE(request) {
   const id = request.nextUrl.searchParams.get("id");
   await connectMongoDB();
-  await blogContent.findByIdAndDelete(id);
+  await BlogModel.findByIdAndDelete(id);
   return NextResponse.json(
     { message: "Blog deleted" },
     { status: 200 }

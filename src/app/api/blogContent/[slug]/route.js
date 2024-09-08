@@ -1,6 +1,7 @@
 
 import { NextResponse } from "next/server";
 import { ObjectId } from 'mongodb';
+import connectMongoDB from "@/lib/db";
 import convertToLink from "@/helpers/trimSpace";
 import BlogModel from "@/models/blog.model";
 

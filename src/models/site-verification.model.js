@@ -10,7 +10,7 @@ const metaDataSchema = new Schema(
   }
 );
 
-const verificationSite =
+const VerificationSiteModel =
   mongoose.models.verificationSite ||
   mongoose.model("verificationSite", metaDataSchema);
-export default verificationSite;
+export default VerificationSiteModel;

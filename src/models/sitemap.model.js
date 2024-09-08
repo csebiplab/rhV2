@@ -23,5 +23,5 @@ const sitemapSchema = new Schema(
     }
 );
 
-const Sitemap = mongoose.models.Sitemap || mongoose.model("Sitemap", sitemapSchema);
-export default Sitemap;
+const SitemapModel = mongoose.models.Sitemap || mongoose.model("Sitemap", sitemapSchema);
+export default SitemapModel;

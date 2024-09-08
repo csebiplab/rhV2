@@ -1,6 +1,6 @@
-import connectMongoDB from "@/lib/db";
 import { NextResponse } from "next/server";
 import { ObjectId } from 'mongodb';
+import connectMongoDB from "@/lib/db";
 import ProjectDetailsModel from "@/models/project-details.model";
 
 export async function PATCH(request) {
