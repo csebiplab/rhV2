@@ -18,7 +18,7 @@ function CreateBlog({ id, data }) {
 
   // console.log(id, data)
 
-  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL
+  const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     if (data) {
@@ -48,14 +48,30 @@ function CreateBlog({ id, data }) {
   };
   const handleSubmit = async () => {
     if (id) {
-      let { blogTitle, metaTitle, customLink, metaDescription, metaKeywords, shortDescription, content } = inputValue;
+      let {
+        blogTitle,
+        metaTitle,
+        customLink,
+        metaDescription,
+        metaKeywords,
+        shortDescription,
+        content,
+      } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/blogContent/${id}`, {
-          method: "PUT",
+          method: "PATCH",
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify({ blogTitle, metaTitle, customLink, metaDescription, metaKeywords, shortDescription, content }),
+          body: JSON.stringify({
+            blogTitle,
+            metaTitle,
+            customLink,
+            metaDescription,
+            metaKeywords,
+            shortDescription,
+            content,
+          }),
         });
         if (!res.ok) {
           toast(`Failed to update blog data`);
@@ -69,14 +85,30 @@ function CreateBlog({ id, data }) {
         console.log(error);
       }
     } else {
-      let { blogTitle, metaTitle, customLink, metaDescription, metaKeywords, shortDescription, content } = inputValue;
+      let {
+        blogTitle,
+        metaTitle,
+        customLink,
+        metaDescription,
+        metaKeywords,
+        shortDescription,
+        content,
+      } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/blogContent`, {
           method: "POST",
           headers: {
             "Content-type": "application/json",
           },
-          body: JSON.stringify({ blogTitle, metaTitle, customLink, metaDescription, metaKeywords, shortDescription, content }),
+          body: JSON.stringify({
+            blogTitle,
+            metaTitle,
+            customLink,
+            metaDescription,
+            metaKeywords,
+            shortDescription,
+            content,
+          }),
         });
 
         if (res.ok) {
@@ -104,7 +136,8 @@ function CreateBlog({ id, data }) {
               Blog Title
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="blogTitle"
                 id="blogTitle"
@@ -123,7 +156,8 @@ function CreateBlog({ id, data }) {
               Meta Title
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="metaTitle"
                 id="metaTitle"
@@ -142,7 +176,8 @@ function CreateBlog({ id, data }) {
               Custom Link
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="customLink"
                 id="customLink"
@@ -161,7 +196,8 @@ function CreateBlog({ id, data }) {
               Meta Description
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="metaDescription"
                 id="metaDescription"
@@ -180,7 +216,8 @@ function CreateBlog({ id, data }) {
               Meta Keywords
             </label>
             <div className="mt-2">
-              <input required
+              <input
+                required
                 type="text"
                 name="metaKeywords"
                 id="metaKeywords"
