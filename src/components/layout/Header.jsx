@@ -25,7 +25,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-
 const drop_down_nav_icons = [
   "/assets/drop_down_nav_icon/bathroom_icon.png",
   "/assets/drop_down_nav_icon/kitchen_icon.png",
@@ -33,14 +32,20 @@ const drop_down_nav_icons = [
   "/assets/drop_down_nav_icon/bathroom_icon.png",
   "/assets/drop_down_nav_icon/bathroom_icon.png",
   "/assets/drop_down_nav_icon/bathroom_icon.png",
-]
+];
 
 const our_service_menu_items = {
   interior: [
     { title: "Bathroom Remodeling", route: "/bathroom-remodeling-in-brooklyn" },
     { title: "Kitchen Remodeling", route: "/kitchen-remodeling-in-brooklyn" },
-    { title: "Home Remodeling Services", route: "/home-remodeling-services-in-brooklyn" },
-    { title: "Roofing Contractor in Brooklyn", route: "/roofing-contractor-in-brooklyn" },
+    {
+      title: "Home Remodeling Services",
+      route: "/home-remodeling-services-in-brooklyn",
+    },
+    {
+      title: "Roofing Contractor in Brooklyn",
+      route: "/roofing-contractor-in-brooklyn",
+    },
     { title: "Roof Repair in Brooklyn, NY", route: "/roof-repair-in-brooklyn" },
     { title: "Sheetrock", route: "/sheetrock" },
     // { title: "Plastering", route: "/plastering" },
@@ -81,7 +86,9 @@ function OurServiceManu() {
     return data?.map(({ route, title }, key) => (
       <Link href={route} key={key}>
         <MenuItem className="rounded-md ">
-          <Typography className="flex items-cneter gap-3 text-primary hover:text-black text-sm font-bold leading-normal"><FaKitchenSet /> {title}</Typography>
+          <Typography className="flex items-cneter gap-3 text-primary hover:text-black text-sm font-bold leading-normal">
+            <FaKitchenSet /> {title}
+          </Typography>
         </MenuItem>
       </Link>
     ));
@@ -129,23 +136,36 @@ function OurServiceManu() {
         <MenuList className="hidden max-w-[100vw] w-screen lg:block rounded-[3px] border border-[#E9E9E9] bg-white -mt-1">
           <div className="container grid grid-cols-4 gap-y-2">
             <div className="border-r-[1.5px] border-primary ">
-              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">Interior</h3>
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">
+                Interior
+              </h3>
               <ul>
-                <li className="text-primary">{renderItems(our_service_menu_items.interior.slice(0,3))}</li>
+                <li className="text-primary">
+                  {renderItems(our_service_menu_items.interior.slice(0, 3))}
+                </li>
               </ul>
             </div>
             <div className="border-r-[1.5px] border-primary">
-              <h3 className="text-[22px] uppercase text-black font-bold leading-normal"> <br/></h3>
-              <ul>{renderItems(our_service_menu_items.interior.slice(3,6))}</ul>
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal">
+                {" "}
+                <br />
+              </h3>
+              <ul>
+                {renderItems(our_service_menu_items.interior.slice(3, 6))}
+              </ul>
             </div>
             <div className="border-r-[1.5px] border-primary">
-              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">Exterior</h3>
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal pl-3">
+                Exterior
+              </h3>
               <ul>
                 {renderItems(our_service_menu_items.exterior.slice(0, 3))}
               </ul>
             </div>
             <div>
-              <h3 className="text-[22px] uppercase text-black font-bold leading-normal"><br/></h3>
+              <h3 className="text-[22px] uppercase text-black font-bold leading-normal">
+                <br />
+              </h3>
               <ul>
                 {renderItems(our_service_menu_items.exterior.slice(3, 6))}
               </ul>
@@ -368,7 +388,7 @@ export function Header() {
         className="p-4 overflow-y-auto pb-24 !z-[1000000000000000000]"
       >
         <div className="mb-6 flex items-center justify-between">
-          <Typography variant="p" color="blue-gray">
+          <Typography variant="paragraph" color="blue-gray">
             RH Construction
           </Typography>
           <IconButton
