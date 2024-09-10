@@ -10,8 +10,7 @@ const Hero = () => {
           <div className="w-full md:w-[58%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
             <div className="py-14 md:py-0 px-4 md:pl-0">
               <h1 className="leading-10 text-xl lg:text-3xl 2xl:text-4xl 4xl:text-5xl 5xl:text-6xl">
-              General Contractor <br/> in Brooklyn
-
+                General Contractor <br /> in Brooklyn
               </h1>
               <p className="text-sm lg:text-base mb-5 leading-6 mt-4 text-black">
                 Best general contractor in Brooklyn, specializing in home
@@ -31,7 +30,7 @@ const Hero = () => {
             </div>
           </div>
           <img
-            src="/assets/images/Group 73.png"
+            src="/assets/images/group73.png"
             alt="arrow left"
             className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0 hidden md:block"
           />
@@ -39,12 +38,12 @@ const Hero = () => {
             <Image
               width={820}
               height={825}
-              src="/assets/images/Group 21.png"
+              src="/assets/images/group21.png"
               alt="hero small image"
               className="hero-main-image mb-0"
             />
             <img
-              src="/assets/images/Group 73.png"
+              src="/assets/images/group73.png"
               alt="arrow right"
               className="md:w-[7%] md:h-[25%] absolute -bottom-[8%] right-0 rotate-180"
             />

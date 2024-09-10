@@ -12,10 +12,12 @@ const BathroomRenoHero = () => {
           <div className="w-full md:w-[50%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
             <div className="py-14 md:py-0 px-4 md:pl-0">
               <h1 className="leading-normal text-[34px] md:text-[36px] xl:text-[38px] 2xl:text-[42px] 3xl:text-[46px] 4xl:text-[50px] 5xl:text-[55px] font-bold text-left">
-              Bathroom Remodeling <br /> in Brooklyn
+                Bathroom Remodeling <br /> in Brooklyn
               </h1>
               <p className="text-base lg:text-lg font-normal mb-5 leading-6 mt-4 text-black">
-              Elevate your space with our expert bathroom remodeling services in Brooklyn. We've got you covered from stunning marble floors to sleek concrete countertops!
+                Elevate your space with our expert bathroom remodeling services
+                in Brooklyn. We've got you covered from stunning marble floors
+                to sleek concrete countertops!
               </p>
               <div className="mb-4 md:mb-0">
                 <a
@@ -33,7 +35,7 @@ const BathroomRenoHero = () => {
             </div>
           </div>
           <img
-            src="/assets/images/Group 73.png"
+            src="/assets/images/group73.png"
             alt="arrow left"
             className="md:w-[3%] md:h-[25%] absolute -bottom-[8%] left-0 rotate-0 hidden md:block"
           />
