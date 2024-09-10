@@ -36,32 +36,32 @@ const KitchenRenovationCost = () => {
               more.
             </p>
             <div className="flex justify-center md:justify-start">
-            <a
-              href={`tel:+1 (646) 683-4612`}
-              className="text-sm font-bold text-black"
-            >
-              <Button className="!px-[34px] !py-2 rounded-[10px] bg-primary text-black text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
-                <span>Learn More</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="9"
-                  height="13"
-                  viewBox="0 0 9 13"
-                  fill="none"
-                >
-                  <path
-                    d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
-                    fill="black"
-                  />
-                </svg>
-              </Button>
-            </a>
+              <a
+                href={`tel:+1 (646) 683-4612`}
+                className="text-sm font-bold text-black"
+              >
+                <Button className="!px-[34px] !py-2 rounded-[10px] bg-primary text-black text-xs lg:text-lg font-bold capitalize flex items-center gap-x-2">
+                  <span>Learn More</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="9"
+                    height="13"
+                    viewBox="0 0 9 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.78711 0L0 1.61048L5.42578 6.5L0 11.3895L1.78711 13L9 6.5L1.78711 0Z"
+                      fill="black"
+                    />
+                  </svg>
+                </Button>
+              </a>
             </div>
           </div>
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/Kitchen Renovation Cost.png"
+                src="/assets/kitchen/KitchenRenovationCost.png"
                 width={810}
                 height={550}
                 alt="bathroom-remodeling image"
