@@ -16,7 +16,7 @@ const footerLinks1 = [
       { label: ">> Careers", url: "/" },
       { label: ">> Sitemap", url: "/" },
     ],
-  }
+  },
 ];
 const footerLinks2 = [
   {
@@ -39,9 +39,9 @@ const footerImages = [
   "/assets/home_page/ssa-2023.png",
   "/assets/home_page/100reviews.png",
   "/assets/home_page/10year.png",
-  "/assets/home_page/Bark-Reviews-Logo.png",
+  "/assets/home_page/bark-reviews-logo.png",
   "/assets/home_page/facebook-reviews-logo.png",
-]
+];
 
 const Footer = () => {
   return (
@@ -61,57 +61,66 @@ const Footer = () => {
                   />
                 </div>
                 <p className="text-white pt-6 leading-[200%] text-center md:text-start">
-                From bathroom renovation to concrete bathroom, transform your space with our bathroom remodeling services in Brooklyn.
+                  From bathroom renovation to concrete bathroom, transform your
+                  space with our bathroom remodeling services in Brooklyn.
                 </p>
                 <div className="flex items-center justify-center md:justify-start gap-[35px] pt-[29px]">
-                <Image src="/assets/home_page/five_star.png" alt="five star icon" width={133} height={20}/>
-                <p className="text-white text-base font-bold">4.9</p>
+                  <Image
+                    src="/assets/home_page/five_star.png"
+                    alt="five star icon"
+                    width={133}
+                    height={20}
+                  />
+                  <p className="text-white text-base font-bold">4.9</p>
                 </div>
-                
               </div>
 
               {/* Mapping through footer links */}
               <div>
-              {footerLinks1.map((category, index) => (
-                <div
-                  key={index}
-                  className="mt-5 md:mt-0 text-center md:text-start"
-                >
-                  <p className="text-white !text-xl font-bold mb-5">{category.cat}</p>
-                  <ul>
-                    {category.links.map((link, idx) => (
-                      <li key={idx} className="mb-6">
-                        <Link href={link.url}>
-                          <span className="text-white !text-base !font-normal">
-                            {link.label}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                {footerLinks1.map((category, index) => (
+                  <div
+                    key={index}
+                    className="mt-5 md:mt-0 text-center md:text-start"
+                  >
+                    <p className="text-white !text-xl font-bold mb-5">
+                      {category.cat}
+                    </p>
+                    <ul>
+                      {category.links.map((link, idx) => (
+                        <li key={idx} className="mb-6">
+                          <Link href={link.url}>
+                            <span className="text-white !text-base !font-normal">
+                              {link.label}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
               <div>
-              {footerLinks2.map((category, index) => (
-                <div
-                  key={index}
-                  className="mt-5 md:mt-0 text-center md:text-start"
-                >
-                  <p className="text-white !text-xl font-bold mb-5">{category.cat}</p>
-                  <ul>
-                    {category.links.map((link, idx) => (
-                      <li key={idx} className="mb-6">
-                        <Link href={link.url}>
-                          <span className="text-white !text-base !font-normal">
-                            {link.label}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                {footerLinks2.map((category, index) => (
+                  <div
+                    key={index}
+                    className="mt-5 md:mt-0 text-center md:text-start"
+                  >
+                    <p className="text-white !text-xl font-bold mb-5">
+                      {category.cat}
+                    </p>
+                    <ul>
+                      {category.links.map((link, idx) => (
+                        <li key={idx} className="mb-6">
+                          <Link href={link.url}>
+                            <span className="text-white !text-base !font-normal">
+                              {link.label}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
 
               <div className="w-full lg:w-auto text-center md:text-start">
@@ -122,7 +131,8 @@ const Footer = () => {
                       href="553 East 2nd Street Brooklyn, NY 11218"
                       className="footer-link items-start text-left justify-center md:justify-start md:items-center text-sm text-white"
                     >
-                      <PiMapPinLineFill className="w-[21px] h-[21px]" />553 East 2nd Street Brooklyn, NY 11218
+                      <PiMapPinLineFill className="w-[21px] h-[21px]" />
+                      553 East 2nd Street Brooklyn, NY 11218
                     </Link>
                   </li>
                   <li className="lg:py-8 xs:py-[12px]">
@@ -130,8 +140,8 @@ const Footer = () => {
                       href="tel:+1 (646) 683-4612"
                       className="footer-link items-center justify-center md:justify-start text-sm text-white"
                     >
-                      <FaPhoneVolume className="w-[21px] h-[21px]" /> +1 (646) 683-4612
-
+                      <FaPhoneVolume className="w-[21px] h-[21px]" /> +1 (646)
+                      683-4612
                     </Link>
                   </li>
                   <li>
@@ -141,18 +151,23 @@ const Footer = () => {
                     >
                       <TfiEmail className="w-[21px] h-[21px]" />
                       rhconusa@gmail.com
-
                     </Link>
                   </li>
                   {/* footer image  */}
                   <div className="grid grid-cols-4 gap-5 5xl:gap-[42px] pt-[26px] md:pt-[36px]">
-                      {
-                        footerImages?.map((img, index)=>{
-                          return <div key={index}>
-                                <Image src={img} alt="footer image" width={60} height={51} className="w-[60px] h-[51px]"/>
-                          </div>
-                        })
-                      }
+                    {footerImages?.map((img, index) => {
+                      return (
+                        <div key={index}>
+                          <Image
+                            src={img}
+                            alt="footer image"
+                            width={60}
+                            height={51}
+                            className="w-[60px] h-[51px]"
+                          />
+                        </div>
+                      );
+                    })}
                   </div>
 
                   <div className="block md:hidden">
@@ -160,7 +175,8 @@ const Footer = () => {
 
                     <div className="text-center lg:text-left">
                       <p className="text-xs lg:text-sm text-white">
-                      © All Copyright 2024 by RH Construction USA, Inc. General Cronstruction.
+                        © All Copyright 2024 by RH Construction USA, Inc.
+                        General Cronstruction.
                       </p>
                       <ul className="text-sm lg:text-sm flex justify-evenly gap-2 mt-4">
                         <li className="text-white"> Terms & Condition</li>
@@ -192,7 +208,8 @@ const Footer = () => {
           </div>
           <div className="text-center lg:text-left hidden md:block">
             <p className="text-xs lg:text-sm text-white">
-            © All Copyright 2024 by RH Construction USA, Inc. General Cronstruction.
+              © All Copyright 2024 by RH Construction USA, Inc. General
+              Cronstruction.
             </p>
           </div>
           <div className="text-center lg:text-right hidden md:block">
