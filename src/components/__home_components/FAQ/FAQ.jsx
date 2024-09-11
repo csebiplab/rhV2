@@ -61,7 +61,7 @@ const Faq = () => {
           <div className="md:col-span-3 flex items-center ">
             <div className="">
               <Image
-                src="/assets/home_page/faq.png"
+                src="/assets/home_page/faq.jpeg"
                 width={764}
                 height={551}
                 alt="faq  image"
@@ -73,12 +73,12 @@ const Faq = () => {
           <div className="md:col-span-3 pt-3 md:pt-0">
             <div className="flex flex-col justify-center items-center md:items-start ">
               <div>
-              <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
+                <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.faq} />
               </div>
 
               <div>
                 <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
-                FAQ FOR RH CONSTRUCTION USA INC
+                  FAQ FOR RH CONSTRUCTION USA INC
                 </h2>
               </div>
             </div>
