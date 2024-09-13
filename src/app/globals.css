@@ -121,7 +121,7 @@ img {
 .hero-section {
   width: 100%;
   height: auto;
-  background-image: url("/assets/images/bg.png");
+  background-image: url("/assets/images/bg.jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,9 +180,8 @@ img {
     brightness(95%) contrast(95%);
 }
 
-
-
 /* Custom hover effect */
 .Images:hover {
-  filter: invert(88%) sepia(92%) saturate(7332%) hue-rotate(355deg) brightness(80%) contrast(110%);
+  filter: invert(88%) sepia(92%) saturate(7332%) hue-rotate(355deg)
+    brightness(80%) contrast(110%);
 }
