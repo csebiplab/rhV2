@@ -26,12 +26,12 @@ export async function GET(request) {
     await connectMongoDB();
 
     const searchParams = request.nextUrl.searchParams;
-    const pageName = searchParams.get('pageName');
+    const pageLink = searchParams.get('pageLink');
 
     const query = {}
 
-    if (pageName) {
-        query['pageName'] = pageName
+    if (pageLink) {
+        query['pageLink'] = pageLink
     }
 
     const data = await MetaDataModel.find(query).select('_id pageLink pageName title description keywords')
