@@ -1,6 +1,6 @@
-import Image from "next/image";
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
+import Image from "next/image";
 
 const AboutOur = () => {
   return (
