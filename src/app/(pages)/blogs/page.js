@@ -1,5 +1,5 @@
 import { PageWrapper } from "@/components/Theme";
-import { Blogs } from "./Blogs";
+import Blogs from "./Blogs";
 
 
 export default function Page() {
