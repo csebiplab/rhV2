@@ -2,11 +2,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
-// import ThemeToggle from "../ui/ToggleTheme";
 import { Icons } from "../ui/__dashboard_ui/icons";
-import { dashboardConfig } from "@/constants/dashboard/dashboard.constants";
 import { useState } from "react";
 import { cn } from "@/libs/utils";
+import { dashboardConfig } from "./constants/dashboard.constants";
 
 export default function DashboardNav() {
   return (
@@ -21,8 +20,6 @@ export default function DashboardNav() {
           );
         })}
       </nav>
-
-      <div className="w-full flex justify-end">{/* <ThemeToggle /> */}</div>
     </div>
   );
 }
