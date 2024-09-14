@@ -1,6 +1,5 @@
 "use client";
 
-import API from "@/config/API.config";
 import { errorMessage } from "@/lib/utils";
 import { ChatBubbleLeftIcon } from "@heroicons/react/24/solid";
 import {
@@ -35,7 +34,8 @@ const SingleBlog = ({ params }) => {
     params?.id,
     async (id) => {
       try {
-        const { data } = await API.get(`/blogs/${id}`);
+        // const { data } = await API.get(`/blogs/${id}`);
+        const data = {};
         return data;
       } catch (error) {
         throw errorMessage(error);
@@ -51,10 +51,12 @@ const SingleBlog = ({ params }) => {
     isLoading: comment_loading,
     mutate: mutate_comment,
   } = useSwr(
-    {blog_id:params?.id},
-    async ({blog_id}) => {
+    { blog_id: params?.id },
+    async ({ blog_id }) => {
       try {
-        const { data } = await API.get(`/comments/${blog_id}`);
+        // const { data } = await API.get(`/comments/${blog_id}`);
+
+        const data = {};
         return data;
       } catch (error) {
         throw errorMessage(error);
@@ -64,23 +66,22 @@ const SingleBlog = ({ params }) => {
       keepPreviousData: false,
     }
   );
-  console.log({comments})
   const [open_comments, setOpenComments] = useState(false);
-  const [commenting,setCommenting]=useState(false);
-  const { register, handleSubmit,reset } = useForm();
+  const [commenting, setCommenting] = useState(false);
+  const { register, handleSubmit, reset } = useForm();
   async function onSubmit(data) {
     try {
       setCommenting(true);
-      await API.post(`/comments/${params?.id}`,data);
+      await API.post(`/comments/${params?.id}`, data);
       Swal.fire({
         title: "Success",
-        text: 'Successfully commented.',
+        text: "Successfully commented.",
         icon: "success",
       });
       mutate_comment(comments);
       reset();
     } catch (error) {
-    }finally{
+    } finally {
       setCommenting(false);
     }
   }
@@ -106,7 +107,9 @@ const SingleBlog = ({ params }) => {
           alt=""
           className="rounded-lg shadow-lg w-full mb-5 max-h-[460px] object-contain object-center"
         />
-        <h2 className="mb-2 text-3xl md:text-5xl text-primary">{data?.title}</h2>
+        <h2 className="mb-2 text-3xl md:text-5xl text-primary">
+          {data?.title}
+        </h2>
         <div className="mb-5 flex flex-wrap gap-3 justify-between items-center">
           <div className="flex gap-2 flex-wrap items-center mb-2">
             <span className="inline-flex font-medium gap-1 py-1 px-2 justify-center items-center">
@@ -129,9 +132,7 @@ const SingleBlog = ({ params }) => {
           <legend className="text-lg tracking-wider font-semibold px-2 bg-blue-gray-900 rounded-lg text-white">
             Summary
           </legend>
-          <p>
-            {data?.summary}
-          </p>
+          <p>{data?.summary}</p>
         </fieldset>
         <div className="mt-5 leading-relaxed text-lg">
           <div dangerouslySetInnerHTML={{ __html: data?.blog }} />
@@ -182,8 +183,13 @@ const SingleBlog = ({ params }) => {
             size="lg"
           />
           <br />
-          <Button type="submit" color="amber" variant="gradient" disabled={commenting}>
-            {commenting?'Loading...':'Submit'}
+          <Button
+            type="submit"
+            color="amber"
+            variant="gradient"
+            disabled={commenting}
+          >
+            {commenting ? "Loading..." : "Submit"}
           </Button>
           <Button type="reset" color="red" variant="text" disabled={commenting}>
             Cancel
@@ -213,7 +219,7 @@ const SingleBlog = ({ params }) => {
                 No comment yet now.
               </Alert>
             )}
-            {(comments||[])?.map((e, key, array) => (
+            {(comments || [])?.map((e, key, array) => (
               <TimelineItem key={key}>
                 {array.length !== key + 1 && <TimelineConnector />}
                 <TimelineHeader>

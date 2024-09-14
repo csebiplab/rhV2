@@ -1,7 +1,6 @@
 "use client";
 
 import PageHeader from "@/components/common/PageHeader";
-import API from "@/config/API.config";
 import { errorMessage } from "@/lib/utils";
 import { Button, Input, Textarea } from "@material-tailwind/react";
 import { useState } from "react";
@@ -20,7 +19,8 @@ const ContactUs = () => {
   async function onSubmit(data) {
     try {
       setLoading(true);
-      await API.post("/contact-us", data);
+      // await API.post("/contact-us", data);
+
       reset();
       Swal.fire({
         title: "Thank you.",
@@ -33,7 +33,7 @@ const ContactUs = () => {
         text: errorMessage(error),
         icon: "error",
       });
-    }finally{
+    } finally {
       setLoading(false);
     }
   }
@@ -132,19 +132,22 @@ const ContactUs = () => {
             <h5 className="mb-2">Headquarters</h5>
             <div className="mt-3 text-lg">
               <address className="mb-1 font-sans flex gap-2 items-center">
-                <GrMapLocation className="text-primary" /> 553 E 2nd St, Brooklyn, NY 11218
+                <GrMapLocation className="text-primary" /> 553 E 2nd St,
+                Brooklyn, NY 11218
               </address>
               <a
                 href="tel:+1 (646) 683-4612"
                 className="flex text-blue-800 gap-2 items-center mb-1"
               >
-                <BsFillTelephoneFill className="text-primary" /> +1 (646) 683-4612
+                <BsFillTelephoneFill className="text-primary" /> +1 (646)
+                683-4612
               </a>
               <a
                 href="mailto:rhconusa@gmail.com"
                 className="flex text-blue-800 gap-2 items-center mb-1"
               >
-                <HiOutlineMailOpen className="text-primary" /> rhconusa@gmail.com
+                <HiOutlineMailOpen className="text-primary" />{" "}
+                rhconusa@gmail.com
               </a>
               <a
                 href="https://www.rhconstructionusa.com/"

@@ -1,24 +1,23 @@
 "use client";
-import API from "@/config/API.config";
 import { errorMessage } from "@/lib/utils";
+import { BellIcon } from "@heroicons/react/24/solid";
 import {
-    BellIcon
-} from "@heroicons/react/24/solid";
-import {
-    Timeline,
-    TimelineBody,
-    TimelineConnector,
-    TimelineHeader,
-    TimelineIcon,
-    TimelineItem,
-    Typography,
+  Timeline,
+  TimelineBody,
+  TimelineConnector,
+  TimelineHeader,
+  TimelineIcon,
+  TimelineItem,
+  Typography,
 } from "@material-tailwind/react";
 import useSwr from "swr";
 
 const Notice = () => {
   const { data, error, isLoading } = useSwr("/notices", async (url) => {
     try {
-      const { data } = await API.get(url);
+      // const { data } = await API.get(url);
+
+      const data = [];
       return data;
     } catch (error) {
       throw errorMessage(error);

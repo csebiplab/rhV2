@@ -1,6 +1,5 @@
 "use client";
 import PageHeader from "@/components/common/PageHeader";
-import API from "@/config/API.config";
 import { errorMessage } from "@/lib/utils";
 import {
   Button,
@@ -31,7 +30,8 @@ const CustomerReviews = () => {
     isLoading,
   } = useSwr("/reviews", async (url) => {
     try {
-      const { data } = await API?.get(url);
+      // const { data } = await API?.get(url);
+      const data = [];
       return data;
     } catch (error) {
       throw errorMessage(error);
@@ -128,49 +128,57 @@ const CustomerReviews = () => {
         </div>
       </section>
 
-      {!!reviews?.length ? <section className="bg-gray-100">
-        <div className="container py-20">
-          <h2 className="mb-4">
-            WHAT OUR <span className="text-primary">CLIENT SAYS</span>
-          </h2>
-          {!!reviews?.length? <Swiper
-            spaceBetween={10}
-            breakpoints={{
-              100: {
-                slidesPerView: 1,
-              },
-              500: {
-                slidesPerView: 1.5,
-              },
-              900: {
-                slidesPerView: 2,
-              },
-            }}
-            autoplay
-            modules={[Autoplay]}
-          >
-            {(reviews||[])?.map((item, index) => (
-              <SwiperSlide className="me-3 bg-white">
-                <figure className="flex gap-4 flex-col md:flex-row">
-                  <div className="h-40  min-w-[10rem] bg-primary p-3 flex flex-col justify-center items-center text-white">
-                    <h3 className="italic">Reviews</h3>
-                    <Rating value={Number(item?.rating)} readonly ratedColor="white" />
-                  </div>
-                  <div className="py-2">
-                    <p className="text-lg mb-1 italic">{item?.name}</p>
-                    <p className="text-primary mb-2 italic">
-                      Satisfied Customer
-                    </p>
-                    <p className="text-secondary line-clamp-3">
-                      {item?.summary || item?.review}
-                    </p>
-                  </div>
-                </figure>
-              </SwiperSlide>
-            ))}
-          </Swiper>:null}
-        </div>
-      </section>:null}
+      {!!reviews?.length ? (
+        <section className="bg-gray-100">
+          <div className="container py-20">
+            <h2 className="mb-4">
+              WHAT OUR <span className="text-primary">CLIENT SAYS</span>
+            </h2>
+            {!!reviews?.length ? (
+              <Swiper
+                spaceBetween={10}
+                breakpoints={{
+                  100: {
+                    slidesPerView: 1,
+                  },
+                  500: {
+                    slidesPerView: 1.5,
+                  },
+                  900: {
+                    slidesPerView: 2,
+                  },
+                }}
+                autoplay
+                modules={[Autoplay]}
+              >
+                {(reviews || [])?.map((item, index) => (
+                  <SwiperSlide className="me-3 bg-white">
+                    <figure className="flex gap-4 flex-col md:flex-row">
+                      <div className="h-40  min-w-[10rem] bg-primary p-3 flex flex-col justify-center items-center text-white">
+                        <h3 className="italic">Reviews</h3>
+                        <Rating
+                          value={Number(item?.rating)}
+                          readonly
+                          ratedColor="white"
+                        />
+                      </div>
+                      <div className="py-2">
+                        <p className="text-lg mb-1 italic">{item?.name}</p>
+                        <p className="text-primary mb-2 italic">
+                          Satisfied Customer
+                        </p>
+                        <p className="text-secondary line-clamp-3">
+                          {item?.summary || item?.review}
+                        </p>
+                      </div>
+                    </figure>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
 
       <section>
         <div className="container py-20">
@@ -230,7 +238,9 @@ const CustomerReviews = () => {
                   variant="gradient"
                   color="amber"
                   className="flex-grow text-center"
-                  disabled={loading || !Object.values(formData).every(e=>!!e)}
+                  disabled={
+                    loading || !Object.values(formData).every((e) => !!e)
+                  }
                 >
                   {loading ? `Loading` : `SUBMIT`}
                 </Button>

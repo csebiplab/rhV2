@@ -1,7 +1,6 @@
 // "use client";
 // import { BlogCard } from "@/components/cards/Blog.Card";
 // import PageHeader from "@/components/common/PageHeader";
-// import API from "@/config/API.config";
 // import { errorMessage } from "@/lib/utils";
 // import { Alert, Spinner } from "@material-tailwind/react";
 // import { useState } from "react";
