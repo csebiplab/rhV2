@@ -1,7 +1,7 @@
-import getCurrentUser from "@/libs/session";
+import getCurrentUser from "@/lib/session";
+import DynamicDashboardHeaderTitle from "./ui/__dashboard_ui/DynamicDashboardHeader";
+import { cn } from "@/lib/utils";
 import UserAccountNav from "./UserAccountNav";
-import { cn } from "@/libs/utils";
-import DynamicDashboardHeaderTitle from "../ui/__dashboard_ui/DynamicDashboardHeader";
 
 export default async function DashboardHeader({ className, ...props }) {
   const user = await getCurrentUser();

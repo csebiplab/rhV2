@@ -1,19 +1,19 @@
 "use client";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
-import { getCapitalLettersOfName } from "@/libs/utils";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../ui/__dashboard_ui/avatar";
+import { getCapitalLettersOfName } from "@/lib/utils";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../ui/__dashboard_ui/DropDownMenu";
+} from "./ui/__dashboard_ui/DropDownMenu";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "./ui/__dashboard_ui/avatar";
 
 export default function UserAccountNav({ user }) {
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;

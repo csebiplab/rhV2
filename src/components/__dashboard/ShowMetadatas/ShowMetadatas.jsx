@@ -1,9 +1,9 @@
 "use client";
 
-import NoDataFound from "@/components/__shared/dashboard/NoDataFound";
-import RemoveBtn from "@/components/__shared/dashboard/RemoveBtn";
 import Link from "next/link";
 import { HiPencilAlt } from "react-icons/hi";
+import NoDataFound from "../shared/NoDataFound";
+import RemoveBtn from "../shared/RemoveBtn";
 
 export default function ShowMetadatas({ data }) {
   return data && data.length > 0 ? (
