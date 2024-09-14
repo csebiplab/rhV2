@@ -7,11 +7,12 @@ export async function getData() {
     cache: "no-store",
   });
   const { data } = await res.json();
+
   return data;
 }
 
 export default async function page() {
-  const { data: blogs } = await getData();
+  const blogs = await getData();
 
   return (
     <div>
