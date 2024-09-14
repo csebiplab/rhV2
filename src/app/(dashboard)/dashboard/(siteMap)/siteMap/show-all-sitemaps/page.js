@@ -15,7 +15,6 @@ export async function getData() {
 
 const page = async () => {
     const data = await getData() ?? {}
-    console.log(data, "sitemap")
 
     return (
         <div>
