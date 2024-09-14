@@ -3,9 +3,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import RemoveBtnComponent from "./RemoveButtonComponent";
+import SubmitNupdateBtn from "../shared/SubmitNupdateBtn";
 
 
 function SiteVerificationComponent({ data }) {
+  const [isUpdateCreateLoading, setIsUpdateCreateLoading] = useState(false);
+
   const router = useRouter();
   const [inputValue, setInputValue] = useState({
     title: "",
@@ -37,6 +40,7 @@ function SiteVerificationComponent({ data }) {
 
   const handleSubmit = async () => {
     if (id) {
+      setIsUpdateCreateLoading(true)
       let { title, url } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/verificationUrl/${id}`, {
@@ -49,15 +53,19 @@ function SiteVerificationComponent({ data }) {
 
         if (res.ok) {
           toast(`Successfully updated verification url & meta data`);
+          setIsUpdateCreateLoading(false)
           router.refresh();
           router.push(`/dashboard/siteVerification`);
         } else {
+          setIsUpdateCreateLoading(false)
           throw new Error(`Failed to update verification url & meta data`);
         }
       } catch (error) {
+        setIsUpdateCreateLoading(false)
         console.log(error);
       }
     } else {
+      setIsUpdateCreateLoading(true)
       let { title, url } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/verificationUrl`, {
@@ -69,13 +77,16 @@ function SiteVerificationComponent({ data }) {
         });
 
         if (res.ok) {
+          setIsUpdateCreateLoading(false)
           toast(`Successfully submitted verification url & meta data`);
           router.refresh();
           router.push(`/dashboard/siteVerification`);
         } else {
+          setIsUpdateCreateLoading(false)
           throw new Error(`Failed to create verificationUrl url`);
         }
       } catch (error) {
+        setIsUpdateCreateLoading(false)
         console.log(error);
       }
     }
@@ -126,14 +137,18 @@ function SiteVerificationComponent({ data }) {
               </div>
             </div>
           </div>
-          <button
+
+          <>
+            <SubmitNupdateBtn id={id} handleSubmit={handleSubmit} isUpdateCreateLoading={isUpdateCreateLoading} />
+          </>
+          {/* <button
             type="submit"
             aria-label="Submit"
             onClick={handleSubmit}
             className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 my-5 px-5 border border-blue-500 hover:border-transparent rounded"
           >
             {id ? "Update" : "Save"}
-          </button>
+          </button> */}
         </div>
 
 

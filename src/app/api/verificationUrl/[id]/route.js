@@ -1,3 +1,4 @@
+import connectMongoDB from "@/lib/db";
 import VerificationSiteModel from "@/models/site-verification.model";
 import { NextResponse } from "next/server";
 

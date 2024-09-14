@@ -1,28 +1,33 @@
 export const dashboardConfig = {
     sidebarNav: [
         {
-            title: "Home",
-            href: "/dashboard/admin/profile",
+            title: "Project",
+            href: "/dashboard",
             icon: "home",
         },
         {
-            title: "Customers",
-            href: "/dashboard/customers",
+            title: "My Profile",
+            href: "/dashboard/admin/profile",
             icon: "users",
-            submenu: true,
-            submenus: [
-                {
-                    title: "All Customers",
-                    href: "/dashboard/customers/all",
-                    icon: "dessert",
-                },
-                {
-                    title: "Add Customer",
-                    href: "/dashboard/customers/add",
-                    icon: "dessert",
-                },
-            ],
         },
+        // {
+        //     title: "Customers",
+        //     href: "/dashboard/customers",
+        //     icon: "users",
+        //     submenu: true,
+        //     submenus: [
+        //         {
+        //             title: "All Customers",
+        //             href: "/dashboard/customers/all",
+        //             icon: "dessert",
+        //         },
+        //         {
+        //             title: "Add Customer",
+        //             href: "/dashboard/customers/add",
+        //             icon: "dessert",
+        //         },
+        //     ],
+        // },
         {
             title: "Pages",
             href: "/dashboard/allpages/home",
@@ -39,46 +44,7 @@ export const dashboardConfig = {
                     href: "/dashboard/allpages/see-all-page-metadata",
                     icon: "dessert",
                 },
-                // {
-                //     title: "Home",
-                //     href: "/dashboard/allpages/home",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Blogs",
-                //     href: "/dashboard/allpages/blogs",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Barrie",
-                //     href: "/dashboard/allpages/barrie",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Toronto Fiberglass",
-                //     href: "/dashboard/allpages/fiberglass",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Vaughan Pools",
-                //     href: "/dashboard/allpages/vaughan-pool",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Vinyl Pools",
-                //     href: "/dashboard/allpages/vinyl-pool",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Markham Pools",
-                //     href: "/dashboard/allpages/markham-pool",
-                //     icon: "dessert",
-                // },
-                // {
-                //     title: "Contact Us",
-                //     href: "/dashboard/allpages/contactUs",
-                //     icon: "dessert",
-                // },
+
             ],
         },
         {
