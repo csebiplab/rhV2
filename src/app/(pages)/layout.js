@@ -71,6 +71,10 @@ export async function generateMetadata() {
       title: "General Contractor in Brooklyn | RH Construction USA Inc.",
       keywords: "Top-rated general contractor in Brooklyn, specializing in home renovations, bathroom & kitchen remodeling, roofing and construction services.",
       description: "General Contractor, General Contractor in Brooklyn, RH Construction USA Inc, home renovations, bathroom & kitchen remodeling, roofing",
+      alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_API_URL}${pathname}`,
+      },
+      robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     };
   }
 }
