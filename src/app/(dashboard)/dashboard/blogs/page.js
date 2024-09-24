@@ -6,9 +6,9 @@ export async function getData() {
   const res = await fetch(`${apiUrl}/api/blogContent`, {
     cache: "no-store",
   });
-  const { data } = await res.json();
+  const data = await res.json();
 
-  return data;
+  return data?.data;
 }
 
 export default async function page() {
