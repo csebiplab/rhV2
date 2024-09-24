@@ -6,21 +6,19 @@ const getBlogDataById = async (id) => {
     const res = await fetch(`${baseAPIUrl}/api/blogContent/${id}`, {
       cache: "no-store",
     });
-
-    if (!res.ok) {
-      throw new Error("Failed to fetch blog");
-    }
-    return res.json();
+    const data = await res.json();
+    return data;
   } catch (error) {
     console.log(error);
   }
 };
 
-export const page = async ({ params }) => {
-  const { id } = params;
+export default async function page({ params }) {
+  const { id } = params ?? {};
   const data = await getBlogDataById(id);
 
-  const blog = data?.data;
+  const blog = data?.blogDetailsData;
+
 
   return <CreateBlog id={id} data={blog} />;
 };
