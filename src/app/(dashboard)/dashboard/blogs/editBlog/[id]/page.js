@@ -16,7 +16,7 @@ const getBlogDataById = async (id) => {
   }
 };
 
-export const UpdateBlogPage = async ({ params }) => {
+export const page = async ({ params }) => {
   const { id } = params;
   const data = await getBlogDataById(id);
 

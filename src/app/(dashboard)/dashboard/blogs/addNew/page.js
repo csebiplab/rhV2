@@ -2,11 +2,11 @@
 
 import CreateBlog from "@/components/__dashboard/BlogComponents/CreateBlog/CreateBlog";
 
-const CreateBlogPage = () => {
+const page = () => {
   return (
     <div>
       <CreateBlog />
     </div>
   );
 };
-export default CreateBlogPage;
+export default page;
