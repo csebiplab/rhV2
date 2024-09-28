@@ -32,7 +32,6 @@ const authOptions = {
         }
 
         const user = { id: admin._id, name: admin.username };
-        console.log(user, "from auth")
         return user;
       },
     }),
