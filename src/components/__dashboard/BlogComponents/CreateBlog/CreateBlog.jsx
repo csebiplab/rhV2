@@ -45,15 +45,6 @@ function CreateBlog({ id, data }) {
   };
   const handleSubmit = async () => {
     if (id) {
-      // let {
-      //   blogTitle,
-      //   metaTitle,
-      //   customLink,
-      //   metaDescription,
-      //   metaKeywords,
-      //   shortDescription,
-      //   content,
-      // } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/blogContent/${id}`, {
           method: "PATCH",
@@ -76,15 +67,6 @@ function CreateBlog({ id, data }) {
         console.log(error);
       }
     } else {
-      // let {
-      //   blogTitle,
-      //   metaTitle,
-      //   customLink,
-      //   metaDescription,
-      //   metaKeywords,
-      //   shortDescription,
-      //   content,
-      // } = inputValue;
       try {
         const res = await fetch(`${baseAPIUrl}/api/blogContent`, {
           method: "POST",
@@ -116,7 +98,7 @@ function CreateBlog({ id, data }) {
           <div className="sm:col-span-3">
             <label
               htmlFor="blogTitle"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Blog Title
             </label>
@@ -136,7 +118,7 @@ function CreateBlog({ id, data }) {
           <div className="sm:col-span-3">
             <label
               htmlFor="metaTitle"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Meta Title
             </label>
@@ -156,7 +138,7 @@ function CreateBlog({ id, data }) {
           <div className="sm:col-span-3">
             <label
               htmlFor="customLink"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Custom Link
             </label>
@@ -176,11 +158,11 @@ function CreateBlog({ id, data }) {
           <div className="sm:col-span-3">
             <label
               htmlFor="metaDescription"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Meta Description
             </label>
-            <div className="mt-2">
+            {/* <div className="mt-2">
               <input
                 required
                 type="text"
@@ -191,12 +173,24 @@ function CreateBlog({ id, data }) {
                 value={inputValue.metaDescription}
                 onChange={(e) => handleInputChange("metaDescription", e)}
               />
+            </div> */}
+            <div className="mt-2">
+              <textarea
+                type="text"
+                name="metaDescription"
+                rows="4"
+                id="metaDescription"
+                autoComplete="off"
+                className="block lg:w-4/6 w-full px-5  rounded-md border-0 py-1.5 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                value={inputValue.metaDescription}
+                onChange={(e) => handleInputChange("metaDescription", e)}
+              />
             </div>
           </div>
           <div className="sm:col-span-3">
             <label
               htmlFor="metaKeywords"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Meta Keywords
             </label>
@@ -217,7 +211,7 @@ function CreateBlog({ id, data }) {
           <div className="sm:col-span-3">
             <label
               htmlFor="shortDescription"
-              className="block text-sm font-medium leading-6 text-gray-900 dark:text-white"
+              className="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
             >
               Short Description
             </label>

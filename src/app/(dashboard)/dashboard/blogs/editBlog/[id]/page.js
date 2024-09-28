@@ -1,4 +1,5 @@
 import CreateBlog from "@/components/__dashboard/BlogComponents/CreateBlog/CreateBlog";
+import Link from "next/link";
 
 const getBlogDataById = async (id) => {
   const baseAPIUrl = process.env.NEXT_PUBLIC_API_URL;
@@ -20,5 +21,14 @@ export default async function page({ params }) {
   const blog = data?.blogDetailsData;
 
 
-  return <CreateBlog id={id} data={blog} />;
+  return <>
+    <>
+      <p className="text-4xl ml-3">
+        <span className="font-extrabold">Link:</span>
+        <Link href={blog?.customLink} className="text-primary-50 text-2xl underline"> {blog?.customLink}</Link></p>
+    </>
+
+    <CreateBlog id={id} data={blog} />
+
+  </>
 };
