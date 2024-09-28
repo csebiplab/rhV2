@@ -42,7 +42,7 @@ const BrooklynHomeRemodelingServiceHero = () => {
             <Image
               width={858}
               height={832}
-              src="/assets/brooklyn_Home/hero-bg.png"
+              src="/assets/brooklyn_Home/hero-bg.jpeg"
               alt="hero small image"
               className="hero-main-image mb-0"
             />

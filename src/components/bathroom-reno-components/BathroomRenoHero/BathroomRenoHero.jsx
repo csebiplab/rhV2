@@ -1,6 +1,5 @@
 import { Button } from "@material-tailwind/react";
 import Image from "next/image";
-import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa6";
 import "../../bathroom-reno-components/BathroomRenoHero/BathroomRenoHero.css";
 
@@ -43,7 +42,7 @@ const BathroomRenoHero = () => {
             <Image
               width={858}
               height={832}
-              src="/assets/images/hero-section.png"
+              src="/assets/images/hero-section.jpeg"
               alt="hero small image"
               className="hero-main-image mb-0"
             />

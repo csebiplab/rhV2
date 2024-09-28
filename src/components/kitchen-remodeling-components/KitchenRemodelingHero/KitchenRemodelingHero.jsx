@@ -43,7 +43,7 @@ const KitchenRemodelingHero = () => {
             <Image
               width={858}
               height={832}
-              src="/assets/kitchen/hero-section.png"
+              src="/assets/kitchen/hero-section.jpeg"
               alt="hero small image"
               className="hero-main-image mb-0"
             />
