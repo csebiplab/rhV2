@@ -38,9 +38,9 @@ const DynamicBlogComponent = ({ blog }) => {
                     <div className='mt-12 w-full mx-auto mb-8'>
                         <div className='flex flex-col md:flex-row gap-8'>
                             <div className='mr-8 w-full md:w-5/12 flex justify-end'>
-                                <div className='w-full md:w-4/5'>
+                                <div className='w-full md:w-4/5 mt-8'>
                                     <h1 className='text-3xl font-bold mb-4'>{blog?.blogTitle}</h1>
-                                    <p className='text-gray-600'>{blog?.shortDescription}</p>
+                                    <p className='text-gray-600 mt-4'>{blog?.shortDescription}</p>
                                 </div>
                             </div>
                             <div className='w-full md:w-7/12 md:mt-6 h-[75vh]'>

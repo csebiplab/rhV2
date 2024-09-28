@@ -23,9 +23,12 @@ export default async function page({ params }) {
 
   return <>
     <>
-      <p className="text-4xl ml-3">
-        <span className="font-extrabold">Link:</span>
-        <Link href={blog?.customLink} className="text-primary-50 text-2xl underline"> {blog?.customLink}</Link></p>
+      {
+        blog?.customLink && <p className="text-4xl ml-3">
+          <span className="font-extrabold">Link:</span>
+          <Link href={blog?.customLink} className="text-primary-50 text-2xl underline"> {blog?.customLink}</Link>
+        </p>
+      }
     </>
 
     <CreateBlog id={id} data={blog} />
