@@ -122,7 +122,7 @@ function SiteVerificationComponent({ data }) {
                 htmlFor="last-name"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Verification Url
+                Paste Content <span className="text-red-500">* Paste only content from meta</span>
               </label>
               <div className="mt-2">
                 <input required

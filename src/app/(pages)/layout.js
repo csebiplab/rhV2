@@ -11,24 +11,6 @@ import "../globals.css";
 const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 
-
-function extractGoogleConsoleKey(verificationData) {
-  try {
-    const metaTagContent = verificationData.verificationUrl?.[0]?.url;
-    if (!metaTagContent) return "";
-
-    const parts = metaTagContent.split(" ");
-    if (parts.length < 3) return "";
-
-    const consoleKeyPart = parts[2].split("=")[1];
-    return consoleKeyPart.slice(1, -1);
-
-  } catch (error) {
-    console.error('Error extracting Google console key:', error);
-    return "";
-  }
-}
-
 export async function generateMetadata() {
 
   const headerList = headers();
@@ -47,8 +29,10 @@ export async function generateMetadata() {
     const googleVerificationResponse = await fetch(`${apiUrl}/api/verificationUrl`, {
       cache: "no-store",
     });
-    const googleVerification = await googleVerificationResponse.json();
-    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+    const data = await googleVerificationResponse.json();
+    // const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+    // console.log("googleVerification", data?.verificationUrl?.[0]?.url)
+    const googleVerificationContent = data?.verificationUrl?.[0]?.url ? data?.verificationUrl?.[0]?.url : ""
 
     return {
       title: title || "General Contractor in Brooklyn | RH Construction USA Inc.",
@@ -59,7 +43,7 @@ export async function generateMetadata() {
         description: description,
       },
       verification: {
-        google: googleConsoleKey,
+        google: googleVerificationContent,
       },
       alternates: {
         canonical: `${process.env.NEXT_PUBLIC_API_URL}${pathname}`,
