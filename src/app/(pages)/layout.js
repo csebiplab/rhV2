@@ -11,7 +11,7 @@ import "../globals.css";
 const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 
-
+/*
 function extractGoogleConsoleKey(verificationData) {
   try {
     const metaTagContent = verificationData.verificationUrl?.[0]?.url;
@@ -78,6 +78,7 @@ export async function generateMetadata() {
     };
   }
 }
+*/
 
 export default function RootLayout({ children }) {
   return (
