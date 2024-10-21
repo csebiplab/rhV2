@@ -48,7 +48,7 @@ const HiringData = [
 
 const HiringUs = () => {
   return (
-    <div className="bg-[#FFF9EE]">
+    <div className="">
       <div className="container">
         <div className="common__padding__top">
           <div className="text-center">

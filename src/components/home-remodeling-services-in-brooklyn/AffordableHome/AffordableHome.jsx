@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const AffordableHome = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="full__section_l_p common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">

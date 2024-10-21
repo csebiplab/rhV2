@@ -4,7 +4,7 @@ import { headingIconText } from "@/utils/heading-text";
 
 const ProjectCost = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">

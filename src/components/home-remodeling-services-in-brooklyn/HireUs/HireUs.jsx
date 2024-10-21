@@ -70,7 +70,7 @@ const slideData = [
 
 const HireUs = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container common__padding__top">
         <div className="">
           <div className="text-center">

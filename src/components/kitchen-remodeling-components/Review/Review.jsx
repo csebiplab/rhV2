@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import google from "@/components/__home_components/Images/google.png";
 import review from "@/components/__home_components/Images/review.png";
 import HeadingIcon from "@/components/ui/HeadingIcon";
@@ -63,6 +64,7 @@ const reviews = [
 ];
 
 const Review = () => {
+  const swiperRef = useRef(null);
   return (
     <div className="bg___color common__padding__top">
       <div className="container">
@@ -77,21 +79,17 @@ const Review = () => {
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
-            // spaceBetween={21}
-            // slidesPerView={3}
-            // modules={[Navigation]}
+            ref={swiperRef}
             modules={[Autoplay, Navigation]}
             loop={true}
             autoplay={{
               delay: 3000,
-              pauseOnMouseEnter: false,
+              pauseOnMouseEnter: true,
               disableOnInteraction: false,
               stopOnLastSlide: false,
             }}
-            // slidesPerView={5}
             speed={3000}
-            allowTouchMove={false}
-            // modules={[Autoplay,Navigation, Scrollbar]}
+            allowTouchMove={true}
             breakpoints={breakpoints}
           >
             {reviews.map(({ address, author, reviewText }, i) => (
