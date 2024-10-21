@@ -5,14 +5,14 @@ import { headingIconText } from "@/utils/heading-text";
 
 const AboutHomeRenovation = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="full__section_r_p common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="order-2 md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.aboutHomeRenovation__HeadingIconText}/>
             </div>
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
             About Home Renovation Contractors  
    
              <br className="hidden 2xl:block"/>{" "}
@@ -25,7 +25,7 @@ const AboutHomeRenovation = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/about_home_reno.png"
+                src="/assets/brooklyn_Home/about_home_reno.jpeg"
                 width={810}
                 height={550}
                 alt="About Bathroom Renovation image"

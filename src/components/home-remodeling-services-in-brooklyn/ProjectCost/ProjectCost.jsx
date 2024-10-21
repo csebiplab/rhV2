@@ -4,7 +4,7 @@ import { headingIconText } from "@/utils/heading-text";
 
 const ProjectCost = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">
@@ -47,7 +47,7 @@ const ProjectCost = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/project_cost.png"
+                src="/assets/brooklyn_Home/project_cost.jpeg"
                 width={810}
                 height={657}
                 alt="Project Cost image"

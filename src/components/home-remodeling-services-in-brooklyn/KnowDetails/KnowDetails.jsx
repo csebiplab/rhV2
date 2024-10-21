@@ -72,7 +72,7 @@ const easyPool = [
 
 const KnowDetails = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container">
         <div className="2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
           <div className=" grid md:grid-cols-3 2xl:gap-[40px] md:gap-[30px] ">

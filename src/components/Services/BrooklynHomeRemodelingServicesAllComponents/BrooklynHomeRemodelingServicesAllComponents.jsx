@@ -9,17 +9,20 @@ import GetReadyWithUs from "@/components/home-remodeling-services-in-brooklyn/Ge
 import HireUs from "@/components/home-remodeling-services-in-brooklyn/HireUs/HireUs";
 import HiringUs from "@/components/home-remodeling-services-in-brooklyn/HiringUs/HiringUs";
 import KnowDetails from "@/components/home-remodeling-services-in-brooklyn/KnowDetails/KnowDetails";
-import Planning from "@/components/home-remodeling-services-in-brooklyn/Planning/Planning";
 import ProjectCost from "@/components/home-remodeling-services-in-brooklyn/ProjectCost/ProjectCost";
 import ProjectGallery from "@/components/home-remodeling-services-in-brooklyn/ProjectGallery/ProjectGallery";
 import StunningDesign from "@/components/home-remodeling-services-in-brooklyn/StunningDesign/StunningDesign";
 import TrustUs from "@/components/home-remodeling-services-in-brooklyn/TrustUs/TrustUs";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
-import React from "react";
+import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/PlanningServices/PlanningServices";
 
-const BrooklynHomeRemodelingServicesAllComponents = () => {
+
+// css file import 
+import "./HomeRemodelingServicesAllComponents.css";
+
+const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
   return (
-    <div className="custom-container">
+    <div className="custom-container homeRemodelingServices__bg">
 
       <section>
         <BrooklynHomeRemodelingServiceHero />
@@ -58,7 +61,7 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
       </section>
 
       <section>
-        <Planning/>
+        <PlanningServices/>
       </section>
 
       {/* =============== Review  Section================= */}
@@ -85,13 +88,13 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
       </section>
 
       {/* =============== LocationMap  Section================= */}
-      <section>
+      <section className="homeRemodelingServices__bg">
       <LocationMap />
       </section>
       
 
       {/* =============== ContactUs  Section================= */}
-      <section>
+      <section className={`${backgroundColor && "!homeRemodelingServices__bg" }`}>
       <ContactUs />
       </section>
       

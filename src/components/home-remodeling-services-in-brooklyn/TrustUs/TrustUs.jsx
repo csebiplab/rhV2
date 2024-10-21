@@ -4,7 +4,7 @@ import { headingIconText } from "@/utils/heading-text";
 
 const TrustUs = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">
@@ -32,7 +32,7 @@ const TrustUs = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/trustus.png"
+                src="/assets/brooklyn_Home/trustus.jpeg"
                 width={810}
                 height={513}
                 alt="Trust us image"

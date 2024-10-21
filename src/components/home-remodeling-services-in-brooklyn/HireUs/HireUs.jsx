@@ -8,30 +8,7 @@ import pp6 from "../../../../public/assets/brooklyn_Home/pp6.png"
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
-import "swiper/css/virtual";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "./HireUs.css";
-import { SwiperNavButtons } from "./SwiperSliderButton";
-
-
-const breakpoints = {
-  0: {
-    slidesPerView: 1,
-  },
-  768: {
-    slidesPerView: 2,
-  },
-  1024: {
-    slidesPerView: 3,
-  },
-
-};
 
 const slideData = [
   {
@@ -70,7 +47,7 @@ const slideData = [
 
 const HireUs = () => {
   return (
-    <div className="bg___color">
+    <div className="">
       <div className="container common__padding__top">
         <div className="">
           <div className="text-center">
@@ -78,46 +55,33 @@ const HireUs = () => {
             <HeadingIcon text={headingIconText.hireUs__HeadingIconText}/>
             </div>
 
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Hiring Us as Your Home Contractor -  <span className="text-primary">What to Expect</span>
             </h2>
           </div>
-
-         
-          <Swiper
-      modules={[Autoplay, Navigation]}
-      loop={true}
-      autoplay={{
-        delay: 3000,
-        pauseOnMouseEnter: false,
-        disableOnInteraction: false,
-        stopOnLastSlide: false,
-      }}
-      speed={3000}
-      allowTouchMove={false}
-      breakpoints={breakpoints}
-    >
-      {slideData.map((slide, index) => (
-        <SwiperSlide key={index} className={`!h-auto !md:h-full text-center py-4 lg:py-10 px-10 md:px-14 lg:px-6`}>
-          <div className="w-full !h-full  card__bg p-[10px]">
+          {/* cart part  */}
+          <div className="pt-[25px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[25px]">
+          {slideData.map((slide, index) => (
+        <div key={index} className={`!h-auto !md:h-full`}>
+          <div className="w-full !h-full  card__bg">
             <Image
               src={slide.imgSrc}
-              width={70}
-              height={70}
+              width={72}
+              height={72}
               alt="RH"
-              className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
+              className="mx-auto mt-[26px] w-[72px] h-[72px] border-2 rounded-full bg-white p-2"
             />
-            <div className="text-center">
-              <p className="text-[20px] font-bold py-2">{slide?.title}</p>
-              <p className="text-base font-normal mt-2 mb-3  text-black ">
+            <div className="text-center px-[23px] pt-[5px]">
+              <p className="text-[20px] font-bold leading-[30px] text-center">{slide?.title}</p>
+              <p className="text-lg font-normal text-black leading-[30px] text-center">
                 {slide.description}
               </p>
             </div>
           </div>
-        </SwiperSlide>
+        </div>
       ))}
-      <SwiperNavButtons />
-    </Swiper>
+          </div>
+         
         </div>
       </div>
     </div>
