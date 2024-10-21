@@ -15,6 +15,7 @@ import ProjectGallery from "@/components/home-remodeling-services-in-brooklyn/Pr
 import StunningDesign from "@/components/home-remodeling-services-in-brooklyn/StunningDesign/StunningDesign";
 import TrustUs from "@/components/home-remodeling-services-in-brooklyn/TrustUs/TrustUs";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
+import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/PlanningServices/PlanningServices";
 import React from "react";
 
 const BrooklynHomeRemodelingServicesAllComponents = () => {
@@ -59,6 +60,10 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
 
       <section>
         <Planning/>
+      </section>
+
+      <section>
+        <PlanningServices/>
       </section>
 
       {/* =============== Review  Section================= */}
