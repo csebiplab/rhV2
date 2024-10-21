@@ -60,7 +60,7 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
         <ProjectCost/>
       </section>
 
-      <section className="homeRemodelingServices__bg">
+      <section>
         <PlanningServices/>
       </section>
 

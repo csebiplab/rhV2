@@ -63,10 +63,10 @@ const reviews = [
   },
 ];
 
-const Review = () => {
+const Review = ({backgroundColor}) => {
   const swiperRef = useRef(null);
   return (
-    <div className="bg___color common__padding__top">
+    <div className={`common__padding__top ${backgroundColor ? "bg___color" : "bg-[#FFFDF8]"}`}>
       <div className="container">
         <div className="">
           <div className="text-center">
