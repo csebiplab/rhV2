@@ -40,7 +40,7 @@ const GetReadyWithUs = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/get_ready_with_us.png"
+                src="/assets/brooklyn_Home/get_ready_with_us.jpeg"
                 width={810}
                 height={621}
                 alt="Get Ready With Us image"

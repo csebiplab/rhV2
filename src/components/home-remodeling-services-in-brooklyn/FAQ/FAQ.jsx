@@ -65,7 +65,7 @@ const FAQ = () => {
           <div className="md:col-span-3 flex items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/FAQ.png"
+                src="/assets/brooklyn_Home/FAQ.jpeg"
                 width={764}
                 height={600}
                 alt="faq  image"

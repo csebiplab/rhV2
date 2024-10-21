@@ -46,10 +46,10 @@ const AffordableHome = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/affordable_services.png"
+                src="/assets/brooklyn_Home/affordable_services.jpeg"
                 width={810}
                 height={513}
-                alt="About Bathroom Renovation image"
+                alt="affordable_services image"
                 className=""
               />
             </div>

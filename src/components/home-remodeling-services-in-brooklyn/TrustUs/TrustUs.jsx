@@ -32,7 +32,7 @@ const TrustUs = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/trustus.png"
+                src="/assets/brooklyn_Home/trustus.jpeg"
                 width={810}
                 height={513}
                 alt="Trust us image"

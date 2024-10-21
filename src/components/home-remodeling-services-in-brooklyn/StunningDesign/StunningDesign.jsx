@@ -44,7 +44,7 @@ const StunningDesign = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/stunning_design.png"
+                src="/assets/brooklyn_Home/stunning_design.jpeg"
                 width={810}
                 height={513}
                 alt="Stunning Design image"

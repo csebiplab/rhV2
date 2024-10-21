@@ -47,7 +47,7 @@ const ProjectCost = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/brooklyn_Home/project_cost.png"
+                src="/assets/brooklyn_Home/project_cost.jpeg"
                 width={810}
                 height={657}
                 alt="Project Cost image"
