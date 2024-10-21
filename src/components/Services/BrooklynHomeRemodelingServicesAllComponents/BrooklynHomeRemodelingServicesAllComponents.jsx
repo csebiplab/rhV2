@@ -20,7 +20,7 @@ import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/
 // css file import 
 import "./HomeRemodelingServicesAllComponents.css";
 
-const BrooklynHomeRemodelingServicesAllComponents = () => {
+const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
   return (
     <div className="custom-container homeRemodelingServices__bg">
 
@@ -94,8 +94,8 @@ const BrooklynHomeRemodelingServicesAllComponents = () => {
       
 
       {/* =============== ContactUs  Section================= */}
-      <section>
-      <ContactUs className="!homeRemodelingServices__bg"/>
+      <section className={`${backgroundColor && "!homeRemodelingServices__bg" }`}>
+      <ContactUs />
       </section>
       
     </div>
