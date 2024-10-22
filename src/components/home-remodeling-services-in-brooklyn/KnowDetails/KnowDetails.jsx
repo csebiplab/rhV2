@@ -82,7 +82,7 @@ const KnowDetails = () => {
               </div>
 
               <div>
-                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+                <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
                 Our Home Renovators Like No Others 
  
                   <span className="text-primary"> in Brooklyn</span>

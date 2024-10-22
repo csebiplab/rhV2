@@ -29,7 +29,7 @@ const BathroomRemodellingAllComponents = () => {
       <BathroomRenoHero />
 
       {/* =============== Rating  Section================= */}
-      <RatingComponent />
+      <RatingComponent/>
 
       {/* ================== AboutBathroomReno Section ===== */}
       <AboutBathroomReno />

@@ -6,9 +6,9 @@ import { FaMapLocationDot, FaPhoneVolume, FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import contactUsLogo from "../../../../public/assets/logos/contact-logo.png";
 
-export default function ContactUs() {
+export default function ContactUs({classNames}) {
   return (
-    <div className="bg-yellow-50">
+    <div className={`${classNames ? classNames?.bg : "bg-yellow-50"}`}>
       <section className="container">
         <div className="mx-auto md:pt-6 lg:pt-[55px]">
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">

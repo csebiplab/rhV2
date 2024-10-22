@@ -73,7 +73,7 @@ const HireUs = () => {
             />
             <div className="text-center px-[23px] pt-[5px]">
               <p className="text-[20px] font-bold leading-[30px] text-center">{slide?.title}</p>
-              <p className="text-lg font-normal text-black leading-[30px] text-center">
+              <p className="text-lg font-normal text-black leading-[30px] text-center pb-[5px]">
                 {slide.description}
               </p>
             </div>
