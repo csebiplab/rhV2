@@ -20,6 +20,7 @@ import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/
 // css file import 
 import "./HomeRemodelingServicesAllComponents.css";
 import { bHeadingText } from "@/utils/bHeading-text";
+import Benefits from "@/components/home-remodeling-services-in-brooklyn/Benefits/Benefits";
 
 const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
   return (
@@ -73,6 +74,10 @@ const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
 
       <section>
         <GetReadyWithUs/>
+      </section>
+
+      <section>
+        <Benefits/>
       </section>
 
       <section>
