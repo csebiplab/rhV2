@@ -74,7 +74,7 @@ const KnowDetails = () => {
   return (
     <div className="">
       <div className="container">
-        <div className="2xl:py-20 py-10 shadow-sm md:mx-0 xs:mx-[35px] ">
+        <div className="2xl:py-20 py-10 md:mx-0 xs:mx-[35px] ">
           <div className=" grid md:grid-cols-3 2xl:gap-[40px] md:gap-[30px] ">
             <div className="mx-auto flex flex-col items-center justify-center">
               <div className="w-full flex md:justify-start justify-center md:items-start items-center">
@@ -100,11 +100,11 @@ const KnowDetails = () => {
               <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
               Usual Home Renovators
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 pt-[18px] 3xl:pt-[22px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex gap-3 5xl:gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 5xl:gap-3 items-center mb-[25px]  leading-none  "
                   >
                     <Image
                       src="/assets/icons/x.png"
@@ -113,7 +113,7 @@ const KnowDetails = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-xs 2xl:text-sm text-black font-bold">
+                    <p className="text-[13px] 5xl:text-base text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -124,11 +124,11 @@ const KnowDetails = () => {
               <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
               RH Construction USA Inc
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  pl-[60px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 pt-[18px] 3xl:pt-[22px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex  gap-3 5xl:gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 5xl:gap-3 items-center mb-[25px]  leading-none  "
                   >
                     <Image
                       src="/assets/icons/r.png"
@@ -137,7 +137,7 @@ const KnowDetails = () => {
                       height={20}
                       className="2xl:h-[20px] 2xl:w-[20px] h-[15px] w-[15px]"
                     />
-                    <p className="text-xs 2xl:text-sm text-black font-bold">
+                    <p className="text-[13px] 5xl:text-base text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
