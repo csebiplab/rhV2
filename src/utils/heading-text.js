@@ -44,6 +44,7 @@ export const headingIconText = {
     faq__HeadingIconText : "FAQ",
     planning__HeadingIconText : "Planning",
     hireUs__HeadingIconText : "Hire Us",
+    benefits__HeadingIconText : "Benefits",
 
 
     // Roofing Contractor in Brooklyn page 

@@ -19,6 +19,8 @@ import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/
 
 // css file import 
 import "./HomeRemodelingServicesAllComponents.css";
+import { bHeadingText } from "@/utils/bHeading-text";
+import Benefits from "@/components/home-remodeling-services-in-brooklyn/Benefits/Benefits";
 
 const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
   return (
@@ -28,8 +30,8 @@ const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
         <BrooklynHomeRemodelingServiceHero />
       </section>
 
-      <section className="bg___color">
-        <RatingComponent />
+      <section>
+        <RatingComponent classNames={{bg : "homeRemodelingServices__bg"}}/>
       </section>
 
       <section>
@@ -66,12 +68,16 @@ const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
 
       {/* =============== Review  Section================= */}
       <section>
-      <Review />
+      <Review bHeading={bHeadingText.homeRemodelingServicesReview__bHeading} classNames={{bg: "homeRemodelingServices__bg"}}/>
       </section>
       
 
       <section>
         <GetReadyWithUs/>
+      </section>
+
+      <section>
+        <Benefits/>
       </section>
 
       <section>
@@ -88,14 +94,14 @@ const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
       </section>
 
       {/* =============== LocationMap  Section================= */}
-      <section className="homeRemodelingServices__bg">
-      <LocationMap />
+      <section>
+      <LocationMap classNames={{bg: "homeRemodelingServices__bg"}}/>
       </section>
       
 
       {/* =============== ContactUs  Section================= */}
-      <section className={`${backgroundColor && "!homeRemodelingServices__bg" }`}>
-      <ContactUs />
+      <section>
+      <ContactUs classNames={{bg: "homeRemodelingServices__bg"}}/>
       </section>
       
     </div>

@@ -11,7 +11,7 @@ const TrustUs = () => {
             <div className="flex md:justify-normal justify-center md:items-start items-center">
               <HeadingIcon text={headingIconText.trusUs__HeadingIconText} />
             </div>
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
               Brooklyn Home Renovators
               <br className="hidden 2xl:block" />{" "}
               <span className="text-primary-50">You Can Trust!</span>

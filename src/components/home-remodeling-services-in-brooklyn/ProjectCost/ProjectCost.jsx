@@ -5,7 +5,7 @@ import { headingIconText } from "@/utils/heading-text";
 const ProjectCost = () => {
   return (
     <div className="">
-      <div className="container common__padding__top">
+      <div className="full__section_l_p pr-3 pr-0 common__padding__top">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
@@ -13,11 +13,11 @@ const ProjectCost = () => {
                 text={headingIconText.projectCost__HeadingIconText}
               />
             </div>
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-normal text-black md:text-start text-center">
-              How Much Does
+            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+              How Much Does The Home Remodeling
               <br className="hidden 2xl:block" />{" "}
               <span className="text-primary-50">
-                The Home Remodeling Project Cost?{" "}
+                 Project Cost?{" "}
               </span>
             </h2>
             <p className="text-lg font-normal md:text-start text-center pt-[10px]">

@@ -20,6 +20,7 @@ import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs";
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
 import OurServices from "@/components/kitchen-remodeling-components/ourServices/OurServices";
+import { bHeadingText } from "@/utils/bHeading-text";
 
 const KitchenRemodelingAllComponents = () => {
   return (
@@ -46,7 +47,7 @@ const KitchenRemodelingAllComponents = () => {
       <WorkingProcess />
 
       {/* =============== Review  Section================= */}
-      <Review />
+      <Review bHeading={bHeadingText.kitchenRemodelingServicesReview__bHeading}/>
 
       {/* =============== OurServices  Section================= */}
 

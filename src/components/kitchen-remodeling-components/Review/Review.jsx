@@ -63,10 +63,10 @@ const reviews = [
   },
 ];
 
-const Review = ({backgroundColor}) => {
+const Review = ({classNames, bHeading="empty"}) => {
   const swiperRef = useRef(null);
   return (
-    <div className={`common__padding__top ${backgroundColor ? "bg___color" : "bg-[#FFFDF8]"}`}>
+    <div className={`common__padding__top ${classNames ? classNames?.bg : "bg___color"}`}>
       <div className="container">
         <div className="">
           <div className="text-center">
@@ -74,7 +74,7 @@ const Review = ({backgroundColor}) => {
             <HeadingIcon text={headingIconText.review__IconTxt}/>
             </div>
             <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
-            Review from  <span className="text-primary">Clients</span>
+            {bHeading}
             </h2>
           </div>
           {/* =================== Card Section =============== */}
