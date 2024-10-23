@@ -1,4 +1,11 @@
 export const headingIconText = {
+
+    // home page 
+    workingProcess__IconText: "Working Process",
+    whyHiring__IconText: "Why Hiring",
+    rightContractor__IconText: "Right Contractor Choosing",
+
+
     // Bathrooom Renovation page 
 
     review__IconTxt: "Review",
