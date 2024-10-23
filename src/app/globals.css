@@ -11,6 +11,10 @@
   background-color: #00000080;
 }
 
+body{
+  background: #FFFCFC;
+}
+
 .pswp__img {
   object-fit: contain;
 }

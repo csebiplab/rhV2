@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from 'react';
 import google from "@/components/__home_components/Images/google.png";
 import review from "@/components/__home_components/Images/review.png";
 import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
@@ -17,112 +18,110 @@ import { SwiperNavButtons } from "./SwiperSliderButton";
 const breakpoints = {
   0: {
     slidesPerView: 1,
+    spaceBetween: 20,
   },
   768: {
     slidesPerView: 3,
+    spaceBetween: 20,
   },
 };
 
 const reviews = [
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door. That speaks volumes!!! They really care about their clients.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock their door.",
     author: "Lisa Silva",
     address: "North York",
   },
 ];
 
 const Review = () => {
+  const swiperSlide = useRef();
   return (
-    <div className="section-bg">
-      <div className="container">
-        <div className="py-6 lg:py-[55px]">
+    <div className="">
+      <div className="container common__padding__top">
+        <div className="">
           <div className="text-center">
             <div className="flex justify-center items-center">
               <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.review} />
             </div>
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[12px] xl:mt-[15px] xl:mb-[25px] text-center">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center pb-[15px]">
               Here's what to expect when you hire us
             </h2>
           </div>
           {/* =================== Card Section =============== */}
           <Swiper
-            // spaceBetween={21}
-            // slidesPerView={3}
-            // modules={[Navigation]}
+            ref={swiperSlide}
             modules={[Autoplay, Navigation]}
             loop={true}
             autoplay={{
               delay: 3000,
-              pauseOnMouseEnter: false,
+              pauseOnMouseEnter: true,
               disableOnInteraction: false,
               stopOnLastSlide: false,
             }}
-            // slidesPerView={5}
             speed={3000}
-            allowTouchMove={false}
-            // modules={[Autoplay,Navigation, Scrollbar]}
+            allowTouchMove={true}
             breakpoints={breakpoints}
           >
             {reviews.map(({ address, author, reviewText }, i) => (
               <SwiperSlide
                 key={i}
-                className={`text-center py-4 lg:py-10 md:pr-[21px]`}
               >
-                <div className="w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] bg-[#fff] md:mx-0 mx-auto">
+                <div className="card_bg py-[14px] px-[12px]">
                   <Image
                     src={google}
-                    width={89.92}
+                    width={90}
                     height={51}
                     alt="google"
-                    className="mb-2"
+                    className="mb-[10px]"
                   />
                   <Image
                     src={review}
-                    width={83}
-                    height={12}
-                    alt="google"
+                    width={120}
+                    height={17}
+                    alt="five star"
                     className=""
                   />
 
                   <div className="text-start">
-                    <p className="text-[10px] md:text-[12px] mt-4  text-black leading-[22px] md:leading-6">
+                    <p className="text-base font-normal my-[12px] text-black leading-[32px]">
                       {reviewText}
                     </p>
-                    <p className="font-semibold lg:text-sm text-xs mt-3">
+                    <p className="text-[15px] font-bold leading-[20px] text-black ">
                       {author}
                     </p>
-                    <p className="text-[#4A4A4A] text-[8px] mt-2">{address}</p>
+                    <p className="text-xs font-normal mt-[10px] text-[#4A4A4A]">{address}</p>
                   </div>
                 </div>
               </SwiperSlide>
