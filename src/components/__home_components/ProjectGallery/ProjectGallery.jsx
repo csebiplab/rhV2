@@ -12,31 +12,45 @@ import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 
 const galImgs = [
-  "/assets/home_page/gallery1.png",
-  "/assets/home_page/gallery2.png",
-  "/assets/home_page/gallery3.png",
-  "/assets/home_page/gallery4.png",
-  "/assets/home_page/gallery5.png",
-  "/assets/home_page/gallery6.png",
-  "/assets/home_page/gallery7.png",
-  "/assets/home_page/gallery8.png",
-  "/assets/home_page/gallery9.png",
-  "/assets/home_page/gallery10.png",
-  "/assets/home_page/gallery11.png",
+  "/assets/home_page/new_home_page/gallery/gallery1.png",
+  "/assets/home_page/new_home_page/gallery/gallery2.png",
+  "/assets/home_page/new_home_page/gallery/gallery3.png",
+  "/assets/home_page/new_home_page/gallery/gallery4.png",
+  "/assets/home_page/new_home_page/gallery/gallery5.png",
+  "/assets/home_page/new_home_page/gallery/gallery6.png",
+  "/assets/home_page/new_home_page/gallery/gallery7.png",
+  "/assets/home_page/new_home_page/gallery/gallery8.png",
+  "/assets/home_page/new_home_page/gallery/gallery9.png",
+  "/assets/home_page/new_home_page/gallery/gallery10.png",
+  "/assets/home_page/new_home_page/gallery/gallery11.png",
+  "/assets/home_page/new_home_page/gallery/gallery11.png",
+  "/assets/home_page/new_home_page/gallery/gallery12.png",
+  "/assets/home_page/new_home_page/gallery/gallery13.png",
+  "/assets/home_page/new_home_page/gallery/gallery14.png",
+  "/assets/home_page/new_home_page/gallery/gallery15.png",
+  "/assets/home_page/new_home_page/gallery/gallery16.png",
+  "/assets/home_page/new_home_page/gallery/gallery17.png",
+  "/assets/home_page/new_home_page/gallery/gallery18.png",
 ];
 
 const galImgs2 = [
-  "/assets/home_page/gallery11.png",
-  "/assets/home_page/gallery12.png",
-  "/assets/home_page/gallery13.png",
-  "/assets/home_page/gallery14.png",
-  "/assets/home_page/gallery15.png",
-  "/assets/home_page/gallery16.png",
-  "/assets/home_page/gallery17.png",
-  "/assets/home_page/gallery18.png",
-  "/assets/home_page/gallery19.png",
-  "/assets/home_page/gallery20.png",
-  "/assets/home_page/gallery21.png",
+  "/assets/home_page/new_home_page/gallery/gallery19.png",
+  "/assets/home_page/new_home_page/gallery/gallery20.png",
+  "/assets/home_page/new_home_page/gallery/gallery21.png",
+  "/assets/home_page/new_home_page/gallery/gallery22.png",
+  "/assets/home_page/new_home_page/gallery/gallery23.png",
+  "/assets/home_page/new_home_page/gallery/gallery24.png",
+  "/assets/home_page/new_home_page/gallery/gallery25.png",
+  "/assets/home_page/new_home_page/gallery/gallery26.png",
+  "/assets/home_page/new_home_page/gallery/gallery27.png",
+  "/assets/home_page/new_home_page/gallery/gallery28.png",
+  "/assets/home_page/new_home_page/gallery/gallery29.png",
+  "/assets/home_page/new_home_page/gallery/gallery30.png",
+  "/assets/home_page/new_home_page/gallery/gallery31.png",
+  "/assets/home_page/new_home_page/gallery/gallery32.png",
+  "/assets/home_page/new_home_page/gallery/gallery33.png",
+  "/assets/home_page/new_home_page/gallery/gallery34.png",
+  "/assets/home_page/new_home_page/gallery/gallery35.png",
 ];
 
 const ProjectGallery = () => {
@@ -62,11 +76,11 @@ const ProjectGallery = () => {
   return (
     <div className="">
       <div className="custom-container common__padding__top">
-        <div className="pb-2">
+        <div className="">
           <div className="flex flex-col justify-center items-center">
           <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
             <div>
-              <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+              <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center pb-[15px]">
               CONSTRUCTION SERVICES GALLARY OF OUR PAST PROJECTS
               </h2>
             </div>

@@ -75,7 +75,7 @@ const Review = () => {
             <div className="flex justify-center items-center">
               <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.review} />
             </div>
-            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[15px]">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center pb-[15px]">
               Here's what to expect when you hire us
             </h2>
           </div>
