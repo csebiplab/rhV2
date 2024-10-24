@@ -8,7 +8,7 @@ import "./About.css";
 const AboutUs = () => {
   return (
     <div>
-      <div className="container common__padding__top">
+      <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-[23px]">
           <div className="md:col-span-3 ">
             <div className="flex justify-start items-center">

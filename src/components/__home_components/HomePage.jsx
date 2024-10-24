@@ -11,6 +11,9 @@ import AboutUs from './AboutUs/AboutUs';
 import Experienced from './Experienced/Experienced';
 import ToolsAndEquipment from './ToolsAndEquipment/ToolsAndEquipment';
 import ArchitecturalDesign from './ArchitecturalDesign/ArchitecturalDesign';
+import ContactUs from './ContactUs/ContactUs';
+import LocationMap from './LocationMap/LocationMap';
+import RatingComponent from './RatingComponent/RatingComponent';
 
 const HomePage = () => {
     return (
@@ -20,6 +23,16 @@ const HomePage = () => {
                 <HomeBanner/>
             </section>
 
+            {/* banner section  */}
+            <section>
+                <RatingComponent />
+            </section>
+
+            {/* about us section  */}
+            <section>
+                <AboutUs />
+            </section>
+            
             {/* leading construction section  */}
             <section>
                 <LeadingConstruction/>
@@ -73,6 +86,16 @@ const HomePage = () => {
             {/* faq section  */}
             <section>
                 <Faq/>
+            </section>
+
+            {/* location area section  */}
+            <section>
+                <LocationMap/>
+            </section>
+
+            {/* contact us section  */}
+            <section>
+                <ContactUs/>
             </section>
         </div>
     );

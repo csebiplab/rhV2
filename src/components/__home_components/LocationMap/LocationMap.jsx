@@ -1,11 +1,12 @@
-import { smHeadingTexts } from "@/constants/smHeadingTexts";
+"use client"
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
 import "swiper/css/virtual";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SmallHeadingWithIcon from "../ui/SmallHeadingWithIcon";
+import HeadingIcon from "@/components/ui/HeadingIcon";
+import { headingIconText } from "@/utils/heading-text";
 
 const breakpoints = {
   0: {
@@ -31,7 +32,6 @@ const locations = [
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d282591.6426865487!2d-74.04841253213657!3d40.68744007354902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C%20NY%2C%USA!5e0!3m2!1sen!2sbd!4v1710652963610!5m2!1sen!2sbd",
   },
-  // ... add other locations here
   {
     title: "Staten Island",
     iframeSrc:
@@ -47,7 +47,6 @@ const locations = [
     iframeSrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193146.52505702147!2d-74.0060943983724!3d40.85180194863987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sBronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1710653132257!5m2!1sen!2sbd",
   },
-  // ... add other locations here
   {
     title: "Staten Island",
     iframeSrc:
@@ -65,17 +64,17 @@ const locations = [
   },
 ];
 
-const LocationMap = () => {
+const LocationMap = ({classNames}) => {
   return (
-    <div>
+    <div className={`${classNames ? classNames.bg : "bg___color"}`}>
       <div className="custom-container">
         <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
           <div className="mx-auto flex flex-col items-center justify-center ">
-            <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.area} />
+          <HeadingIcon text={headingIconText.ourServicearea__IconTxt}/>
 
             <div>
-              <h2 className="lg:leading-10 lg:text-4xl text-lg py-2 lg:py-4">
-                SERVICE AREA IN RH CONSTRUCTION USA INC
+              <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
+              Our <span className="text-primary">Service Areas</span>
               </h2>
             </div>
           </div>
@@ -112,7 +111,7 @@ const LocationMap = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                   />
 
-                  <p className="lg:text-base text-center text-sm py-4 px-3 lg:px-10 bg-yellow-700 ">
+                  <p className="lg:text-base text-center text-sm font-bold py-4 px-3 lg:px-10 bg-yellow-700 ">
                     {location?.title}
                   </p>
                 </div>
