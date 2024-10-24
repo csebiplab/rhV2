@@ -6,7 +6,7 @@ import Achievement from "./Achievement";
 import Brand from "./Brand";
 import BrandSwiper from "./BrandSwiper";
 
-const RatingComponent = () => {
+const RatingComponents = () => {
   return (
     <div className="pt-5 container">
       <div className="w-full mx-auto">
@@ -131,4 +131,4 @@ const RatingComponent = () => {
   );
 };
 
-export default RatingComponent;
+export default RatingComponents;

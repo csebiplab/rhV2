@@ -2,7 +2,7 @@
 
 import "../../../app/styles/Home.css";
 
-import RatingComponent from "@/components/__home_components/RatingComponent";
+// import RatingComponent from "@/components/__home_components/RatingComponent";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 import AboutKitchenRemodeling from "@/components/kitchen-remodeling-components/AboutKitchenRemodeling/AboutKitchenRemodeling";
@@ -21,6 +21,7 @@ import TrustUs from "@/components/kitchen-remodeling-components/TrustUs/TrustUs"
 import WorkingProcess from "@/components/kitchen-remodeling-components/WorkingProcess/WorkingProcess";
 import OurServices from "@/components/kitchen-remodeling-components/ourServices/OurServices";
 import { bHeadingText } from "@/utils/bHeading-text";
+import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
 
 const KitchenRemodelingAllComponents = () => {
   return (
@@ -31,7 +32,8 @@ const KitchenRemodelingAllComponents = () => {
       {/* =============== RatingComponent  Section================= */}
 
       <div className="bg___color">
-        <RatingComponent />
+        {/* <RatingComponent /> */}
+        <RatingComponents />
       </div>
 
       {/* =============== AboutKitchenRemodeling  Section================= */}
