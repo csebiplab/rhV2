@@ -13,7 +13,7 @@ import ToolsAndEquipment from './ToolsAndEquipment/ToolsAndEquipment';
 import ArchitecturalDesign from './ArchitecturalDesign/ArchitecturalDesign';
 import ContactUs from './ContactUs/ContactUs';
 import LocationMap from './LocationMap/LocationMap';
-import RatingComponent from './RatingComponent/RatingComponent';
+// import RatingComponents from './RatingComponents/RatingComponents';
 
 const HomePage = () => {
     return (
@@ -24,9 +24,9 @@ const HomePage = () => {
             </section>
 
             {/* banner section  */}
-            <section>
-                <RatingComponent />
-            </section>
+            {/* <section>
+                <RatingComponents />
+            </section> */}
 
             {/* about us section  */}
             <section>
