@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import RoofRepairInBrooklynBanner from "./RoofRepairInBrooklynBanner/RoofRepairInBrooklynBanner";
-import RatingComponent from "@/components/__home_components/RatingComponent";
+// import RatingComponent from "@/components/__home_components/RatingComponent";
 import AboutOur from "./AboutOur/AboutOur";
 import RoofRepairSpecialists from "./RoofRepairSpecialists/RoofRepairSpecialists";
 import Affordable from "./Affordable/Affordable";
@@ -17,6 +17,7 @@ import RoofRepairServices from "./RoofRepairServices/RoofRepairServices";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
+import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
 
 const RoofRepairInBrooklyn = () => {
   return (
@@ -26,7 +27,8 @@ const RoofRepairInBrooklyn = () => {
       </section>
 
       <section className="bg___color">
-        <RatingComponent />
+        {/* <RatingComponent /> */}
+        <RatingComponents />
       </section>
 
       <section>

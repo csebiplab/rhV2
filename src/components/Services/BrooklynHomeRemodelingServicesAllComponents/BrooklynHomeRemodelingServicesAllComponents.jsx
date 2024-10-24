@@ -1,4 +1,4 @@
-import RatingComponent from "@/components/__home_components/RatingComponent";
+// import RatingComponent from "@/components/__home_components/RatingComponent";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import AboutHomeRenovation from "@/components/home-remodeling-services-in-brooklyn/AboutHomeRenovation/AboutHomeRenovation";
@@ -21,6 +21,7 @@ import PlanningServices from "@/components/home-remodeling-services-in-brooklyn/
 import "./HomeRemodelingServicesAllComponents.css";
 import { bHeadingText } from "@/utils/bHeading-text";
 import Benefits from "@/components/home-remodeling-services-in-brooklyn/Benefits/Benefits";
+import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
 
 const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
   return (
@@ -31,7 +32,8 @@ const BrooklynHomeRemodelingServicesAllComponents = ({backgroundColor}) => {
       </section>
 
       <section>
-        <RatingComponent classNames={{bg : "homeRemodelingServices__bg"}}/>
+        {/* <RatingComponent classNames={{bg : "homeRemodelingServices__bg"}}/> */}
+        <RatingComponents classNames={{bg : "homeRemodelingServices__bg"}} />
       </section>
 
       <section>

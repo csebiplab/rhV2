@@ -3,7 +3,7 @@
 import "../../../app/styles/Home.css";
 
 import BathroomRenoHero from "@/components/bathroom-reno-components/BathroomRenoHero/BathroomRenoHero";
-import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
+// import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
 import AboutBathroomReno from "@/components/bathroom-reno-components/AboutBathroomReno/AboutBathroomReno";
 import Expert from "@/components/bathroom-reno-components/Expert/Expert";
 import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
@@ -20,6 +20,8 @@ import FaqSection from "@/components/bathroom-reno-components/FaqSection/FaqSect
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 import BathroomRemodelingServices from "@/components/bathroom-reno-components/BathroomRemodelingServices/BathroomRemodelingServices";
+import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
+
 
 const BathroomRemodellingAllComponents = () => {
   return (
@@ -29,7 +31,8 @@ const BathroomRemodellingAllComponents = () => {
       <BathroomRenoHero />
 
       {/* =============== Rating  Section================= */}
-      <RatingComponent/>
+      {/* <RatingComponent/> */}
+      <RatingComponents />
 
       {/* ================== AboutBathroomReno Section ===== */}
       <AboutBathroomReno />
