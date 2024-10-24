@@ -2,44 +2,44 @@
 
 import Image from "next/image";
 
-import hiring1 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh1.png";
-import hiring2 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh2.png";
-import hiring3 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh3.png";
-import hiring4 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh4.png";
-import hiring5 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh5.png";
-import hiring6 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh6.png";
+// import hiring1 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh1.png";
+// import hiring2 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh2.png";
+// import hiring3 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh3.png";
+// import hiring4 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh4.png";
+// import hiring5 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh5.png";
+// import hiring6 from "../../../../public/assets/home_page/new_home_page/why_hiring/wh6.png";
 
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const HiringData = [
   {
-    imgSrc: hiring1,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh1.png",
     title: "Reputation & experience",
     description: `Begin by researching the contractor's credibility and industry experience.`,
   },
   {
-    imgSrc: hiring2,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh2.png",
     title: "Specialization & expertise",
     description: `Assess whether the contractor specializes in the type of work you need. A specialist will likely have more in-depth knowledge and skills in a specific area, leading to better outcomes for your project.`,
   },
   {
-    imgSrc: hiring3,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh3.png",
     title: "Communicate  & transparency",
     description: `Effective communication for transporting construction materials is critical to any successful construction project. Ensure the contractor is transparent about timelines, costs, and potential challenges.`,
   },
   {
-    imgSrc: hiring4,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh4.png",
     title: "Contract Terms & Conditions",
     description: `Ensure it includes all relevant details such as scope of work, timelines, and payment schedules.`,
   },
   {
-    imgSrc: hiring5,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh5.png",
     title: "Availability and Workforce",
     description: `Check the contractor's accessibility and the size of their workforce. Confirm that they can dedicate sufficient time to your project and have the necessary manpower to complete it efficiently.`,
   },
   {
-    imgSrc: hiring6,
+    imgSrc: "/assets/home_page/new_home_page/why_hiring/wh6.png",
     title: "Communicate  & transparency",
     description: `Effective communication for transporting construction materials is critical to any successful construction project. Ensure the contractor is transparent about timelines, costs, and potential challenges.`,
   }
