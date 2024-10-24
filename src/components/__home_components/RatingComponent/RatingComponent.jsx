@@ -1,14 +1,14 @@
 "use client";
 import vector from "@/components/__home_components/Images/Vector.png";
+import Rating from "./Rating";
+import RatingProgressBar from "./RatingProgressBar";
 import Achievement from "./Achievement";
 import Brand from "./Brand";
 import BrandSwiper from "./BrandSwiper";
-import Rating from "./Rating";
-import RatingProgressBar from "./RatingProgressBar";
 
 const RatingComponent = () => {
   return (
-    <div className="py-4 lg:py-[15px] container">
+    <div className="pt-5 container">
       <div className="w-full mx-auto">
         <div className="w-full max-w-[980px] mx-auto">
           <div className="rating p-6 rounded-[8px]">
@@ -127,7 +127,7 @@ const RatingComponent = () => {
       <div className="block lg:hidden w-full">
         <BrandSwiper />
       </div>
-    </div> 
+    </div>
   );
 };
 

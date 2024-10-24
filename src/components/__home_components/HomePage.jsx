@@ -6,6 +6,14 @@ import ProjectGallery from './ProjectGallery/ProjectGallery';
 import WorkingProcess from './WorkingProcess/WorkingProcess';
 import WhyHiring from './WhyHiring/whyHiring';
 import RightContractor from './RightContractor/RightContractor';
+import LeadingConstruction from './LeadingConstruction/LeadingConstruction';
+import AboutUs from './AboutUs/AboutUs';
+import Experienced from './Experienced/Experienced';
+import ToolsAndEquipment from './ToolsAndEquipment/ToolsAndEquipment';
+import ArchitecturalDesign from './ArchitecturalDesign/ArchitecturalDesign';
+import ContactUs from './ContactUs/ContactUs';
+import LocationMap from './LocationMap/LocationMap';
+import RatingComponent from './RatingComponent/RatingComponent';
 
 const HomePage = () => {
     return (
@@ -15,9 +23,44 @@ const HomePage = () => {
                 <HomeBanner/>
             </section>
 
+            {/* banner section  */}
+            <section>
+                <RatingComponent />
+            </section>
+
+            {/* about us section  */}
+            <section>
+                <AboutUs />
+            </section>
+            
+            {/* leading construction section  */}
+            <section>
+                <LeadingConstruction/>
+            </section>
+
+            {/* about us section  */}
+            <section>
+                <AboutUs/>
+            </section>
+
+            {/* Experienced section  */}
+            <section>
+                <Experienced/>
+            </section>
+
+            {/* Tools And Equipment section  */}
+            <section>
+                <ToolsAndEquipment/>
+            </section>
+
             {/* working procss section  */}
             <section>
                 <WorkingProcess/>
+            </section>
+
+            {/* Architectural Design section  */}
+            <section>
+                <ArchitecturalDesign/>
             </section>
 
             {/* project gallery section  */}
@@ -43,6 +86,16 @@ const HomePage = () => {
             {/* faq section  */}
             <section>
                 <Faq/>
+            </section>
+
+            {/* location area section  */}
+            <section>
+                <LocationMap/>
+            </section>
+
+            {/* contact us section  */}
+            <section>
+                <ContactUs/>
             </section>
         </div>
     );

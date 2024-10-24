@@ -4,6 +4,15 @@ export const headingIconText = {
     workingProcess__IconText: "Working Process",
     whyHiring__IconText: "Why Hiring",
     rightContractor__IconText: "Right Contractor Choosing",
+    architecturalDesign__IconText: "Architectural Design",
+    projectCost__IconText: "Project Cost",
+    exceptionalServices__IconText: "Exceptional Services",
+    toolsAndEquipment__IconText: "Tools and Equipment",
+    whyChooseUs__IconText: "Why Choose Us",
+    experienced__IconText: "Experienced",
+    trustUs__IconText: "Trust us",
+    aboutUs__IconText: "About Us",
+    leadingConstruction__IconText: "Leading Construction Company in Brooklyn",
 
 
     // Bathrooom Renovation page 
