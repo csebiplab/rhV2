@@ -15,6 +15,7 @@ import RatingComponents from './RatingComponents/RatingComponents';
 import ContactUs from './ContactUs/ContactUs';
 import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
 import TrustUs from './TrustUs/TrustUs';
+import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 
 const HomePage = () => {
     return (
@@ -39,7 +40,7 @@ const HomePage = () => {
                 <AboutUs />
             </section>
 
-            {/* about us section  */}
+            {/* trust us section  */}
             <section>
                 <TrustUs />
             </section>
@@ -47,6 +48,11 @@ const HomePage = () => {
             {/* Experienced section  */}
             <section>
                 <Experienced/>
+            </section>
+
+            {/* why choose us section  */}
+            <section>
+                <WhyChooseUs/>
             </section>
 
             {/* Tools And Equipment section  */}

@@ -53,7 +53,8 @@ module.exports = withMT({
         primary : {
           DEFAULT : "#fab704",
           50 : "#FFB703",
-          100 : "#1F1F1F"
+          100 : "#1F1F1F",
+          200 : "#FABB05"
         },
         secondary: "#555",
         "gray-1": "var(--gray-1)",
@@ -66,6 +67,7 @@ module.exports = withMT({
           200: "#434343",
           300: "#535455",
           400: "#181514",
+          500: "#717171",
         },
         background: "var(--background-color)",
         foreground: "var(--foreground)",
