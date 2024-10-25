@@ -14,6 +14,7 @@ import LocationMap from './LocationMap/LocationMap';
 import RatingComponents from './RatingComponents/RatingComponents';
 import ContactUs from './ContactUs/ContactUs';
 import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
+import TrustUs from './TrustUs/TrustUs';
 
 const HomePage = () => {
     return (
@@ -28,14 +29,19 @@ const HomePage = () => {
                 <RatingComponents />
             </section>
 
+            {/* leading construction section  */}
+            <section>
+                <LeadingConstruction/>
+            </section>
+
             {/* about us section  */}
             <section>
                 <AboutUs />
             </section>
-            
-            {/* leading construction section  */}
+
+            {/* about us section  */}
             <section>
-                <LeadingConstruction/>
+                <TrustUs />
             </section>
 
             {/* Experienced section  */}
