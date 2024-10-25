@@ -16,6 +16,7 @@ import ContactUs from './ContactUs/ContactUs';
 import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
 import TrustUs from './TrustUs/TrustUs';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
+import ExceptionalServices from './ExceptionalServices/ExceptionalServices';
 
 const HomePage = () => {
     return (
@@ -58,6 +59,11 @@ const HomePage = () => {
             {/* Tools And Equipment section  */}
             <section>
                 <ToolsAndEquipment/>
+            </section>
+
+            {/* Exceptional Services section  */}
+            <section>
+                <ExceptionalServices/>
             </section>
 
             {/* working procss section  */}
