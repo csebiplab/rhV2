@@ -14,6 +14,9 @@ import LocationMap from './LocationMap/LocationMap';
 import RatingComponents from './RatingComponents/RatingComponents';
 import ContactUs from './ContactUs/ContactUs';
 import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
+import TrustUs from './TrustUs/TrustUs';
+import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
+import ExceptionalServices from './ExceptionalServices/ExceptionalServices';
 
 const HomePage = () => {
     return (
@@ -28,14 +31,19 @@ const HomePage = () => {
                 <RatingComponents />
             </section>
 
+            {/* leading construction section  */}
+            <section>
+                <LeadingConstruction/>
+            </section>
+
             {/* about us section  */}
             <section>
                 <AboutUs />
             </section>
-            
-            {/* leading construction section  */}
+
+            {/* trust us section  */}
             <section>
-                <LeadingConstruction/>
+                <TrustUs />
             </section>
 
             {/* Experienced section  */}
@@ -43,9 +51,19 @@ const HomePage = () => {
                 <Experienced/>
             </section>
 
+            {/* why choose us section  */}
+            <section>
+                <WhyChooseUs/>
+            </section>
+
             {/* Tools And Equipment section  */}
             <section>
                 <ToolsAndEquipment/>
+            </section>
+
+            {/* Exceptional Services section  */}
+            <section>
+                <ExceptionalServices/>
             </section>
 
             {/* working procss section  */}
