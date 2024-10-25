@@ -73,8 +73,8 @@ const LocationMap = ({classNames}) => {
           <HeadingIcon text={headingIconText.ourServicearea__IconTxt}/>
 
             <div>
-              <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center pb-2">
-              Our <span className="text-primary">Service Areas</span>
+              <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[10px]">
+                SERVICE AREA IN RH CONSTRUCTION USA INC
               </h2>
             </div>
           </div>

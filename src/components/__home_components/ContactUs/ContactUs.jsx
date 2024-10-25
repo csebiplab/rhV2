@@ -145,7 +145,7 @@ export default function ContactUs({classNames}) {
                 <div className="flex justify-center md:justify-start">
                   <button
                     type="submit"
-                    className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-8 mt-6"
+                    className="contact_us_btn px-[37px] py-[11px] text-lg font-bold text-black items-center flex lg:mt-8 mt-6"
                   >
                     Submit{" "}
                     <svg

@@ -35,26 +35,29 @@ const whyHiringData = [
     imgSrc: "/assets/home_page/new_home_page/why_hiring/wh6.png",
     title: "Communicate  & transparency",
     description: `Effective communication for transporting construction materials is critical to any successful construction project. Ensure the contractor is transparent about timelines, costs, and potential challenges.`,
-  }
+  },
 ];
-
 
 const WhyHiringUs = () => {
   return (
     <div className="">
       <div className="container">
         <div className="common__padding__top">
-        <div className="flex justify-center items-center">
-            <HeadingIcon text={headingIconText.whyHiring__IconText}/>
-            </div>
-            <div className="pb-[25px]">
-        <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[10px]">
-         When Hiring the Best Contractors, What to Consider First
-        </h2>
-        <p className="text-lg font-normal text-black leading-[36px] text-center">
-        When selecting the best contractors from all construction companies in Brooklyn for your project, it's crucial to consider several key factors to ensure a successful and satisfactory outcome. Here are the top considerations to prioritize, listed in order of importance:
-        </p>
-      </div>
+          <div className="flex justify-center items-center">
+            <HeadingIcon text={headingIconText.whyHiring__IconText} />
+          </div>
+          <div className="pb-[25px]">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[10px]">
+              When Hiring the Best Contractors, What to Consider First
+            </h2>
+            <p className="text-lg font-normal text-black leading-[36px] text-center">
+              When selecting the best contractors from all construction
+              companies in Brooklyn for your project, it's crucial to consider
+              several key factors to ensure a successful and satisfactory
+              outcome. Here are the top considerations to prioritize, listed in
+              order of importance:
+            </p>
+          </div>
 
           <div className="grid gird-cols-1 lg:grid-cols-3 gap-10">
             {whyHiringData.map((data, index) => (
@@ -78,11 +81,9 @@ const WhyHiringUs = () => {
                     <p className="text-lg text-center pb-[40px]  text-black leading-[24px] md:leading-6">
                       {data.description}
                     </p>
-                    
                   </div>
                 </div>
                 <hr className="absolute bottom-0 left-0 right-0 border border-black" />
-
               </div>
             ))}
           </div>
