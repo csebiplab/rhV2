@@ -171,7 +171,7 @@ const ExceptionalServices = () => {
             </div>
           </div>
           <div className="md:col-span-2 w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <Image
                 src="/assets/home_page/new_home_page/interior_services/is8.png"
                 alt="interior services"
@@ -180,7 +180,7 @@ const ExceptionalServices = () => {
                 className=""
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                 Interior Remodeling & Renovation Services At a Glance
               </p>
@@ -277,7 +277,7 @@ const ExceptionalServices = () => {
             </div>
           </div>
           <div className="md:col-span-2 w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <Image
                 src="/assets/home_page/new_home_page/exterior_services/es8.png"
                 alt="interior services"
@@ -286,7 +286,7 @@ const ExceptionalServices = () => {
                 className=""
               />
             </div>
-            <div className="w-1/2">
+            <div className="w-full md:w-1/2">
               <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
               Exterior Construction & Renovation Services At a Glance
               </p>
