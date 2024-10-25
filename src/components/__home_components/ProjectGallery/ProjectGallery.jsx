@@ -1,4 +1,3 @@
-
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -78,10 +77,10 @@ const ProjectGallery = () => {
       <div className="custom-container common__padding__top">
         <div className="">
           <div className="flex flex-col justify-center items-center">
-          <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
+            <SmallHeadingWithIcon smallHeadingText={smHeadingTexts.gallery} />
             <div>
               <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center pb-[15px]">
-              CONSTRUCTION SERVICES GALLARY OF OUR PAST PROJECTS
+                CONSTRUCTION SERVICES GALLARY OF OUR PAST PROJECTS
               </h2>
             </div>
           </div>
@@ -90,17 +89,19 @@ const ProjectGallery = () => {
         {isMobileView ? (
           <div>
             <div className="grid grid-cols-1 gap-2">
-              {galImgs.slice(0, showAll ? galImgs.length : 4).map((imgUrl, idx) => (
-                <div key={idx} className="m-2 px-0 md:px-6">
-                  <Image
-                    width={370}
-                    height={250}
-                    src={imgUrl}
-                    alt="gallery"
-                    className="object-contain w-full h-auto mx-auto"
-                  />
-                </div>
-              ))}
+              {galImgs
+                .slice(0, showAll ? galImgs.length : 4)
+                .map((imgUrl, idx) => (
+                  <div key={idx} className="m-2 px-0 md:px-6">
+                    <Image
+                      width={370}
+                      height={250}
+                      src={imgUrl}
+                      alt="gallery"
+                      className="object-contain w-full h-auto mx-auto"
+                    />
+                  </div>
+                ))}
             </div>
             {!showAll && (
               <div className="text-center mt-4 px-10">
@@ -108,9 +109,19 @@ const ProjectGallery = () => {
                   onClick={handleLoadMore}
                   className="flex items-center justify-center gap-2 w-full text-lg font-bold px-4 py-2 bg-primary text-black rounded"
                 >
-                  Load More <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none">
-  <path d="M1.38997 0.4375L0 1.67633L4.22005 5.4375L0 9.19867L1.38997 10.4375L7 5.4375L1.38997 0.4375Z" fill="black"/>
-</svg>
+                  Load More{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="7"
+                    height="11"
+                    viewBox="0 0 7 11"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.38997 0.4375L0 1.67633L4.22005 5.4375L0 9.19867L1.38997 10.4375L7 5.4375L1.38997 0.4375Z"
+                      fill="black"
+                    />
+                  </svg>
                 </button>
               </div>
             )}

@@ -158,7 +158,7 @@ const Faq = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center pb-2">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center pb-[10px]">
               FAQ FOR RH CONSTRUCTION USA INC
             </h2>
           </div>

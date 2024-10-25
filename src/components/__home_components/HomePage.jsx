@@ -17,6 +17,7 @@ import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
 import TrustUs from './TrustUs/TrustUs';
 import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
 import ExceptionalServices from './ExceptionalServices/ExceptionalServices';
+import ProjectCost from './ProjectCost/ProjectCost';
 
 const HomePage = () => {
     return (
@@ -79,6 +80,11 @@ const HomePage = () => {
             {/* project gallery section  */}
             <section>
                 <ProjectGallery/>
+            </section>
+
+            {/* Project cost section  */}
+            <section>
+                <ProjectCost/>
             </section>
 
             {/* why hiring section  */}

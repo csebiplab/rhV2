@@ -1,9 +1,5 @@
 "use client";
-import cost1 from "@/components/__home_components/Images/cost1.png";
-import cost2 from "@/components/__home_components/Images/cost2.png";
-import cost3 from "@/components/__home_components/Images/cost3.png";
-import cost4 from "@/components/__home_components/Images/cost4.png";
-import cost5 from "@/components/__home_components/Images/cost5.png";
+
 import SmallHeadingWithIcon from "@/components/ui/SmallHeadingWithIcon";
 import { smHeadingTexts } from "@/constants/smHeadingTexts";
 import Image from "next/image";
@@ -22,122 +18,133 @@ const breakpoints = {
   768: {
     slidesPerView: 3,
   },
+  1220: {
+    slidesPerView: 4,
+  },
+  1440: {
+    slidesPerView: 5,
+  },
 };
 
 const slideData = [
   {
-    imgSrc: cost1,
-    title: 'Reputation and Experience',
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc1.png",
+    title: "Scope of Work",
   },
   {
-    imgSrc: cost2,
-    title: 'Specialization and Expertise',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc2.png",
+    title: "Materials",
   },
   {
-    imgSrc: cost3,
-    title: 'Communication and Transparency',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc3.png",
+    title: "Labor Costs",
   },
   {
-    imgSrc: cost4,
-    title: 'Reputation and Experience',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc4.png",
+    title: "Equipment and Machinery",
   },
   {
-    imgSrc: cost5,
-    title: 'Specialization and Expertise',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc5.png",
+    title: "Permits and Regulations",
   },
   {
-    imgSrc: cost1,
-    title: 'Reputation and Experience',
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc6.png",
+    title: "Site Preparation",
   },
   {
-    imgSrc: cost2,
-    title: 'Specialization and Expertise',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc7.png",
+    title: "Contingency",
   },
   {
-    imgSrc: cost3,
-    title: 'Communication and Transparency',
-    
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc8.png",
+    title: "Overhead and Profit",
   },
-  
+  {
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc9.png",
+    title: "Market Conditions",
+  },
+  {
+    imgSrc: "/assets/home_page/new_home_page/project_cost/pc10.png",
+    title: "Project Management",
+  },
 ];
-
 
 const ProjectCost = () => {
   return (
-    <div className="section-bg">
-      <div className="container">
-        <div className="md:flex py-6 lg:py-[55px] lg:gap-10 md:gap-3">
-          <div>
+    <div className="">
+      <div className="container common__padding__top">
+        <div className="w-full md:flex md:justify-between lg:gap-10 md:gap-3">
+          <div className="w-full md:w-1/2">
             <div className="flex justify-center md:block">
               <SmallHeadingWithIcon
                 smallHeadingText={smHeadingTexts.projectCost}
               />
             </div>
 
-            <h2 className="lg:leading-10 lg:text-4xl text-lg mt-[9px] mb-[10px] xl:mt-[15px] xl:mb-[25px] text-center md:text-start">
-              HOW MUCH DOES <br/> A CONSTRUCTION PROJECT COST?
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-left">
+              How Much Does a <br /> Construction Project Cost?
             </h2>
           </div>
-          <div>
-            <p className="md:text-base text-[12px] leading-[208%] lg:leading-[250%] text-black text-center md:text-start mt-0  md:mt-1 lg:mt-4">
-              The cost of a construction project can vary widely depending on{" "}
-              <br /> various factors such as the size, complexity, location,
-              materials used,
-              <br />
-              labor costs, and any additional requirements or unforeseen
-              circumstances. <br />
-              Here are some key points to consider when estimating
-              <br /> the cost of a construction project:
+          <div className="w-full md:w-1/2">
+            <p className="text-base font-normal text-black leading-[35px]">
+              The cost of a construction project can vary widely depending on
+              various factors such as the size, complexity, location, materials
+              used, labor costs, and any additional requirements or unforeseen
+              circumstances.
             </p>
           </div>
         </div>
         {/* =================== Card Section =============== */}
-      
+
         <Swiper
-            modules={[Autoplay, Navigation]}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              pauseOnMouseEnter: false,
-              disableOnInteraction: false,
-              stopOnLastSlide: false,
-            }}
-            speed={3000}
-            allowTouchMove={false}
-            breakpoints={breakpoints}
-            spaceBetween={74}
-          >
-            {slideData.map((data, index) => (
-              <SwiperSlide key={index} className={`text-center py-4 lg:py-10 px-[90px] md:px-0`}>
-                <div
+        className=""
+          modules={[Autoplay, Navigation]}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            stopOnLastSlide: false,
+          }}
+          speed={3000}
+          allowTouchMove={false}
+          breakpoints={breakpoints}
+          spaceBetween={74}
+        >
+          {slideData.map((data, index) => (
+            <SwiperSlide
+              key={index}
+              className={`text-center px-[90px] md:px-0`}
+            >
+              <div
                 className={`${
                   (index + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
                 }`}
               >
-              
                 <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
-                  
-                <Image
-                  src={data.imgSrc}
-                  width={318}
-                  height={238}
-                  alt="cost"
-                  className="w-full"
-                />
-                  <p className="lg:text-base text-sm font-semibold py-2 text-center">
-                    {data?.title}
-                  </p>
+                  {index % 2 === 0 && (
+                    <p className="lg:text-base text-black text-sm leading-normal font-bold py-[13px] text-center rounded-b-[9px] bg-white border">
+                      {data?.title}
+                    </p>
+                  )}
+                  <Image
+                    src={data.imgSrc}
+                    width={255}
+                    height={191}
+                    alt="cost"
+                    className="w-full"
+                  />
+                  {index % 2 !== 0 && (
+                    <p className="lg:text-base text-black rounded-b-[9px] bg-white border text-sm leading-normal font-bold py-[13px] text-center">
+                      {data?.title}
+                    </p>
+                  )}
                 </div>
               </div>
-              </SwiperSlide>
-            ))}
-            <SwiperNavButtons />
-          </Swiper>
+            </SwiperSlide>
+          ))}
+          <SwiperNavButtons />
+        </Swiper>
       </div>
     </div>
   );
