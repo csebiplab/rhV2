@@ -4,16 +4,16 @@ import HomeBanner from './HomeBanner/HomeBanner';
 import Review from './Review/Review';
 import ProjectGallery from './ProjectGallery/ProjectGallery';
 import WorkingProcess from './WorkingProcess/WorkingProcess';
-// import WhyHiring from './WhyHiring/whyHiring';
 import RightContractor from './RightContractor/RightContractor';
 import LeadingConstruction from './LeadingConstruction/LeadingConstruction';
 import AboutUs from './AboutUs/AboutUs';
 import Experienced from './Experienced/Experienced';
 import ToolsAndEquipment from './ToolsAndEquipment/ToolsAndEquipment';
 import ArchitecturalDesign from './ArchitecturalDesign/ArchitecturalDesign';
-// import ContactUs from './ContactUs/ContactUs';
 import LocationMap from './LocationMap/LocationMap';
 import RatingComponents from './RatingComponents/RatingComponents';
+import ContactUs from './ContactUs/ContactUs';
+import WhyHiringUs from './WhyHiringUs/WhyHiringUs';
 
 const HomePage = () => {
     return (
@@ -64,9 +64,9 @@ const HomePage = () => {
             </section>
 
             {/* why hiring section  */}
-            {/* <section>
-                <WhyHiring/>
-            </section> */}
+            <section>
+                <WhyHiringUs/>
+            </section>
 
             {/* review section  */}
             <section>
@@ -89,9 +89,9 @@ const HomePage = () => {
             </section>
 
             {/* contact us section  */}
-            {/* <section>
+            <section>
                 <ContactUs/>
-            </section> */}
+            </section>
         </div>
     );
 };
