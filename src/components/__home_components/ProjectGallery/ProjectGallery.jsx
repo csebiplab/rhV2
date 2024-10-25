@@ -104,10 +104,10 @@ const ProjectGallery = () => {
                 ))}
             </div>
             {!showAll && (
-              <div className="text-center mt-4 px-10">
+              <div className="w-full flex justify-center items-center mt-4">
                 <button
                   onClick={handleLoadMore}
-                  className="flex items-center justify-center gap-2 w-full text-lg font-bold px-4 py-2 bg-primary text-black rounded"
+                  className="flex items-center justify-center gap-2 text-lg font-bold px-[50px] py-[18px] bg-primary text-black rounded"
                 >
                   Load More{" "}
                   <svg

@@ -81,12 +81,12 @@ const ProjectCost = () => {
               />
             </div>
 
-            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-left">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-primary-100 font-bold leading-normal text-center md:text-left">
               How Much Does a <br /> Construction Project Cost?
             </h2>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="text-base font-normal text-black leading-[35px]">
+            <p className="text-base font-normal text-black text-center md:text-left leading-[35px]">
               The cost of a construction project can vary widely depending on
               various factors such as the size, complexity, location, materials
               used, labor costs, and any additional requirements or unforeseen
