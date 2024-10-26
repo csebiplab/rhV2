@@ -88,11 +88,11 @@ const WorkingProcess = () => {
         </p>
       </div>
 
-      {/* benefit data  */}
+      {/* working data  */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 5xl:grid-cols-4 gap-[15px]">
         {
           workingData?.map((data)=>{
-              return <div key={data.id} className="cart__bg relative mt-10 px-[10px] pb-[24px]">
+              return <div key={data.id} className="cart__bg relative mt-12 px-[10px] pb-[24px]">
                   <Image src={data.img} alt="benefit image" width={92} height={92} className="absolute -top-12 left-0 right-0  w-[92px] h-[92px] mx-auto p-2 border-[3px] border-primary-50 rounded-full bg-white"/>
                   <p className="text-center text-[25px] font-bold leading-normal text-black mt-12">{data.title}</p>
                   <p className="text-center text-lg font-normal leading-normal text-black">{data.desc}</p>

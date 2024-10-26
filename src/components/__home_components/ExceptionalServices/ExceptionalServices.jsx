@@ -170,8 +170,60 @@ const ExceptionalServices = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-2 w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
-            <div className="w-full md:w-1/2">
+          {/* large device start  */}
+          <div className="hidden md:block md:col-span-2 ">
+            <div className="w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
+              <div className="w-full md:w-1/2">
+                <Image
+                  src="/assets/home_page/new_home_page/interior_services/is8.png"
+                  alt="interior services"
+                  width={423}
+                  height={729}
+                  className=""
+                />
+              </div>
+              <div className="w-full md:w-1/2">
+                <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                  Interior Remodeling & Renovation Services At a Glance
+                </p>
+                <p className="text-lg font-normal text-black leading-[36px] text-center">
+                  At RH Construction USA Inc., we specialize in comprehensive
+                  interior remodeling and renovation services designed to
+                  enhance both the aesthetics and functionality of your space.
+                  Our expert team delivers top-tier craftsmanship across a wide
+                  range of services, ensuring every detail is tailored to your
+                  needs. We pride ourselves on delivering high-quality, timely,
+                  and budget-friendly results for all of our services. Whether
+                  you're looking for a small upgrade or a complete renovation,
+                  RH Construction USA Inc. is committed to making your vision a
+                  reality.
+                </p>
+                <div className="pt-[25px] flex justify-center items-center">
+                  <Link href="tel:+1 (646) 683-4612">
+                    <button className="flex items-center gap-[14px] btn__bg text-base font-bold leading-normal text-black py-[15px] px-[30px]">
+                      Get an Estimate{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="14"
+                        viewBox="0 0 9 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.78711 0.0200195L0 1.6305L5.42578 6.52002L0 11.4095L1.78711 13.02L9 6.52002L1.78711 0.0200195Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* small device start  */}
+          <div className="block md:hidden  service__cart__bg2 p-[8px]">
+            <div className="">
               <Image
                 src="/assets/home_page/new_home_page/interior_services/is8.png"
                 alt="interior services"
@@ -180,7 +232,7 @@ const ExceptionalServices = () => {
                 className=""
               />
             </div>
-            <div className="w-full md:w-1/2">
+            <div className="">
               <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                 Interior Remodeling & Renovation Services At a Glance
               </p>
@@ -217,6 +269,7 @@ const ExceptionalServices = () => {
               </div>
             </div>
           </div>
+          {/* small device end  */}
         </div>
 
         {/* exterior Services part  */}
@@ -268,15 +321,73 @@ const ExceptionalServices = () => {
               />
               <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[510px]">
                 <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
-                Power Wash & Siding
+                  Power Wash & Siding
                 </p>
                 <p className="text-lg font-normal text-black leading-[36px] text-center">
-                RH Construction USA Inc. provides professional power washing and siding services to rejuvenate your home's exterior. Our expert team of siding contractors uses state-of-the-art equipment and eco-friendly cleaning solutions to remove dirt, grime, mold, and mildew, restoring the beauty of your siding. We also offer a range of siding options, from installation to repair, ensuring your property not only looks excellent but is also well protected against the elements. With a commitment to quality and customer satisfaction, RH Construction USA Inc.
+                  RH Construction USA Inc. provides professional power washing
+                  and siding services to rejuvenate your home's exterior. Our
+                  expert team of siding contractors uses state-of-the-art
+                  equipment and eco-friendly cleaning solutions to remove dirt,
+                  grime, mold, and mildew, restoring the beauty of your siding.
+                  We also offer a range of siding options, from installation to
+                  repair, ensuring your property not only looks excellent but is
+                  also well protected against the elements. With a commitment to
+                  quality and customer satisfaction, RH Construction USA Inc.
                 </p>
               </div>
             </div>
           </div>
-          <div className="md:col-span-2 w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
+
+          {/* large device start  */}
+          <div className="hidden md:block md:col-span-2">
+            <div className=" w-full flex justify-between items-center gap-[25px] 5xl:gap-[30px] service__cart__bg2 p-[8px]">
+              <div className="w-full md:w-1/2">
+                <Image
+                  src="/assets/home_page/new_home_page/exterior_services/es8.png"
+                  alt="interior services"
+                  width={423}
+                  height={729}
+                  className=""
+                />
+              </div>
+              <div className="w-full md:w-1/2">
+                <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                  Exterior Construction & Renovation Services At a Glance
+                </p>
+                <p className="text-lg font-normal text-black leading-[36px] text-center">
+                  RH Construction USA Inc. provides top-quality exterior
+                  services designed to enhance both the aesthetics and
+                  functionality of your property. From roofing and waterproofing
+                  to masonry work and siding, our team delivers exceptional
+                  craftsmanship and reliable results for every project. With a
+                  commitment to quality, RH Construction USA Inc. ensures every
+                  exterior project is completed with precision and care,
+                  enhancing the beauty and longevity of your property.
+                </p>
+                <div className="pt-[25px] flex justify-center items-center">
+                  <Link href="tel:+1 (646) 683-4612">
+                    <button className="flex items-center gap-[14px] btn__bg text-base font-bold leading-normal text-black py-[15px] px-[30px]">
+                      Get an Estimate{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="9"
+                        height="14"
+                        viewBox="0 0 9 14"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.78711 0.0200195L0 1.6305L5.42578 6.52002L0 11.4095L1.78711 13.02L9 6.52002L1.78711 0.0200195Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* small device start  */}
+          <div className="block md:hidden service__cart__bg2 p-[8px]">
             <div className="w-full md:w-1/2">
               <Image
                 src="/assets/home_page/new_home_page/exterior_services/es8.png"
@@ -288,11 +399,17 @@ const ExceptionalServices = () => {
             </div>
             <div className="w-full md:w-1/2">
               <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
-              Exterior Construction & Renovation Services At a Glance
+                Exterior Construction & Renovation Services At a Glance
               </p>
               <p className="text-lg font-normal text-black leading-[36px] text-center">
-              RH Construction USA Inc. provides top-quality exterior services designed to enhance both the aesthetics and functionality of your property. From roofing and waterproofing to masonry work and siding, our team delivers exceptional craftsmanship and reliable results for every project.
-              With a commitment to quality, RH Construction USA Inc. ensures every exterior project is completed with precision and care, enhancing the beauty and longevity of your property.
+                RH Construction USA Inc. provides top-quality exterior services
+                designed to enhance both the aesthetics and functionality of
+                your property. From roofing and waterproofing to masonry work
+                and siding, our team delivers exceptional craftsmanship and
+                reliable results for every project. With a commitment to
+                quality, RH Construction USA Inc. ensures every exterior project
+                is completed with precision and care, enhancing the beauty and
+                longevity of your property.
               </p>
               <div className="pt-[25px] flex justify-center items-center">
                 <Link href="tel:+1 (646) 683-4612">
@@ -315,6 +432,7 @@ const ExceptionalServices = () => {
               </div>
             </div>
           </div>
+          {/* small device end  */}
         </div>
       </div>
     </div>
