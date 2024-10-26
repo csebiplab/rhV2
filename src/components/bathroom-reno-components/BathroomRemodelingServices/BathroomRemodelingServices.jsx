@@ -27,7 +27,7 @@ const BathroomRemodelingServices = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/BathroomRemodelingServices.png"
+                src="/assets/images/BathroomRemodelingServices.jpeg"
                 width={810}
                 height={700}
                 alt="Bathroom Remodeling Services image"

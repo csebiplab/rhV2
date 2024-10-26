@@ -73,7 +73,7 @@ const Professional = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/Professional.png"
+                src="/assets/images/Professional.jpeg"
                 width={680}
                 height={495}
                 alt="Professional image"

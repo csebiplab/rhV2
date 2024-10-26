@@ -3,7 +3,6 @@
 import "../../../app/styles/Home.css";
 
 import BathroomRenoHero from "@/components/bathroom-reno-components/BathroomRenoHero/BathroomRenoHero";
-// import RatingComponent from "@/components/bathroom-reno-components/RatingComponent";
 import AboutBathroomReno from "@/components/bathroom-reno-components/AboutBathroomReno/AboutBathroomReno";
 import Expert from "@/components/bathroom-reno-components/Expert/Expert";
 import TurnKeys from "@/components/bathroom-reno-components/TurnKeys/TurnKeys";
@@ -31,7 +30,6 @@ const BathroomRemodellingAllComponents = () => {
       <BathroomRenoHero />
 
       {/* =============== Rating  Section================= */}
-      {/* <RatingComponent/> */}
       <RatingComponents />
 
       {/* ================== AboutBathroomReno Section ===== */}
