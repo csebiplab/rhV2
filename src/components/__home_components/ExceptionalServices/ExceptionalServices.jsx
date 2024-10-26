@@ -108,7 +108,7 @@ const ExceptionalServices = () => {
         {/* Interior Services part  */}
         <div className="flex flex-col justify-center items-center">
           <button className="text-[25p] text-white font-bold leading-normal py-[14px] px-[85px] Services__bg my-[15px]">
-            Interior Services
+            <h3>Interior Services</h3>
           </button>
           <p className="text-lg font-normal text-black leading-[40px] text-center">
             At RH Construction USA Inc., we specialize in transforming interiors
@@ -131,9 +131,9 @@ const ExceptionalServices = () => {
                   height={250}
                 />
                 <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[540px]">
-                  <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                  <h4 className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                     {data.title}
-                  </p>
+                  </h4>
                   <p className="text-lg font-normal text-black leading-[36px] text-center">
                     {data.desc}
                   </p>
@@ -153,9 +153,9 @@ const ExceptionalServices = () => {
                 height={250}
               />
               <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[510px]">
-                <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                <h4 className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                   Plumbing Service
-                </p>
+                </h4>
                 <p className="text-lg font-normal text-black leading-[36px] text-center">
                   RH Construction USA Inc. offers reliable and professional
                   plumbing services in Brooklyn and the surrounding areas. Our
@@ -275,7 +275,7 @@ const ExceptionalServices = () => {
         {/* exterior Services part  */}
         <div className="flex flex-col justify-center items-center pt-[20px]">
           <button className="text-[25p] text-white font-bold leading-normal py-[14px] px-[85px] Services__bg my-[15px]">
-            Exterior Services
+            <h3>Exterior Services</h3>
           </button>
           <p className="text-lg font-normal text-black leading-[40px] text-center">
             At RH Construction USA Inc., we specialize in providing top-quality
@@ -298,9 +298,9 @@ const ExceptionalServices = () => {
                   height={250}
                 />
                 <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[540px]">
-                  <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                  <h4 className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                     {data.title}
-                  </p>
+                  </h4>
                   <p className="text-lg font-normal text-black leading-[36px] text-center">
                     {data.desc}
                   </p>
@@ -320,9 +320,9 @@ const ExceptionalServices = () => {
                 height={250}
               />
               <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[510px]">
-                <p className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                <h4 className="text-[25px] font-bold text-black leading-[40px] text-center pb-[5px]">
                   Power Wash & Siding
-                </p>
+                </h4>
                 <p className="text-lg font-normal text-black leading-[36px] text-center">
                   RH Construction USA Inc. provides professional power washing
                   and siding services to rejuvenate your home's exterior. Our
