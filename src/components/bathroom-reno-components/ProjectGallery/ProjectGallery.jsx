@@ -68,6 +68,7 @@ const ProjectGallery = () => {
               Bathroom Renovation  <br className="block md:hidden"/>
                 <span className="text-primary">Gallery of Past Projects</span>
               </h2>
+              <p className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">Your bathroom renovation starts with a design</p>
             </div>
           </div>
         </div>

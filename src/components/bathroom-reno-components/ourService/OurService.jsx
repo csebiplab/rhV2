@@ -102,11 +102,8 @@ const OurService = () => {
               </div>
 
               <div className="flex flex-col justify-center items-center">
-                <h3 className="text-lg font-semibold md:text-start text-center py-[10px]">We have done bathroom remodeling so many times.</h3>
                 <p className="text-lg font-normal md:text-start text-center pb-[10px]">
-                   When considering a bathroom remodeling project in Brooklyn, there
-                  are certain actions that contractors should avoid to ensure
-                  the best results and customer satisfaction:
+                By avoiding these common pitfalls, contractors can deliver high-quality bathroom remodeling projects that meet the needs and expectations of every client. In Brooklyn, our bathroom remodeling services company maintains all of these. 
                 </p>
               </div>
             </div>

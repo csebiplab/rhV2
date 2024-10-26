@@ -10,7 +10,7 @@ export default function ContactUs({classNames}) {
   return (
     <div className={`${classNames ? classNames?.bg : "bg-yellow-50"}`}>
       <section className="container">
-        <div className="mx-auto md:pt-6 lg:pt-[55px]">
+        <div className="">
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
             <div className="lg:col-span-3 pt-[40px] pb-[60px] pl-[60px] pr-[50px] contact__bg">
               <div className="text-center md:text-start">

@@ -47,9 +47,6 @@ const BathroomRemodellingAllComponents = () => {
       {/* ================ Ready to Work ============== */}
       <ReadyToWork />
 
-      {/* ================ Gallery ============== */}
-      <ProjectGallery />
-
       {/* =================== our service section ============== */}
       <OurService />
 
@@ -65,6 +62,9 @@ const BathroomRemodellingAllComponents = () => {
       {/* ================== HiringUs Section ===== */}
 
       <HiringUs />
+
+      {/* ================ Gallery ============== */}
+      <ProjectGallery />
 
       {/* ================== WhyUs Section ===== */}
       <WhyUs />
