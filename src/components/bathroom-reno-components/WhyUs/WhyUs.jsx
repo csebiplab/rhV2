@@ -96,14 +96,14 @@ const WhyUs = () => {
             </div>
 
             <div className=" border-2 my-6 md:my-0 cart1">
-              <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
+              <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg 5xl:text-[22px] font-bold">
               Usual Bathroom Renovators
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:pt-[35px] pt-[25px] 3xl:px-[25px] px-[20px]">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 items-center mb-[25px]  leading-none  "
                   >
                     <Image
                       src="/assets/icons/x.png"
@@ -112,7 +112,7 @@ const WhyUs = () => {
                       height={23}
                       className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                     />
-                    <p className="text-sm md:text-lg text-black font-bold">
+                    <p className="text-xs 5xl:text-[15px] text-black font-bold">
                       {usual.title}
                     </p>
                   </div>
@@ -120,14 +120,14 @@ const WhyUs = () => {
               </div>
             </div>
             <div className=" border-2 my-6 md:my-0 cart2">
-              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-[22px] font-bold">
+              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg 5xl:text-[22px] font-bold">
               RH Construction USA Inc.
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] 3xl:px-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className="grid grid-rows-8 3xl:pt-[35px] pt-[25px] 3xl:px-[25px] px-[20px]">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex  gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 items-center mb-[25px]  leading-none  "
                   >
                     <Image
                       src="/assets/icons/r.png"
@@ -136,7 +136,7 @@ const WhyUs = () => {
                       height={23}
                       className="2xl:h-[23px] 2xl:w-[23px] h-[15px] w-[15px]"
                     />
-                    <p className="text-xs md:text-base text-black font-bold">
+                    <p className="text-xs 5xl:text-[15px] text-black font-bold">
                       {usual.title}
                     </p>
                   </div>

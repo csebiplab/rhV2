@@ -23,7 +23,7 @@ const AboutBathroomReno = () => {
           <div className="order-1 md:col-span-4 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/AboutBathroomReno.png"
+                src="/assets/images/AboutBathroomReno.jpeg"
                 width={810}
                 height={510}
                 alt="About Bathroom Renovation image"

@@ -10,30 +10,8 @@ import pp8 from "../../../../public/assets/images/pp8.png"
 import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 import Image from "next/image";
-
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
-import "swiper/css/virtual";
-import { Autoplay, Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "./Constructor.css";
-import { SwiperNavButtons } from "./SwiperSliderButton";
 
-
-const breakpoints = {
-  0: {
-    slidesPerView: 1,
-  },
-  768: {
-    slidesPerView: 2,
-  },
-  1024: {
-    slidesPerView: 3,
-  },
-
-};
 
 const slideData = [
   {
@@ -93,43 +71,34 @@ const Constructor = () => {
             <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Why Choose Our <span className="text-primary">Bathroom Remodeling Services</span>
             </h2>
+            <p className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">We have done bathroom remodeling so many times</p>
+            <p className="text-lg font-normal text-black text-center leading-[36px]">Certainly! Here are some unique points for why someone might choose RH Construction USA Inc. for their bathroom remodeling services in Brooklyn:</p>
           </div>
 
-         
-          <Swiper
-      modules={[Autoplay, Navigation]}
-      loop={true}
-      autoplay={{
-        delay: 3000,
-        pauseOnMouseEnter: false,
-        disableOnInteraction: false,
-        stopOnLastSlide: false,
-      }}
-      speed={3000}
-      allowTouchMove={false}
-      breakpoints={breakpoints}
-    >
-      {slideData.map((slide, index) => (
-        <SwiperSlide key={index} className={`!h-auto !md:h-full text-center py-4 lg:py-10 px-20 md:px-14 lg:px-6`}>
-          <div className="w-full !h-full  card__bg p-[10px]">
-            <Image
-              src={slide.imgSrc}
-              width={70}
-              height={70}
-              alt="RH"
-              className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
-            />
-            <div className="text-center">
-              <p className="text-[20px] font-bold py-2">{slide?.title}</p>
-              <p className="text-base font-normal mt-2 mb-3  text-black ">
-                {slide.description}
-              </p>
+            {/* cart section  */}
+            <div className="grid grid-cols-1 md:grid-cols-3">
+              {
+                slideData?.map((slide, index)=>{
+                  return <div className="card__bg p-[10px]">
+
+                  <Image
+                    src={slide.imgSrc}
+                    width={70}
+                    height={70}
+                    alt="RH"
+                    className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
+                  />
+                  <div className="text-center">
+                    <p className="text-[20px] font-bold py-2">{slide?.title}</p>
+                    <p className="text-base font-normal mt-2 mb-3  text-black ">
+                      {slide.description}
+                    </p>
+                  </div>
+                </div>
+                })
+              }
+            
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-      <SwiperNavButtons />
-    </Swiper>
         </div>
       </div>
     </div>

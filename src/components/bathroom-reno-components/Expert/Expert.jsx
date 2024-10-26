@@ -12,7 +12,7 @@ const Expert = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/Expert.png"
+                src="/assets/images/Expert.jpeg"
                 width={680}
                 height={495}
                 alt="expert image"

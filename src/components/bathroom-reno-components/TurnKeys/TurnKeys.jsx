@@ -104,7 +104,7 @@ const TurnKeys = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/images/Turn_Keys.png"
+                src="/assets/images/Turn_Keys.jpeg"
                 width={810}
                 height={713}
                 alt="Turn_Keys image"
