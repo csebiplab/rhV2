@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
@@ -18,7 +18,6 @@ const breakpoints = {
   1024: {
     slidesPerView: 5,
   },
-  
 };
 
 const locations = [
@@ -64,13 +63,13 @@ const locations = [
   },
 ];
 
-const LocationMap = ({classNames}) => {
+const LocationMap = ({ classNames }) => {
   return (
     <div className={`${classNames ? classNames.bg : "bg___color"}`}>
       <div className="custom-container">
         <div className="py-[30px] lg:py-[120px] 5xl:py-[168px]">
           <div className="mx-auto flex flex-col items-center justify-center ">
-          <HeadingIcon text={headingIconText.ourServicearea__IconTxt}/>
+            <HeadingIcon text={headingIconText.ourServicearea__IconTxt} />
 
             <div>
               <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[10px]">
@@ -78,7 +77,7 @@ const LocationMap = ({classNames}) => {
               </h2>
             </div>
           </div>
-          
+
           <Swiper
             modules={[Autoplay]}
             loop={true}
@@ -96,26 +95,26 @@ const LocationMap = ({classNames}) => {
             {locations.map((location, index) => (
               <SwiperSlide key={index} className={`px-[90px] md:px-0`}>
                 <div
-                className={`${
-                  (index + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
-                }`}
-              >
-                <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
-                  <iframe
-                  
-                    src={location.iframeSrc}
-                    height="325"
-                    style={{ border: 0, width: "100%" }}
-                    allowFullScreen={false}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+                  className={`${
+                    (index + 2) % 2 === 0 ? "lg:-mt-10 md:-mt-5" : ""
+                  }`}
+                >
+                  <div className="w-full shadow-md p-0 mt-[45px] lg:mt-[65px] ">
+                    <iframe
+                      src={location.iframeSrc}
+                      title={`Map showing ${location.title}`}
+                      height="325"
+                      style={{ border: 0, width: "100%" }}
+                      allowFullScreen={false}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
 
-                  <p className="lg:text-base text-center text-sm font-bold py-4 px-3 lg:px-10 bg-yellow-700 ">
-                    {location?.title}
-                  </p>
+                    <p className="lg:text-base text-center text-sm font-bold py-4 px-3 lg:px-10 bg-yellow-700 ">
+                      {location?.title}
+                    </p>
+                  </div>
                 </div>
-              </div>
               </SwiperSlide>
             ))}
           </Swiper>

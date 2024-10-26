@@ -6,7 +6,7 @@ import Image from 'next/image';
 const LeadingConstruction = () => {
   return (
     <div>
-      <div className="container pt-3 md:pt-0">
+      <div className="container pt-6 md:pt-0">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-[23px]">
           <div className="order-2 md:col-span-3 ">
             <div className="flex justify-center md:justify-start items-center">
