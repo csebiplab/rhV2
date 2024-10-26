@@ -349,6 +349,7 @@ export function Header() {
               <div className="flex items-center gap-x-4">
                 <Image
                   src="/assets/images/phone-call.png"
+                  alt="phone call icon"
                   width={37}
                   height={37}
                   className="w-7 h-7 2xl:w-[37px] 2xl:h-[37px]"
