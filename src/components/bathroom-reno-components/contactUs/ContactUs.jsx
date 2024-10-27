@@ -8,7 +8,7 @@ import contactUsLogo from "../../../../public/assets/logos/contact-logo.png";
 
 export default function ContactUs({classNames}) {
   return (
-    <div className={`${classNames ? classNames?.bg : "bg-yellow-50"}`}>
+    <div className={`${classNames ? classNames?.bg : "bg___color"}`}>
       <section className="container">
         <div className="">
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
@@ -145,7 +145,7 @@ export default function ContactUs({classNames}) {
                 <div className="flex justify-center md:justify-start">
                   <button
                     type="submit"
-                    className=" w-full rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-8 mt-6"
+                    className=" rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-8 mt-6"
                   >
                     Submit{" "}
                     <svg

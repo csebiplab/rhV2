@@ -17,7 +17,7 @@ const BathroomRemodelingServices = () => {
               <span className="text-primary">Bathroom Remodeling Services</span> <br/>
               in Brooklyn
             </h2>
-            <p className="text-[20px] 5xl:text-[25px] font-bold leading-[36px] text-black">RH Design Libraries</p>
+            <h3 className="text-[20px] 5xl:text-[25px] font-bold leading-[36px] text-black">RH Design Libraries</h3>
             <p className="text-lg font-normal md:text-start text-center pt-[10px]">
             RH Construction USA Inc. brings dreams to life with its exquisite bathroom renovation design. Step into a sanctuary of luxury and functionality as our skilled team transforms your space into a haven of relaxation and style. Our expert designers work closely with clients for bathroom remodeling services in Brooklyn, ensuring every detail aligns with their vision. From custom vanities to elegant tile selections, we prioritize both aesthetics and practicality to create a bathroom that exceeds expectations.
             </p>
@@ -32,7 +32,7 @@ const BathroomRemodelingServices = () => {
                 width={810}
                 height={700}
                 alt="Bathroom Remodeling Services image"
-                className="w-full h-[700px]"
+                className="w-full h-[423px] md:h-[700px]"
               />
             </div>
           </div>

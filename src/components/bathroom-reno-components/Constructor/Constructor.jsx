@@ -71,22 +71,22 @@ const Constructor = () => {
             <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
             Why Choose Our <span className="text-primary">Bathroom Remodeling Services</span>
             </h2>
-            <p className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">We have done bathroom remodeling so many times</p>
+            <h3 className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">We have done bathroom remodeling so many times</h3>
             <p className="text-lg font-normal text-black text-center leading-[36px]">Certainly! Here are some unique points for why someone might choose RH Construction USA Inc. for their bathroom remodeling services in Brooklyn:</p>
           </div>
 
             {/* cart section  */}
-            <div className="grid grid-cols-1 md:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[25px] pt-[25px]">
               {
                 slideData?.map((slide, index)=>{
                   return <div className="card__bg p-[10px]">
 
                   <Image
                     src={slide.imgSrc}
-                    width={70}
-                    height={70}
+                    width={71}
+                    height={71}
                     alt="RH"
-                    className="mx-auto mt-[10px] w-[70px] h-[70px] border-2 rounded-full bg-white p-4 "
+                    className="mx-auto mt-[10px] w-[71px] h-[71px] border-2 rounded-full bg-white p-2 "
                   />
                   <div className="text-center">
                     <p className="text-[20px] font-bold py-2">{slide?.title}</p>

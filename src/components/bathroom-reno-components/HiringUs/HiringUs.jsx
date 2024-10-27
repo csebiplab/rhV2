@@ -60,7 +60,7 @@ const workingData = [
 
 const HiringUs = () => {
   return (
-    <div className="bg-[#FFF9EE]">
+    <div className="bg___color">
       <div className="container">
         <div className="py-[60px] lg:py-[70px] xl:py-[80px] 2xl:py-[90px] 3xl:py-[100px] 4xl:py-[110px] 5xl:py-[120px]">
           <div className="text-center">
@@ -72,7 +72,7 @@ const HiringUs = () => {
             How Our Bath Renew 
               <span className="text-primary"> Contractors Work</span>
             </h2>
-            <p className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">Your bathroom renovation starts with a design</p>
+            <h3 className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">Your bathroom renovation starts with a design</h3>
             <p className="text-lg font-normal text-black text-center leading-[36px]">Here are some unique points on how our bath renew contractors at RH Construction USA Inc. work for bathroom remodeling services in Brooklyn: By following these principles, our bathroom remodeling services company in Brooklyn ensures a seamless and client-focused approach to bath renewals, making the experience not only efficient but also enjoyable for our valued customers.</p>
           </div>
 

@@ -213,7 +213,7 @@ const FaqSection = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="bg-[#FFFAEE]">
+    <div className="bg___color">
       <div className="container common__padding__top">
         <div className="flex flex-col justify-center items-center">
           <div>

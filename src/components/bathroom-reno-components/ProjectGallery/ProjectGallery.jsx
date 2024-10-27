@@ -58,8 +58,8 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="bg___color">
-      <div className="custom-container common__padding__top">
+    <div className="bg___color ">
+      <div className="custom-container ">
         <div className="">
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery__IconTxt}/>
@@ -68,7 +68,7 @@ const ProjectGallery = () => {
               Bathroom Renovation  <br className="block md:hidden"/>
                 <span className="text-primary">Gallery of Past Projects</span>
               </h2>
-              <p className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">Your bathroom renovation starts with a design</p>
+              <h3 className="text-[20px] 5xl:text-[25px] font-bold text-center text-black leading-[36px]">Your bathroom renovation starts with a design</h3>
             </div>
           </div>
         </div>
@@ -89,12 +89,14 @@ const ProjectGallery = () => {
               ))}
             </div>
             {!showAll && (
-              <div className="text-center mt-4 px-10">
+              <div className="w-full flex justify-center items-center mt-4 px-10">
                 <button
                   onClick={handleLoadMore}
-                  className="w-full text-lg font-medium px-4 py-2 bg-primary text-white rounded"
+                  className="flex items-center gap-2 text-xs font-bold leading-normal px-[30px] py-[8px] bg-primary text-black rounded"
                 >
-                  Load More
+                  Load More <svg xmlns="http://www.w3.org/2000/svg" width="7" height="11" viewBox="0 0 7 11" fill="none">
+                  <path d="M1.38997 0.691406L0 1.93024L4.22005 5.69141L0 9.45258L1.38997 10.6914L7 5.69141L1.38997 0.691406Z" fill="black"/>
+                </svg>
                 </button>
               </div>
             )}

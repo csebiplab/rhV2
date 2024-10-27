@@ -95,7 +95,7 @@ const Review = () => {
             {reviews.map(({ address, author, reviewText }, i) => (
               <SwiperSlide
                 key={i}
-                className={`text-center py-4 lg:py-10 md:pr-[21px]`}
+                className={`text-center py-4 md:pr-[21px]`}
               >
                 <div className="w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] bg-[#fff] md:mx-0 mx-auto">
                   <Image

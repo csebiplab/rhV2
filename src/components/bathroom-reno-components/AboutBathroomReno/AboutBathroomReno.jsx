@@ -6,7 +6,7 @@ import { headingIconText } from "@/utils/heading-text";
 const AboutBathroomReno = () => {
   return (
     <div className="bg___color">
-      <div className="full__section_r_p common__padding__top">
+      <div className="full__section_r_p ">
         <div className=" grid md:grid-cols-7 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
           <div className="order-2 md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
