@@ -35,7 +35,7 @@ const AestheticKitchen = () => {
           <div className="md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/AestheticKitchen.png"
+                src="/assets/kitchen/AestheticKitchen.jpeg"
                 width={810}
                 height={470}
                 alt="Aesthetic Kitchen image"

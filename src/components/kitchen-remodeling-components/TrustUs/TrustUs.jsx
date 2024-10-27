@@ -11,7 +11,7 @@ const TrustUs = () => {
           <div className="order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/trustus.png"
+                src="/assets/kitchen/trustus.jpeg"
                 width={680}
                 height={495}
                 alt="expert image"

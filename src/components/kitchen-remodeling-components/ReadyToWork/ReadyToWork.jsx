@@ -11,7 +11,7 @@ const ReadyToWork = () => {
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/ReadytoWorkwithus.png"
+                src="/assets/kitchen/ReadytoWorkwithus.jpeg"
                 width={940}
                 height={580}
                 alt="ready to work image"

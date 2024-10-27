@@ -65,7 +65,7 @@ const FaqSection = () => {
           <div className="md:col-span-3 flex items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/FAQ.png"
+                src="/assets/kitchen/FAQ.jpeg"
                 width={764}
                 height={600}
                 alt="faq  image"

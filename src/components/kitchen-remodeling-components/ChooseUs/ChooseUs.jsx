@@ -34,7 +34,7 @@ const ChooseUs = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/kitchen/WhyChooseUs.png"
+                src="/assets/kitchen/WhyChooseUs.jpeg"
                 width={810}
                 height={480}
                 alt="WHy Choose Us image"
