@@ -19,6 +19,7 @@ export async function generateMetadata() {
 
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    console.log(`${apiUrl}/api/metaDatas?pageLink=${fullUrl}`)
 
     const metaDataResponse = await fetch(`${apiUrl}/api/metaDatas?pageLink=${fullUrl}`, {
       cache: "no-store",
