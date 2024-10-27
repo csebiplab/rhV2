@@ -99,11 +99,11 @@ const HireUs = () => {
               <p className="title-bg text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
               Usual Kitchen Renovators
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px] px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:pt-[35px] pt-[25px] px-[10px] 5xl:px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {usualPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 items-center mb-[25px] leading-none  "
                   >
                     <Image
                       src="/assets/icons/x.png"
@@ -120,14 +120,14 @@ const HireUs = () => {
               </div>
             </div>
             <div className="border-2 my-6 md:my-0 cart2">
-              <p className="title-bg2 text-center 2xl:py-[15px] py-[10px] text-white text-base md:text-lg font-bold">
+              <p className="title-bg2 text-center 2xl:pt-[15px] pt-[10px] text-white text-base md:text-lg font-bold">
               Our Kitchen Renovation Contractors
               </p>
-              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
+              <div className=" grid grid-rows-8 3xl:py-[35px] py-[25px]  px-[10px] 5xl:px-[20px] 2xl:text-[16px] lg:text-[14px] xs:text-[9px]  ">
                 {easyPool.map((usual, idx) => (
                   <div
                     key={idx}
-                    className="flex  gap-4 items-center mb-[25px]  leading-none  "
+                    className="flex gap-2 items-center mb-[25px] leading-none  "
                   >
                     <Image
                       src="/assets/icons/r.png"

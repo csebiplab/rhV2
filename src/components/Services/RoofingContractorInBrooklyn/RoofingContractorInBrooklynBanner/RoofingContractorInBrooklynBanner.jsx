@@ -43,7 +43,7 @@ const RoofingContractorInBrooklynBanner = () => {
             <Image
               width={858}
               height={832}
-              src="/assets/roofing_contractor/hero-bg.png"
+              src="/assets/roofing_contractor/hero-bg.jpeg"
               alt="hero small image"
               className="hero-main-image mb-0"
             />

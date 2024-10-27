@@ -5,7 +5,7 @@ import { headingIconText } from "@/utils/heading-text";
 const AboutOur = () => {
   return (
     <div className="bg___color">
-      <div className="full__section_l_p pr-3 md:pr-0 common__padding__top">
+      <div className="full__section_l_p pr-3 md:pr-0">
         <div className=" grid md:grid-cols-6 grid-cols-1 gap-10">
           <div className="order-2 md:order-1 md:col-span-3">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
@@ -41,7 +41,7 @@ const AboutOur = () => {
           <div className="order-1 md:order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/AboutOurRoofingContractor.png"
+                src="/assets/roofing_contractor/AboutOurRoofingContractor.jpeg"
                 width={810}
                 height={550}
                 alt="About Our Roofing Contractor image"

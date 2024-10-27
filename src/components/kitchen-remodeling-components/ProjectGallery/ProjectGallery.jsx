@@ -12,30 +12,31 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
-  "/assets/kitchen/Our Portfolio Gallery-1.png",
-  "/assets/kitchen/Our Portfolio Gallery-2.png",
-  "/assets/kitchen/Our Portfolio Gallery-3.png",
-  "/assets/kitchen/Our Portfolio Gallery-4.png",
-  "/assets/kitchen/Our Portfolio Gallery-5.png",
-  "/assets/kitchen/Our Portfolio Gallery-6.png",
-  "/assets/kitchen/Our Portfolio Gallery-8.png",
-  "/assets/kitchen/Our Portfolio Gallery-9.png",
-  "/assets/kitchen/Our Portfolio Gallery-10.png",
-  "/assets/kitchen/Our Portfolio Gallery-11.png",
+  "/assets/kitchen/OurPortfolioGallery-1.png",
+  "/assets/kitchen/OurPortfolioGallery-2.png",
+  "/assets/kitchen/OurPortfolioGallery-3.png",
+  "/assets/kitchen/OurPortfolioGallery-4.png",
+  "/assets/kitchen/OurPortfolioGallery-5.png",
+  "/assets/kitchen/OurPortfolioGallery-6.png",
+  "/assets/kitchen/OurPortfolioGallery-7.png",
+  "/assets/kitchen/OurPortfolioGallery-8.png",
+  "/assets/kitchen/OurPortfolioGallery-9.png",
+  "/assets/kitchen/OurPortfolioGallery-10.png",
+  
   
 ];
 
 const galImgs2 = [
-  "/assets/kitchen/Our Portfolio Gallery-11.png",
-  "/assets/kitchen/Our Portfolio Gallery-12.png",
-  "/assets/kitchen/Our Portfolio Gallery-13.png",
-  "/assets/kitchen/Our Portfolio Gallery-14.png",
-  "/assets/kitchen/Our Portfolio Gallery-15.png",
-  "/assets/kitchen/Our Portfolio Gallery-1.png",
-  "/assets/kitchen/Our Portfolio Gallery-2.png",
-  "/assets/kitchen/Our Portfolio Gallery-3.png",
-  "/assets/kitchen/Our Portfolio Gallery-4.png",
-  "/assets/kitchen/Our Portfolio Gallery-5.png",
+  "/assets/kitchen/OurPortfolioGallery-9.png",
+  "/assets/kitchen/OurPortfolioGallery-10.png",
+  "/assets/kitchen/OurPortfolioGallery-11.png",
+  "/assets/kitchen/OurPortfolioGallery-12.png",
+  "/assets/kitchen/OurPortfolioGallery-13.png",
+  "/assets/kitchen/OurPortfolioGallery-14.png",
+  "/assets/kitchen/OurPortfolioGallery-15.png",
+  "/assets/kitchen/OurPortfolioGallery-1.png",
+  "/assets/kitchen/OurPortfolioGallery-2.png",
+  "/assets/kitchen/OurPortfolioGallery-3.png",
 ];
 
 const ProjectGallery = () => {

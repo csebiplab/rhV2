@@ -11,7 +11,7 @@ const StartWithRHConstruction = () => {
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/StartWithRHConstructio.png"
+                src="/assets/roofing_contractor/StartWithRHConstructio.jpeg"
                 width={940}
                 height={580}
                 alt="Start With RH Construction image"

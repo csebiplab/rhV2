@@ -47,7 +47,7 @@ const Footer = () => {
   return (
     <div className="custom-container">
       <div className="relative Footer__bg px-5 lg:px-[30px] !text-white">
-        <footer className="container top-footer-content !z-50 py-[24px] md:py-[40px] lg:py-[55px] xl:py-[70px] 2xl:py-[85px] 3xl:py-[100px] 4xl:py-[110px] 5xl:py-[120px] text-white">
+        <footer className="container top-footer-content !z-50 py-[24px] md:py-[30px] text-white">
           <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 2xl:gap-x-[px] justify-center">
               <div className=" w-full lg:w-auto">

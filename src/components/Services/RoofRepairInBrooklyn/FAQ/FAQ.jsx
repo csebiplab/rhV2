@@ -64,7 +64,7 @@ const FAQ = () => {
           <div className="order-1 md:order-2 md:col-span-3 flex items-center ">
             <div className="">
               <Image
-                src="/assets/roof_repair/FAQ.png"
+                src="/assets/roof_repair/FAQ.jpeg"
                 width={764}
                 height={551}
                 alt="faq  image"

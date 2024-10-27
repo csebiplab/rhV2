@@ -2,7 +2,6 @@
 
 import "../../../app/styles/Home.css";
 
-// import RatingComponent from "@/components/__home_components/RatingComponent";
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
 import AboutKitchenRemodeling from "@/components/kitchen-remodeling-components/AboutKitchenRemodeling/AboutKitchenRemodeling";
@@ -32,7 +31,6 @@ const KitchenRemodelingAllComponents = () => {
       {/* =============== RatingComponent  Section================= */}
 
       <div className="bg___color">
-        {/* <RatingComponent /> */}
         <RatingComponents />
       </div>
 

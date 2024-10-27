@@ -2,7 +2,6 @@
 import React from "react";
 import "./RoofingContractorInBrooklyn.css";
 import RoofingContractorInBrooklynBanner from "./RoofingContractorInBrooklynBanner/RoofingContractorInBrooklynBanner";
-// import RatingComponent from "@/components/__home_components/RatingComponent";
 import AboutOur from "./AboutOur/AboutOur";
 import Expert from "./Expert/Expert";
 import ResidentialRoofing from "./ResidentialRoofing/ResidentialRoofing";
@@ -21,6 +20,7 @@ import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import WhyChoose from "./WhyChoose/WhyChoose";
 import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
+import { bHeadingText } from "@/utils/bHeading-text";
 
 const RoofingContractorInBrooklyn = () => {
   return (
@@ -30,7 +30,6 @@ const RoofingContractorInBrooklyn = () => {
       </section>
 
       <section className="bg___color">
-        {/* <RatingComponent /> */}
         <RatingComponents />
       </section>
 
@@ -83,7 +82,7 @@ const RoofingContractorInBrooklyn = () => {
       </section>
 
       <section>
-        <Review/>
+        <Review bHeading={bHeadingText.kitchenRemodelingServicesReview__bHeading}/>
       </section>
       
       <section>
