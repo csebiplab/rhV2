@@ -11,7 +11,7 @@ const RoofingContractor = () => {
           <div className="md:col-span-4 flex items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/RoofingContractor1.png"
+                src="/assets/roofing_contractor/RoofingContractor1.jpeg"
                 width={940}
                 height={580}
                 alt="Roofing Contractors1 image"

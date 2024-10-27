@@ -34,7 +34,7 @@ const Expert = () => {
           <div className="order-1 md:order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/Expert.png"
+                src="/assets/roofing_contractor/Expert.jpeg"
                 width={810}
                 height={550}
                 alt="Expert image"

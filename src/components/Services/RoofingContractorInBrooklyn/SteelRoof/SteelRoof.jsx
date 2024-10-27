@@ -36,7 +36,7 @@ const SteelRoof = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/SteelRoof.png"
+                src="/assets/roofing_contractor/SteelRoof.jpeg"
                 width={677}
                 height={600}
                 alt="Steel Roof image"

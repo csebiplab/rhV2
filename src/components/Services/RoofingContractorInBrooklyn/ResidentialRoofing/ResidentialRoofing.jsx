@@ -29,7 +29,7 @@ const ResidentialRoofing = () => {
               team works diligently to deliver exceptional results, all while
               prioritizing customer satisfaction and timely service. At RH, we
               understand that your home is your significant investment, and your
-              roof is its first line of defense. That’s why we focus on
+              roof is its first line of defense. That's why we focus on
               delivering outstanding residential roofing services that combine
               quality, reliability, and efficiency. Our expert contractors are
               adept at handling all types of residential roofing projects, from
@@ -39,7 +39,7 @@ const ResidentialRoofing = () => {
           <div className="order-1 md:order-2 md:md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roofing_contractor/ResidentialRoofin.png"
+                src="/assets/roofing_contractor/ResidentialRoofin.jpeg"
                 width={810}
                 height={541}
                 alt="Residential Roofing image"
