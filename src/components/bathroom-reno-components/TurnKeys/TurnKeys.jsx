@@ -79,9 +79,7 @@ const TurnKeys = () => {
               </span>
             </h2>
             <p className="text-lg font-normal md:text-start text-center py-[10px]">
-              With our turnkey approach, we handle every aspect of your bathroom
-              renovation project, ensuring a seamless and stress-free experience
-              for you.
+            With our turnkey approach, we handle every aspect of your bathroom renovation project, ensuring a seamless and stress-free experience for you. Whether you desire a sleek, modern look or a timeless, classic design, we have the expertise and resources to exceed your expectations. Revitalize your home and elevate your daily routine with our comprehensive bathroom remodeling services in Brooklyn.
             </p>
 
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-[14px]">

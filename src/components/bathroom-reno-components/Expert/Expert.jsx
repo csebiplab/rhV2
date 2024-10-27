@@ -9,7 +9,7 @@ const Expert = () => {
     <div>
       <div className="bg___color container common__padding__top">
         <div className="grid md:grid-cols-6 grid-cols-1 gap-10 md:mx-0 mx-[35px]">
-          <div className="order-2 md:col-span-3 flex justify-center items-center ">
+          <div className="order-1 md:order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
                 src="/assets/images/Expert.jpeg"
@@ -21,7 +21,7 @@ const Expert = () => {
             </div>
           </div>
 
-          <div className="order-1 md:col-span-3 ">
+          <div className="order-2 md:order-1 md:col-span-3 ">
             <div className="flex md:justify-normal justify-center md:items-start items-center">
             <HeadingIcon text={headingIconText.expert__IconTxt}/>
             </div>
