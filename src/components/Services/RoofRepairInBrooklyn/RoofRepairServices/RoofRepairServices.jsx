@@ -8,8 +8,9 @@ import "./RoofRepairServices.css";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
+import 'swiper/css/pagination';
 import "swiper/css/virtual";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const breakpoints = {
@@ -97,8 +98,11 @@ const RoofRepairServices = () => {
               {/* ==================== swiper slider ================ */}
               <Swiper
                 className=" !overflow-visible mt-[120px]"
-                modules={[Autoplay]}
+                modules={[Autoplay, Pagination]}
                 loop={true}
+                pagination={{ 
+                  clickable: true,
+                 }}
                 autoplay={{
                   delay: 3000,
                   pauseOnMouseEnter: false,

@@ -18,6 +18,7 @@ import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs
 import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import Review from "@/components/kitchen-remodeling-components/Review/Review";
 import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
+import { bHeadingText } from "@/utils/bHeading-text";
 
 const RoofRepairInBrooklyn = () => {
   return (
@@ -70,7 +71,7 @@ const RoofRepairInBrooklyn = () => {
       </section>
       
       <section>
-        <Review/>
+        <Review bHeading={bHeadingText.kitchenRemodelingServicesReview__bHeading}/>
       </section>
 
       <section>

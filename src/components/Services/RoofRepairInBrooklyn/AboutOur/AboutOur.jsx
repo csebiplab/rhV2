@@ -41,7 +41,7 @@ const AboutOur = () => {
           <div className="order-1 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roof_repair/AboutOurRoofRepair.png"
+                src="/assets/roof_repair/AboutOurRoofRepair.jpeg"
                 width={810}
                 height={600}
                 alt="About Our Roof Repair image"

@@ -38,7 +38,7 @@ const RoofRepairSpecialists = () => {
           <div className="order-1 md:order-2 md:col-span-3 flex justify-center items-center ">
             <div className="">
               <Image
-                src="/assets/roof_repair/RoofRepairSpecialist.png"
+                src="/assets/roof_repair/RoofRepairSpecialist.jpeg"
                 width={810}
                 height={600}
                 alt="Roof Repair Specialists image"
