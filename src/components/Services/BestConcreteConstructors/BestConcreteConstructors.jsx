@@ -4,12 +4,22 @@ import LocationMap from "@/components/bathroom-reno-components/LocationMap/Locat
 import React from "react";
 import FAQ from "./FAQ/FAQ";
 import Review from "./Review/Review";
+import BestConcreteConstructorsBanner from "./BestConcreteConstructorsBanner/BestConcreteConstructorsBanner";
+import AboutUs from "./AboutUs/AboutUs";
 
 const BestConcreteConstructors = () => {
   return (
     <div>
+        <section>
+            <BestConcreteConstructorsBanner/>
+        </section>
+
       <section className="bg___color">
         <RatingComponents />
+      </section>
+
+      <section>
+        <AboutUs/>
       </section>
 
       <section>

@@ -97,6 +97,22 @@ export const headingIconText = {
     whyHireUs__headingIconText : "Why Hire Us",
     readyToWorkWithUs__headingIconText : "Ready to Work with us",
     faq__headingIconText : "FAQ",
-    areas__headingIconText : "Areas"
+    areas__headingIconText : "Areas",
+
+    // Best Concrete Constructors in Brooklyn page
+    aboutUs__headingIconText : "About Us",
+    affordableConcreateServices__headingIconText : "Affordable Concrete Services",
+    turnKey__headingIconText : "Turn-Key",
+    reimaginedProfessional__headingIconText : "Reimagined Professional",
+    specialConcreServices__headingIconText : "Special Concrete Services",
+    reputed__headingIconText : "Reputed",
+    whyHiring__headingIconText : "Why Hiring",
+    doAndDont__headingIconText : "Do And Don't",
+    gallery__headingIconText : "Gallery",
+    whyChooseUs__headingIconText : "Why Choose Us",
+    review__headingIconText : "Review",
+    faq__headingIconText : "FAQ",
+    startYourProject__headingIconText : "Start Your Project",
+    area__headingIconText : "Area",
 
 }
