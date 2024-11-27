@@ -6,6 +6,9 @@ import FAQ from "./FAQ/FAQ";
 import Review from "./Review/Review";
 import BestConcreteConstructorsBanner from "./BestConcreteConstructorsBanner/BestConcreteConstructorsBanner";
 import AboutUs from "./AboutUs/AboutUs";
+import AffordableConcreteServices from "./AffordableConcreteServices/AffordableConcreteServices";
+import ReimaginedProfessional from "./ReimaginedProfessional/ReimaginedProfessional";
+import Reputed from "./Reputed/Reputed";
 
 const BestConcreteConstructors = () => {
   return (
@@ -20,6 +23,18 @@ const BestConcreteConstructors = () => {
 
       <section>
         <AboutUs/>
+      </section>
+
+      <section>
+        <AffordableConcreteServices/>
+      </section>
+
+      <section>
+        <ReimaginedProfessional/>
+      </section>
+
+      <section>
+        <Reputed/>
       </section>
 
       <section>
