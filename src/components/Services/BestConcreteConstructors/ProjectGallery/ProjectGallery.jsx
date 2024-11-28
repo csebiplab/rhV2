@@ -12,38 +12,30 @@ import HeadingIcon from "@/components/ui/HeadingIcon";
 import { headingIconText } from "@/utils/heading-text";
 
 const galImgs = [
-  "/assets/brooklyn_Home/portfolio1.png",
-  "/assets/brooklyn_Home/portfolio2.png",
-  "/assets/brooklyn_Home/portfolio3.png",
-  "/assets/brooklyn_Home/portfolio4.png",
-  "/assets/brooklyn_Home/portfolio5.png",
-  "/assets/brooklyn_Home/portfolio6.png",
-  "/assets/brooklyn_Home/portfolio7.png",
-  "/assets/brooklyn_Home/portfolio8.png",
-  "/assets/brooklyn_Home/portfolio9.png",
-  "/assets/brooklyn_Home/portfolio10.png",
-  "/assets/brooklyn_Home/portfolio11.png",
-  "/assets/brooklyn_Home/portfolio12.png",
-  "/assets/brooklyn_Home/portfolio13.png",
-  "/assets/brooklyn_Home/portfolio14.png",
+  "/assets/bestConcreteConstructor/gallery/gallery1.png",
+  "/assets/bestConcreteConstructor/gallery/gallery2.png",
+  "/assets/bestConcreteConstructor/gallery/gallery3.png",
+  "/assets/bestConcreteConstructor/gallery/gallery4.png",
+  "/assets/bestConcreteConstructor/gallery/gallery5.png",
+  "/assets/bestConcreteConstructor/gallery/gallery6.png",
+  "/assets/bestConcreteConstructor/gallery/gallery7.png",
+  "/assets/bestConcreteConstructor/gallery/gallery8.png",
+  "/assets/bestConcreteConstructor/gallery/gallery9.png",
+  "/assets/bestConcreteConstructor/gallery/gallery10.png",
   
 ];
 
 const galImgs2 = [
-  "/assets/brooklyn_Home/portfolio14.png",
-  "/assets/brooklyn_Home/portfolio13.png",
-  "/assets/brooklyn_Home/portfolio12.png",
-  "/assets/brooklyn_Home/portfolio11.png",
-  "/assets/brooklyn_Home/portfolio10.png",
-  "/assets/brooklyn_Home/portfolio9.png",
-  "/assets/brooklyn_Home/portfolio8.png",
-  "/assets/brooklyn_Home/portfolio7.png",
-  "/assets/brooklyn_Home/portfolio6.png",
-  "/assets/brooklyn_Home/portfolio5.png",
-  "/assets/brooklyn_Home/portfolio4.png",
-  "/assets/brooklyn_Home/portfolio3.png",
-  "/assets/brooklyn_Home/portfolio2.png",
-  "/assets/brooklyn_Home/portfolio1.png",
+  "/assets/bestConcreteConstructor/gallery/gallery11.png",
+  "/assets/bestConcreteConstructor/gallery/gallery12.png",
+  "/assets/bestConcreteConstructor/gallery/gallery13.png",
+  "/assets/bestConcreteConstructor/gallery/gallery14.png",
+  "/assets/bestConcreteConstructor/gallery/gallery15.png",
+  "/assets/bestConcreteConstructor/gallery/gallery16.png",
+  "/assets/bestConcreteConstructor/gallery/gallery17.png",
+  "/assets/bestConcreteConstructor/gallery/gallery18.png",
+  "/assets/bestConcreteConstructor/gallery/gallery19.png",
+  "/assets/bestConcreteConstructor/gallery/gallery20.png",
 ];
 
 const ProjectGallery = () => {
@@ -71,11 +63,10 @@ const ProjectGallery = () => {
       <div className="custom-container common__padding__top">
         <div className="pb-2">
           <div className="flex flex-col justify-center items-center">
-            <HeadingIcon text={headingIconText.gallery__IconTxt}/>
+            <HeadingIcon text={headingIconText.gallery__headingIconText}/>
             <div>
               <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
-              Gallery OF Past Projects Made by <br className="block md:hidden"/>
-                <span className="text-primary"> Our Home Renovator</span>
+              Gallery of RH concrete constructor 
               </h2>
             </div>
           </div>

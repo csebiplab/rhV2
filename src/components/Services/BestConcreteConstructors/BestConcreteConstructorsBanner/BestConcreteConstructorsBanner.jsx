@@ -41,7 +41,7 @@ const BestConcreteConstructorsBanner = () => {
             <Image
               width={820}
               height={760}
-              src="/assets/home_page/new_home_page/hero_bg.png"
+              src="/assets/bestConcreteConstructor/hero_bg.png"
               alt="hero small image"
               className="hero-main-image mb-0"
             />

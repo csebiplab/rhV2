@@ -9,6 +9,7 @@ import AboutUs from "./AboutUs/AboutUs";
 import AffordableConcreteServices from "./AffordableConcreteServices/AffordableConcreteServices";
 import ReimaginedProfessional from "./ReimaginedProfessional/ReimaginedProfessional";
 import Reputed from "./Reputed/Reputed";
+import ProjectGallery from "./ProjectGallery/ProjectGallery";
 
 const BestConcreteConstructors = () => {
   return (
@@ -35,6 +36,10 @@ const BestConcreteConstructors = () => {
 
       <section>
         <Reputed/>
+      </section>
+
+      <section>
+        <ProjectGallery/>
       </section>
 
       <section>
