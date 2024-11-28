@@ -10,6 +10,7 @@ import AffordableConcreteServices from "./AffordableConcreteServices/AffordableC
 import ReimaginedProfessional from "./ReimaginedProfessional/ReimaginedProfessional";
 import Reputed from "./Reputed/Reputed";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
+import SpecialConcreteServices from "./SpecialConcreteServices/SpecialConcreteServices";
 
 const BestConcreteConstructors = () => {
   return (
@@ -32,6 +33,10 @@ const BestConcreteConstructors = () => {
 
       <section>
         <ReimaginedProfessional/>
+      </section>
+
+      <section>
+        <SpecialConcreteServices/>
       </section>
 
       <section>
