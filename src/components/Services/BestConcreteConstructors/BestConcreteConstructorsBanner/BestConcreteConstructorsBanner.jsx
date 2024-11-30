@@ -11,7 +11,7 @@ const BestConcreteConstructorsBanner = () => {
         <div className="md:flex items-center relative">
           <div className="w-full md:w-[50%] pl-3 md:pl-5 lg:pl-10 xl:pl-20 2xl:pl-28 3xl:pl-40 4xl:pl-52 5xl:pl-[285px]">
             <div className="py-14 md:py-0 px-[8px] md:pl-0">
-              <h1 className="leading-normal text-[30px] md:text-[36px] xl:text-[38px] 2xl:text-[42px] 3xl:text-[46px] 4xl:text-[50px] 5xl:text-[55px] font-bold text-left">
+              <h1 className="leading-normal text-[30px] md:text-[34px] xl:text-[38px] 2xl:text-[42px] 3xl:text-[46px] 4xl:text-[51px] 5xl:text-[55px] text-dark-600 font-bold text-left">
               Best Concrete Constructors <br/> in Brooklyn
               </h1>
               <p className="text-base lg:text-lg font-normal mb-5 leading-6 mt-4 text-black">

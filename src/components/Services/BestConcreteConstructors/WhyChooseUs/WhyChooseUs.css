@@ -1,0 +1,4 @@
+.bar__bg{
+    border-radius: 50px 0px 0px 50px;
+    background: linear-gradient(180deg, #FF3100 0%, #931C00 100%);
+}

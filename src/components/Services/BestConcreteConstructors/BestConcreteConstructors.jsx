@@ -12,6 +12,9 @@ import Reputed from "./Reputed/Reputed";
 import ProjectGallery from "./ProjectGallery/ProjectGallery";
 import SpecialConcreteServices from "./SpecialConcreteServices/SpecialConcreteServices";
 import WhyHiringUs from "./WhyHiringUs/WhyHiringUs";
+import TurnKey from "./TurnKey/TurnKey";
+import DoAndDont from "./DoAndDont/DoAndDont";
+import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
 
 const BestConcreteConstructors = () => {
   return (
@@ -33,6 +36,10 @@ const BestConcreteConstructors = () => {
       </section>
 
       <section>
+        <TurnKey/>
+      </section>
+
+      <section>
         <ReimaginedProfessional/>
       </section>
 
@@ -49,7 +56,15 @@ const BestConcreteConstructors = () => {
       </section>
 
       <section>
+        <DoAndDont />
+      </section>
+
+      <section>
         <ProjectGallery/>
+      </section>
+
+      <section>
+        <WhyChooseUs/>
       </section>
 
       <section>

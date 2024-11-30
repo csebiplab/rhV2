@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutUs = () => {
     return (
-        <div className="full__section_r_p pl-3 md:pl-0 common__padding__top">
+        <div className="full__section_r_p pl-3 md:pl-0 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[22px]">
                 <div className="md:col-span-1">
                     <Image src="/assets/bestConcreteConstructor/aboutUs.png" alt='about us' width={804} height={640}/>
