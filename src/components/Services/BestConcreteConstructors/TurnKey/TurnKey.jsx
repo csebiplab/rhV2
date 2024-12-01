@@ -35,7 +35,11 @@ const benefitsData = [
     id: 5,
     img: "/assets/bestConcreteConstructor/turnKey/key5.png",
     title: "Adherence to Timelines and Budgets",
-    desc: "Time and budget constraints are paramount in the construction industry. Our company is known for its commitment to adhering to project timelines and budgets, ensuring that clients receive exceptional value without compromising quality.",
+    desc: (
+      <>
+       Time and budget constraints are paramount in the <Link className="text-primary hover:underline" href="https://en.wikipedia.org/wiki/Category:Construction_industry" rel="nofollow" target="_blank">construction industry.</Link> Our company is known for its commitment to adhering to project timelines and budgets, ensuring that clients receive exceptional value without compromising quality. 
+      </>
+    ),
   },
   {
     id: 6,

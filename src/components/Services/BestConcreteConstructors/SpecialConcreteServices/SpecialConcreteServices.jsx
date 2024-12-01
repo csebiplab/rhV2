@@ -69,9 +69,9 @@ const SpecialConcreteServices = () => {
                   height={250}
                 />
                 <div className="service__cart__bg px-[8px] pt-[4px] pb-[16px] h-[630px] 2xl:h-[540px]">
-                  <h4 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                  <h3 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
                     {data.title}
-                  </h4>
+                  </h3>
                   <p className="text-base font-normal text-black leading-[31px] text-center">
                     {data.desc}
                   </p>
@@ -91,9 +91,9 @@ const SpecialConcreteServices = () => {
                 height={250}
               />
               <div className="service__cart__bg p-[8px] h-[630px] 2xl:h-[510px]">
-                <h4 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                <h3 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
                 Stamped Concrete Services
-                </h4>
+                </h3>
                 <p className="text-base font-normal text-black leading-[31px] text-center">
                 RH Construction USA Inc. provides expert concrete foundation services to ensure strength and stability for residential and commercial projects in Brooklyn and surrounding areas. With a team of skilled professionals, we specialize in foundation pouring, repairs, and reinforcements, meeting the highest industry standards. Whether it's a new build, an addition, or repairs for an existing foundation, we use premium-grade materials and proven techniques to deliver dependable results. With a commitment to excellence and a team of skilled professional foundation concrete constructors, we provide reliable and high-quality foundation solutions tailored to the unique needs of each project.
                 </p>
@@ -113,9 +113,9 @@ const SpecialConcreteServices = () => {
                 />
               </div>
               <div className="w-full md:w-1/2">
-                <p className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
+                <h3 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
                 Contact RH Concrete Constructors Today
-                </p>
+                </h3>
                 <p className="text-base font-normal text-black leading-[31px] text-center">
                 Ready to start your concrete construction project? Trust RH Concrete Constructors for reliable and professional services. Contact us now for a consultation and free estimate.We pride ourselves on delivering high-quality, timely, and budget-friendly results for all of our services. Whether you're looking for a small upgrade or a complete renovation, RH Construction USA Inc. is committed to making your vision a reality.
                 </p>
@@ -154,9 +154,9 @@ const SpecialConcreteServices = () => {
               />
             </div>
             <div className="">
-              <p className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
+              <h3 className="text-lg 5xl:text-[20px] font-bold text-black leading-[40px] text-center pb-[5px]">
               Contact RH Concrete Constructors Today
-              </p>
+              </h3>
               <p className="text-base font-normal text-black leading-[31px] text-center">
               Ready to start your concrete construction project? Trust RH Concrete Constructors for reliable and professional services. Contact us now for a consultation and free estimate.We pride ourselves on delivering high-quality, timely, and budget-friendly results for all of our services. Whether you're looking for a small upgrade or a complete renovation, RH Construction USA Inc. is committed to making your vision a reality.
               </p>

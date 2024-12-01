@@ -15,7 +15,7 @@ const BestConcreteConstructorsBanner = () => {
               Best Concrete Constructors <br/> in Brooklyn
               </h1>
               <p className="text-base lg:text-lg font-normal mb-5 leading-6 mt-4 text-black">
-              RH Construction USA Inc. is one of the leading concrete constructors in Brooklyn, <br className="hidden 5xl:block"/> known for its commitment to excellence and quality craftsmanship.
+              RH Construction USA Inc. is one of the leading concrete constructors in Brooklyn, <br className="hidden 5xl:block" /> known for its commitment to excellence and quality craftsmanship.
               </p>
               <div className="mb-4 md:mb-0">
                 <a

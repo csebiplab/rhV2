@@ -201,10 +201,10 @@ const WhyChooseUs = () => {
           />
         </div>
         <div className="md:col-span-2 flex items-center gap-2">
-          <div className="border-t-2 border-r-2 border-l-2 border-gray mr-0 md:mr-2">
-            <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
+          <div className="w-full border-t-2 border-r-2 border-l-2 border-gray mr-0 md:mr-2">
+            <p className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             RH Construction USA Inc.
-            </h3>
+            </p>
             {considerationFactorData?.map((data) => {
               return (
                 <div
@@ -227,11 +227,11 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="md:col-span-2 flex items-center gap-2">
-        <div className="w-[6px] h-full bar___bg2 ml-[1px]" />
-          <div className="border-t-2 border-r-2 border-l-2 border-gray ml-0 md:ml-2">
-            <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
+          <div className="w-[6px] h-full bar___bg2 ml-[1px]" />
+          <div className="w-full border-t-2 border-r-2 border-l-2 border-gray ml-0 md:ml-2">
+            <p className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             Typical Construction Company
-            </h3>
+            </p>
             {limitationFactorData?.map((data) => {
               return (
                 <div
@@ -279,9 +279,9 @@ const WhyChooseUs = () => {
         </div>
         <div className="md:col-span-2 border-t-2 border-r-2 border-l-2 border-bg-primary-300 mr-0 md:mr-3">
           <div>
-            <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
+            <p className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             RH Construction USA Inc.
-            </h3>
+            </p>
             {considerationFactorData?.map((data) => {
               return (
                 <div
@@ -315,9 +315,9 @@ const WhyChooseUs = () => {
 
         <div className="md:col-span-2 border-2 border-bg-primary-300 ml-0 md:ml-3">
           <div>
-            <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
+            <p className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             Typical Construction Company
-            </h3>
+            </p>
             {limitationFactorData?.map((data) => {
               return (
                 <div
