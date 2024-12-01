@@ -196,7 +196,7 @@ const FAQ = () => {
                   </svg>
                 </div>
               </AccordionHeader>
-              <AccordionBody className="px-3 py-1 text-base font-normal bg-white text-black border border-black">
+              <AccordionBody className="p-5 text-base font-normal bg-white text-black border border-black">
                 {answer}
               </AccordionBody>
             </Accordion>

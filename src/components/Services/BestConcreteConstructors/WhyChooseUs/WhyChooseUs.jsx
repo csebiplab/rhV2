@@ -200,8 +200,8 @@ const WhyChooseUs = () => {
             className="h-[435px] md:h-full w-full md:w-auto"
           />
         </div>
-        <div className="md:col-span-2 border-t-2 border-r-2 border-l-2 border-gray mr-0 md:mr-3">
-          <div>
+        <div className="md:col-span-2 flex items-center gap-2">
+          <div className="border-t-2 border-r-2 border-l-2 border-gray mr-0 md:mr-2">
             <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             RH Construction USA Inc.
             </h3>
@@ -223,11 +223,12 @@ const WhyChooseUs = () => {
               );
             })}
           </div>
-          <div className="rounded-l-[50px] rounded-tr-[0px] bg-gradient-to-b from-[#FF3100] to-[#931C00]" />
+          <div className="w-[6px] h-full bar___bg mr-[1px]" />
         </div>
 
-        <div className="md:col-span-2 border-2 border-gray ml-0 md:ml-3">
-          <div>
+        <div className="md:col-span-2 flex items-center gap-2">
+        <div className="w-[6px] h-full bar___bg2 ml-[1px]" />
+          <div className="border-t-2 border-r-2 border-l-2 border-gray ml-0 md:ml-2">
             <h3 className="text-[20px] font-bold text-black leading-normal text-center pt-[13px]">
             Typical Construction Company
             </h3>
@@ -236,7 +237,7 @@ const WhyChooseUs = () => {
                 <div
                   key={data.id}
                   className={`border-b-2 border-gray px-[8px] py-[10px] ${
-                    data.id === 7 && "border-b-0"
+                    data.id === 16 && "border-b-0"
                   }`}
                 >
                   <p className="text-lg font-bold text-black leading-normal">
@@ -286,7 +287,7 @@ const WhyChooseUs = () => {
                 <div
                   key={data.id}
                   className={`border-b-2 border-bg-primary-300 px-[8px] py-[10px] ${
-                    data.id === 7 && "border-b-0"
+                    data.id === 16 && "border-b-0"
                   }`}
                 >
                   <p className="text-lg font-bold text-black leading-normal">
@@ -322,7 +323,7 @@ const WhyChooseUs = () => {
                 <div
                   key={data.id}
                   className={`border-b-2 border-bg-primary-300 px-[8px] py-[10px] ${
-                    data.id === 7 && "border-b-0"
+                    data.id === 16 && "border-b-0"
                   }`}
                 >
                   <p className="text-lg font-bold text-black leading-normal">

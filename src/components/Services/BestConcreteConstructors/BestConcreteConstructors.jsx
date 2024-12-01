@@ -1,6 +1,4 @@
 import RatingComponents from "@/components/__home_components/RatingComponents/RatingComponents";
-import ContactUs from "@/components/bathroom-reno-components/contactUs/ContactUs";
-import LocationMap from "@/components/bathroom-reno-components/LocationMap/LocationMap";
 import React from "react";
 import FAQ from "./FAQ/FAQ";
 import Review from "./Review/Review";
@@ -15,10 +13,13 @@ import WhyHiringUs from "./WhyHiringUs/WhyHiringUs";
 import TurnKey from "./TurnKey/TurnKey";
 import DoAndDont from "./DoAndDont/DoAndDont";
 import WhyChooseUs from "./WhyChooseUs/WhyChooseUs";
+import LocationMap from "./LocationMap/LocationMap";
+import ContactUs from "./ContactUs/ContactUs";
+import StartYourProject from "./StartYourProject/StartYourProject";
 
 const BestConcreteConstructors = () => {
   return (
-    <div>
+    <div className="custom-container">
         <section>
             <BestConcreteConstructorsBanner/>
         </section>
@@ -75,14 +76,16 @@ const BestConcreteConstructors = () => {
         <FAQ/>
       </section>
 
-      {/* =============== LocationMap  Section================= */}
       <section>
-        <LocationMap classNames={{ bg: "homeRemodelingServices__bg" }} />
+        <StartYourProject/>
       </section>
 
-      {/* =============== ContactUs  Section================= */}
       <section>
-        <ContactUs classNames={{ bg: "homeRemodelingServices__bg" }} />
+        <LocationMap />
+      </section>
+
+      <section>
+        <ContactUs />
       </section>
     </div>
   );
