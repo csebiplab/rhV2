@@ -2,6 +2,11 @@
   width: 100%;
   height: 100%;
 }
+.card__review{
+  border-radius: 9px;
+  border: 1px solid #CFCACA;
+  background: #FFF;
+}
 
 /* .swiper-slide {
   text-align: center;

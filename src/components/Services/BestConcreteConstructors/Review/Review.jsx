@@ -27,43 +27,44 @@ const breakpoints = {
 const reviews = [
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. ",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. ",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. ",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. ",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
   {
     reviewText:
-      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key.",
+      "They Are Professional and do great job cleaning the house!!! I Locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to",
     author: "Lisa Silva",
     address: "North York",
   },
+  
 ];
 
-const Review = ({classNames, bHeading="empty"}) => {
+const Review = ({classNames}) => {
   const swiperRef = useRef(null);
   return (
     <div className={`common__padding__top ${classNames ? classNames?.bg : "bg___color"}`}>
@@ -71,10 +72,10 @@ const Review = ({classNames, bHeading="empty"}) => {
         <div className="">
           <div className="text-center">
             <div className="flex justify-center items-center">
-            <HeadingIcon text={headingIconText.review__IconTxt}/>
+            <HeadingIcon text={headingIconText.review__headingIconText}/>
             </div>
             <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center">
-            {bHeading}
+            Here's what to expect when you hire us
             </h2>
           </div>
           {/* =================== Card Section =============== */}
@@ -97,7 +98,7 @@ const Review = ({classNames, bHeading="empty"}) => {
                 key={i}
                 className={`text-center py-4 lg:py-10 md:pr-[21px]`}
               >
-                <div className="w-[370px] md:w-full h-[250px] md:h-full card-sd p-[14px] bg-[#fff] md:mx-0 mx-auto">
+                <div className="w-[370px] md:w-full h-[250px] md:h-full card__review p-[14px] md:mx-0 mx-auto">
                   <Image
                     src={google}
                     width={89.92}
