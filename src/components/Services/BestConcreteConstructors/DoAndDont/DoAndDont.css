@@ -1,0 +1,13 @@
+.how_we_cart___bg{
+    border-radius: 25px;
+    border: 1px solid #BCBCBC;
+    background: #FFF;
+}
+.btn__first{
+    border-radius: 16px;
+    background: linear-gradient(0deg, #2B2B2B 0%, #828282 100%);
+}
+.btn__second{
+    border-radius: 16px;
+    background: linear-gradient(0deg, #2B2B2B 0%, #828282 100%);
+}

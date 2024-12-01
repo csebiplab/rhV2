@@ -68,6 +68,11 @@ module.exports = withMT({
           300: "#535455",
           400: "#181514",
           500: "#717171",
+          600: "#010D14",
+          700: "#333333",
+        },
+        gary: {
+          DEFAULT: "#B1B1B1"
         },
         background: "var(--background-color)",
         foreground: "var(--foreground)",
