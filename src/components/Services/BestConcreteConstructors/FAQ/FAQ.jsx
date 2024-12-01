@@ -158,7 +158,7 @@ const FAQ = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center pb-2">
+            <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] leading-normal font-bold text-black text-center pb-2">
             FAQ For RH Concrete Constructor
             </h2>
           </div>

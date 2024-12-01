@@ -14,7 +14,7 @@ export default function ContactUs({classNames}) {
           <div className="grid grid-cols-1 gap-x-16 lg:grid-cols-6 items-center ">
             <div className="lg:col-span-3 pt-[40px] pb-[60px] pl-[60px] pr-[50px] contact__bg">
               <div className="text-center md:text-start">
-                <p className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">
+                <p className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] leading-normal font-bold text-black text-center md:text-left">
                   Contact Us
                 </p>
                 <div className="flex gap-2 items-start 5xl:text-[18px] md:text-base text-[14px] 5xl:py-8 py-4 justify-center md:justify-start">
@@ -65,7 +65,7 @@ export default function ContactUs({classNames}) {
             </div>
 
             <div className="rounded-lg p-5 lg:col-span-3 lg:p-12 items-center">
-              <p className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-left  mb-5">
+              <p className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] leading-normal font-bold text-black text-left  mb-5">
                 {" "}
                 Give Us Feedback{" "}
               </p>

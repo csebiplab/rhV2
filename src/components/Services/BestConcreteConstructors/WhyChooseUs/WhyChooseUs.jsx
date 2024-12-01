@@ -180,7 +180,7 @@ const WhyChooseUs = () => {
         <HeadingIcon
           text={headingIconText.whyChooseUs__headingIconText}
         />
-        <h2 className="text-[25px] md:text-[27px] lg:text-[30px] xl:text-[33px] 2xl:text-[35px] 3xl:text-[38px] 4xl:text-[40px] 5xl:tex-[42px] font-bold text-black text-center leading-normal">
+        <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold text-black text-center leading-normal">
         Why Choose Our Concrete Specialist in Brooklyn
         </h2>
       </div>

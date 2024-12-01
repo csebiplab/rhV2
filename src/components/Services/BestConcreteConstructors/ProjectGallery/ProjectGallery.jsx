@@ -65,7 +65,7 @@ const ProjectGallery = () => {
           <div className="flex flex-col justify-center items-center">
             <HeadingIcon text={headingIconText.gallery__headingIconText}/>
             <div>
-              <h2 className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black md:text-start text-center">
+              <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] leading-normal font-bold text-black md:text-start text-center">
               Gallery of RH concrete constructor 
               </h2>
             </div>
