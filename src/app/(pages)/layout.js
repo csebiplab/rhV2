@@ -10,7 +10,7 @@ import "../globals.css";
 
 const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
-
+/*
 export async function generateMetadata() {
 
   const headerList = headers();
@@ -63,6 +63,7 @@ export async function generateMetadata() {
     };
   }
 }
+  */
 
 export default function RootLayout({ children }) {
   return (
