@@ -17,7 +17,7 @@ export default function ContactUs({classNames}) {
                 <p className="text-3xl lg:text-[32px] xl:text-[34px] 2xl:text-4xl 3xl:text-[38px] 4xl:text-[40px] 5xl:text-[42px] leading-normal font-bold text-black text-center md:text-left">
                   Contact Us
                 </p>
-                <div className="flex gap-2 items-center 5xl:text-[18px] md:text-base text-[14px] 5xl:py-8 py-4 justify-center md:justify-start">
+                <div className="flex gap-2 items-start 5xl:text-[18px] md:text-base text-[14px] 5xl:py-8 py-4 justify-center md:justify-start">
                   <FaMapLocationDot className=" lg:w-5 lg:h-5 w-auto h-auto" />
                   <Link
                     href={`Location:553 E 2nd St, Brooklyn, NY 11218, United States`}
@@ -145,7 +145,7 @@ export default function ContactUs({classNames}) {
                 <div className="flex justify-center md:justify-start">
                   <button
                     type="submit"
-                    className=" rounded-md bg-[#FBCC21E4] px-10 py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-8 mt-6"
+                    className="rounded-md bg-[#FBCC21E4] px-10 py-[11px] md:py-4 lg:px-20 text-lg font-bold  sm:w-auto text-black items-center flex lg:mt-8 mt-6"
                   >
                     Submit{" "}
                     <svg

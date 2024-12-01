@@ -7,11 +7,11 @@ const AffordableConcreteServices = () => {
     return (
         <div className="full__section_l_p pr-3 md:pr-0 common__padding__top">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[22px]">
-                <div className="order-2 md:col-span-1">
+                <div className="order-1 md:order-2 md:col-span-1">
                     <Image src="/assets/bestConcreteConstructor/affordable.png" alt='affordable' width={804} height={767}/>
                 </div>
-                <div className="order-1 md:col-span-1">
-                    <div>
+                <div className="order-2 md:order-1 md:col-span-1">
+                    <div className='flex justify-center md:justify-start items-center'>
                         <HeadingIcon text={headingIconText.affordableConcreateServices__headingIconText}/>
                     </div>
                     <h2 className='text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold leading-normal text-black text-center md:text-left'>Dream Affordable Concrete Services at Your Fingertips</h2>

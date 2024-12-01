@@ -270,11 +270,11 @@ const WhyChooseUs = () => {
       >
         <div className="md:col-span-1">
           <Image
-            src="/assets/bestConcreteConstructor/whyChooseUs/whyChooseUs1.png"
+            src="/assets/bestConcreteConstructor/whyChooseUs/small_whyChoseUs1.png"
             alt="consideration image"
             width={334}
-            height={669}
-            className="h-[435px] md:h-full w-full md:w-auto"
+            height={401}
+            className="h-[401px] md:h-full w-full md:w-auto"
           />
         </div>
         <div className="md:col-span-2 border-t-2 border-r-2 border-l-2 border-bg-primary-300 mr-0 md:mr-3">
@@ -305,11 +305,11 @@ const WhyChooseUs = () => {
 
         <div className="md:col-span-1">
           <Image
-            src="/assets/bestConcreteConstructor/whyChooseUs/whyChooseUs2.png"
+            src="/assets/bestConcreteConstructor/whyChooseUs/small_whyChoseUs2.png"
             alt="consideration image"
             width={334}
-            height={669}
-            className="h-[435px] md:h-full w-full md:w-auto"
+            height={401}
+            className="h-[401px] md:h-full w-full md:w-auto"
           />
         </div>
 

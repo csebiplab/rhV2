@@ -88,12 +88,14 @@ const ProjectGallery = () => {
               ))}
             </div>
             {!showAll && (
-              <div className="text-center mt-4 px-10">
+              <div className="w-full flex justify-center items-center mt-[34px]">
                 <button
                   onClick={handleLoadMore}
-                  className="w-full text-lg font-medium px-4 py-2 bg-primary text-white rounded"
+                  className="flex items-center gap-[25px] text-lg font-medium pl-[55px] pr-[50px] py-[18px] bg-primary text-black"
                 >
-                  Load More
+                  Load More <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                  <path d="M1.78711 0.28125L0 1.89173L5.42578 6.78125L0 11.6708L1.78711 13.2813L9 6.78125L1.78711 0.28125Z" fill="black"/>
+                  </svg>
                 </button>
               </div>
             )}

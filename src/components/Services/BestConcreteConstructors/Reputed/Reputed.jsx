@@ -11,7 +11,7 @@ const Reputed = () => {
                     <Image src="/assets/bestConcreteConstructor/reputed.png" alt='Reputed' width={812} height={720}/>
                 </div>
                 <div className="order-1 md:col-span-1">
-                    <div>
+                    <div className='flex justify-center md:justify-start items-center'>
                         <HeadingIcon text={headingIconText.reputed__headingIconText}/>
                     </div>
                     <h2 className='text-[25px] md:text-[26px] lg:text-[28px] xl:text-[30px] 2xl:text-[31px] 3xl:text-[33px] 4xl:text-[34px] 5xl:text-[36px] font-bold leading-normal text-black text-center md:text-left'>Reputed Cement Contractors in Brooklyn</h2>

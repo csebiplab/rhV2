@@ -54,7 +54,7 @@ const SpecialConcreteServices = () => {
         </div>
         <div className="">
           <h2 className="text-[25px] md:text-[26px] lg:text-[28px] xl:text-[29px] 2xl:text-[30px] 3xl:text-[32px] 4xl:text-[34px] 5xl:text-[36px] text-black font-bold leading-normal text-center pb-[10px]">
-          Special Concrete Services by Our Concrete Constructors
+          Special Concrete Services by <br className="block md:hidden"/>  Our Concrete Constructors
           </h2>
         </div>
         {/* cart data  */}
