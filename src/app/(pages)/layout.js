@@ -10,6 +10,7 @@ import "../globals.css";
 
 const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
+
 /*
 export async function generateMetadata() {
 
@@ -31,8 +32,8 @@ export async function generateMetadata() {
       cache: "no-store",
     });
     const data = await googleVerificationResponse.json();
-    // const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
-    // console.log("googleVerification", data?.verificationUrl?.[0]?.url)
+    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
+    console.log("googleVerification", data?.verificationUrl?.[0]?.url)
     const googleVerificationContent = data?.verificationUrl?.[0]?.url ? data?.verificationUrl?.[0]?.url : ""
 
     return {
@@ -63,7 +64,8 @@ export async function generateMetadata() {
     };
   }
 }
-  */
+
+*/
 
 export default function RootLayout({ children }) {
   return (
