@@ -4,68 +4,65 @@ import { Roboto_Slab } from 'next/font/google';
 import 'sweetalert2/src/sweetalert2.scss';
 import Footer from "@/components/layout/Footer/Footer";
 import { headers } from "next/headers";
-
+import { projectfor } from "@/constants/projectfor";
 import "../globals.css";
 
 
 const roboto = Roboto_Slab({ subsets: ['latin'], display: 'swap', adjustFontFallback: false });
 
 
-/*
 export async function generateMetadata() {
 
   const headerList = headers();
   const pathname = headerList.get("x-current-path");
-  const fullUrl = headerList.get("next-url");
+  const clientUrlWithPath = process.env.NEXT_PUBLIC_CLIENT_URL + pathname
+
+  console.log(clientUrlWithPath, 'clientUrlWithPath')
 
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    console.log(`${apiUrl}/api/metaDatas?pageLink=${fullUrl}`)
 
-    const metaDataResponse = await fetch(`${apiUrl}/api/metaDatas?pageLink=${fullUrl}`, {
+    const response = await fetch(`${apiUrl}/api/metadata?projectFor=${projectfor}&pageLink=${clientUrlWithPath}`, {
       cache: "no-store",
     });
-    const metaData = await metaDataResponse.json();
-    const { title, description, keywords } = metaData?.data[0] ?? {};
+    const data = await response.json();
 
-    const googleVerificationResponse = await fetch(`${apiUrl}/api/verificationUrl`, {
+    const { title, description, keywords } = data?.data[0] ?? {};
+
+    const gglverificationResponse = await fetch(`${apiUrl}/api/site-verification`, {
       cache: "no-store",
     });
-    const data = await googleVerificationResponse.json();
-    const googleConsoleKey = extractGoogleConsoleKey(googleVerification);
-    console.log("googleVerification", data?.verificationUrl?.[0]?.url)
-    const googleVerificationContent = data?.verificationUrl?.[0]?.url ? data?.verificationUrl?.[0]?.url : ""
+
+    const gVerificationData = await gglverificationResponse.json();
+
+    const verificationContent = gVerificationData?.data?.[0]?.url
 
     return {
-      title: title || "General Contractor in Brooklyn | RH Construction USA Inc.",
-      description: description || "Top-rated general contractor in Brooklyn, specializing in home renovations, bathroom & kitchen remodeling, roofing and construction services.",
-      keywords: keywords || "General Contractor, General Contractor in Brooklyn, RH Construction USA Inc, home renovations, bathroom & kitchen remodeling, roofing",
+      title: title,
+      description: description,
+      keywords: keywords,
       openGraph: {
         title: title,
         description: description,
       },
       verification: {
-        google: googleVerificationContent,
+        google: verificationContent,
       },
       alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_API_URL}${pathname}`,
+        canonical: clientUrlWithPath,
       },
       robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
     };
+
   } catch (error) {
     return {
-      title: "General Contractor in Brooklyn | RH Construction USA Inc.",
-      keywords: "Top-rated general contractor in Brooklyn, specializing in home renovations, bathroom & kitchen remodeling, roofing and construction services.",
-      description: "General Contractor, General Contractor in Brooklyn, RH Construction USA Inc, home renovations, bathroom & kitchen remodeling, roofing",
-      alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_API_URL}${pathname}`,
-      },
-      robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-    };
+      title: "Home",
+      description: "Home",
+      keywords: "Home",
+    }
   }
 }
 
-*/
 
 export default function RootLayout({ children }) {
   return (
