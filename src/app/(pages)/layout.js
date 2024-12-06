@@ -17,7 +17,7 @@ export async function generateMetadata() {
   const pathname = headerList.get("x-current-path");
   const clientUrlWithPath = process.env.NEXT_PUBLIC_CLIENT_URL + pathname
 
-  console.log(clientUrlWithPath, 'clientUrlWithPath')
+  // console.log(clientUrlWithPath, 'clientUrlWithPath')
 
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
