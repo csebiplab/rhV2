@@ -38,15 +38,15 @@ export async function generateMetadata() {
     const verificationContent = gVerificationData?.data?.[0]?.url
 
     return {
-      title: title,
-      description: description,
-      keywords: keywords,
+      title: title || "General Contractor in Brooklyn | RH Construction USA Inc.",
+      description: description || "Top-rated general contractor in Brooklyn, specializing in home renovations, bathroom & kitchen remodeling, roofing and construction services.",
+      keywords: keywords || "General Contractor, General Contractor in Brooklyn, RH Construction USA Inc, home renovations, bathroom & kitchen remodeling, roofing",
       openGraph: {
-        title: title,
-        description: description,
+        title: title || "General Contractor in Brooklyn | RH Construction USA Inc.",
+        description: description || "Top-rated general contractor in Brooklyn, specializing in home renovations, bathroom & kitchen remodeling, roofing and construction services.",
       },
       verification: {
-        google: verificationContent,
+        google: verificationContent || "ABCDEFGH",
       },
       alternates: {
         canonical: clientUrlWithPath,
